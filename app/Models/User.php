@@ -41,4 +41,12 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function judge() {
+        return $this->hasOne(Judge::class, 'user_id');
+    }
+
+    public function team() {
+        return $this->hasOne(Team::class, 'user_id');
+    }
 }
