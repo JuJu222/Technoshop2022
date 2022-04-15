@@ -15,6 +15,8 @@ return new class extends Migration
     {
         Schema::create('teams', function (Blueprint $table) {
             $table->id();
+            $table->string('mentors');
+            $table->string('members');
             $table->integer('points')->default(0);
             $table->foreignId('user_id');
             $table->timestamps();

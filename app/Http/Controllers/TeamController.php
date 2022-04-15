@@ -2,7 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Judge;
+use App\Models\Team;
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class TeamController extends Controller
 {
@@ -13,7 +17,14 @@ class TeamController extends Controller
      */
     public function index()
     {
-        //
+
+    }
+
+    public function leaderboard()
+    {
+        $teams = Team::with('user')->get();
+
+        return view('leaderboard', compact('teams'));
     }
 
     /**

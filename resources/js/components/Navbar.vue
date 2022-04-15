@@ -3,7 +3,7 @@
         <div class="mx-auto container px-6 py-2 xl:py-0">
             <div class="flex items-center justify-between">
                 <div class="inset-y-0 left-0 flex items-center xl:hidden">
-                    <div class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-100 focus:outline-none transition duration-150 ease-in-out">
+                    <div class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-400 focus:outline-none transition duration-150 ease-in-out">
                         <div class="visible xl:hidden z-50">
                             <ul class="p-2 border-r bg-white absolute rounded left-0 right-0 shadow mt-8 md:mt-8 hidden">
                                 <li class="flex xl:hidden cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none">
@@ -18,7 +18,7 @@
                                         <span class="ml-2 font-bold">Leaderboard</span>
                                     </div>
                                 </li>
-                                <li class="xl:hidden flex-col cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none flex justify-center" @click="dropdownHandler($event)">
+                                <li class="xl:hidden flex-col cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none flex justify-center" @click="goToInvestors($event)">
                                     <div class="flex items-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-puzzle" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                             <path stroke="none" d="M0 0h24v24H0z"></path>
@@ -68,19 +68,16 @@
                     </div>
                 </div>
                 <div class="flex w-full sm:w-auto items-center sm:items-stretch justify-end sm:justify-start">
-                    <div class="flex items-center" @click="goToHome()">
-                        <svg aria-label="Home" id="logo" enable-background="new 0 0 300 300" height="44" viewBox="0 0 300 300" width="43" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <g>
-                                <path
-                                    fill="#4c51bf"
-                                    d="m234.735 35.532c-8.822 0-16 7.178-16 16s7.178 16 16 16 16-7.178 16-16-7.178-16-16-16zm0 24c-4.412 0-8-3.588-8-8s3.588-8 8-8 8 3.588 8 8-3.588 8-8 8zm-62.529-14c0-2.502 2.028-4.53 4.53-4.53s4.53 2.028 4.53 4.53c0 2.501-2.028 4.529-4.53 4.529s-4.53-2.027-4.53-4.529zm89.059 60c0 2.501-2.028 4.529-4.53 4.529s-4.53-2.028-4.53-4.529c0-2.502 2.028-4.53 4.53-4.53s4.53 2.029 4.53 4.53zm-40.522-5.459-88-51.064c-1.242-.723-2.773-.723-4.016 0l-88 51.064c-1.232.715-1.992 2.033-1.992 3.459v104c0 1.404.736 2.705 1.938 3.428l88 52.936c.635.381 1.35.572 2.062.572s1.428-.191 2.062-.572l88-52.936c1.201-.723 1.938-2.023 1.938-3.428v-104c0-1.426-.76-2.744-1.992-3.459zm-90.008-42.98 80.085 46.47-52.95 31.289-23.135-13.607v-21.713c0-2.209-1.791-4-4-4s-4 1.791-4 4v21.713l-26.027 15.309c-1.223.719-1.973 2.029-1.973 3.447v29.795l-52 30.727v-94.688zm0 198.707-80.189-48.237 51.467-30.412 24.723 14.539v19.842c0 2.209 1.791 4 4 4s4-1.791 4-4v-19.842l26.027-15.307c1.223-.719 1.973-2.029 1.973-3.447v-31.667l52-30.728v94.729z"
-                                />
-                            </g>
-                        </svg>
-                        <h2 class="hidden sm:block text-base text-gray-700 font-bold leading-normal pl-3">The North</h2>
-                    </div>
+                        <a href="/" class="flex items-center">
+                            <img src="/img/logo_uc.png" alt="Logo UC" class="w-10 mr-2">
+                            <img src="/img/logo_su.png" alt="Logo SU" class="w-10 mr-3">
+                            <div class="flex flex-col">
+                                <h2 class="hidden sm:block text-base text-gray-700 font-bold leading-normal">Technopreneruship Workshop</h2>
+                                <h2 class="hidden sm:block text-base text-gray-700 font-bold leading-normal">2022</h2>
+                            </div>
+                        </a>
                     <div class="hidden xl:flex md:ml-6 xl:ml-16">
-                        <a href="javascript: void(0)" class="flex px-5 items-center py-6 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
+                        <a href="/leaderboard" class="flex px-5 items-center py-6 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
                             <span class="mr-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-grid" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z"></path>
@@ -92,7 +89,7 @@
                             </span>
                             Leaderboard
                         </a>
-                        <a href="javascript: void(0)" class="flex px-5 items-center py-6 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
+                        <a href="/investors" class="flex px-5 items-center py-6 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
                             <span class="mr-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-puzzle" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z"></path>
@@ -127,7 +124,7 @@
                                         </svg>
                                         <span class="ml-2" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">Logout</span>
-                                        <form id="logout-form" action="logout" method="POST" class="d-none">
+                                        <form id="logout-form" action="/logout" method="POST" class="d-none">
                                             <input type="hidden" name="_token" :value="csrf">
                                         </form>
                                     </li>
@@ -178,11 +175,15 @@ export default {
                 el.currentTarget.classList.add("hidden");
             }
         },
-        goToLogin(){
-            window.location.href = 'login'
+        goToLogin() {
+            window.location.href = '/login'
         },
-        goToHome(){
+        goToHome() {
             window.location.href = '/'
+        },
+        goToInvestors(event) {
+            window.location.href = '/investors'
+            this.dropdownHandler(event)
         }
     },
     props: ['homeRoute', 'isGuest']

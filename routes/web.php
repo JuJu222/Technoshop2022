@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\JudgeController;
+use App\Http\Controllers\TeamController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,3 +24,12 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::resource('investors', JudgeController::class);
+Route::middleware(['auth'])->group(function () {
+    Route::middleware(['judge'])->group(function () {
+        Route::get('/judge/{id}', [JudgeController::class, 'judgeGet']);
+        Route::post('/judge/{id}', [JudgeController::class, 'judgePost']);
+    });
+});
+
+Route::resource('teams', TeamController::class);
+Route::get('/leaderboard', [TeamController::class, 'leaderboard'])->name('leaderboard');
