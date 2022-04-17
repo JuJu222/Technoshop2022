@@ -6627,7 +6627,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "Navbar",
   data: function data() {
@@ -58853,6 +58852,10 @@ var render = function () {
                             {
                               staticClass:
                                 "cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none",
+                              attrs: {
+                                onclick:
+                                  "event.preventDefault(); document.getElementById('logout-form').submit();",
+                              },
                             },
                             [
                               _c("div", { staticClass: "flex items-center" }, [
@@ -59222,6 +59225,10 @@ var render = function () {
                             {
                               staticClass:
                                 "cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-indigo-700 flex items-center focus:text-indigo-700 focus:outline-none",
+                              attrs: {
+                                onclick:
+                                  "event.preventDefault(); document.getElementById('logout-form').submit();",
+                              },
                             },
                             [
                               _c(
@@ -59261,17 +59268,9 @@ var render = function () {
                                 ]
                               ),
                               _vm._v(" "),
-                              _c(
-                                "span",
-                                {
-                                  staticClass: "ml-2",
-                                  attrs: {
-                                    onclick:
-                                      "event.preventDefault();\n                                                 document.getElementById('logout-form').submit();",
-                                  },
-                                },
-                                [_vm._v("Logout")]
-                              ),
+                              _c("span", { staticClass: "ml-2" }, [
+                                _vm._v("Logout"),
+                              ]),
                               _vm._v(" "),
                               _c(
                                 "form",
