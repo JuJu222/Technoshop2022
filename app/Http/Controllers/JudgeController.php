@@ -68,13 +68,26 @@ class JudgeController extends Controller
      */
     public function judgePost(Request $request, $id)
     {
-        $query = Point::query()->create([
-            'judge_id' => Judge::query()->where('user_id', Auth::id())->first()->user_id,
-            'team_id' => $id,
-            'prototype' => $request->prototype,
-            'idea' => $request->idea,
-            'investment' => $request->investment,
-        ]);
+        $judge = Judge::query()->where('user_id', Auth::id())->first();
+        $teamName = Team::query()->findOrFail($id)->name;
+
+        if (Point::query()->where('judge_id', $judge->id)->where('team_id', $id)->exists()) {
+            $message = 'You have already given points and scores to ' . $teamName;
+            $query = Point::query()->where('judge_id', $judge->id)->where('team_id', $id)->first();
+        } else {
+            $message = 'You have succesfully given points and scores to ' . $teamName;
+            $query = Point::query()->create([
+                'judge_id' => $judge->id,
+                'team_id' => $id,
+                'prototype' => $request->prototype,
+                'idea' => $request->idea,
+                'investment' => $request->investment,
+            ]);
+            $judge->update([
+                'points' => $judge->points - $request->investment
+            ]);
+        }
+
         $team = DB::table('points')
             ->rightJoin(
                 'teams',
@@ -97,9 +110,8 @@ class JudgeController extends Controller
             ->groupBy('members')
             ->first();
         $team = json_encode($team);
-        $judge = Judge::with('user')->where('user_id', Auth::id())->first();
 
-        return view('judge_success', compact('team', 'judge', 'query'));
+        return view('judge_success', compact('team', 'judge', 'query', 'message'));
     }
 
     /**
