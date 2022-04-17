@@ -16,6 +16,6 @@ class Team extends Model
     }
 
     public function point() {
-        return $this->belongsToMany(Point::class);
+        return $this->hasMany(Point::class);
     }
 }

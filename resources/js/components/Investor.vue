@@ -1,39 +1,35 @@
 <template>
-    <div class="bg-gray-200 pb-10">
-        <!-- Page title starts -->
-        <div class="bg-gray-800 pt-8 pb-16 relative z-10">
-            <div class="container px-6 mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between">
-                <div class="flex-col flex lg:flex-row items-start lg:items-center">
-                    <div class="flex items-center">
-                        <img class="border-2 shadow border-gray-600 rounded-full mr-3" :src="titlePhoto" alt="logo" />
-                        <div>
-                            <h5 class="text-sm text-white leading-4 mb-1">Andres Berlin</h5>
-                            <p class="text-xs text-gray-400 leading-4">VP Operations</p>
-                        </div>
-                    </div>
-                    <div class="ml-0 lg:ml-20 my-6 lg:my-0">
-                        <h4 class="text-2xl font-bold leading-tight text-white mb-2">Dashboard</h4>
-                        <p class="flex items-center text-gray-300 text-xs">
-                            <span class="cursor-pointer"> Portal </span>
-                            <span class="mx-2"> &gt; </span>
-                            <span class="cursor-pointer"> Dashboard </span>
-                            <span class="mx-2"> &gt; </span>
-                            <span class="cursor-pointer"> KPIs </span>
-                        </p>
-                    </div>
+    <div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0">
+
+        <!--Main Col-->
+        <div id="profile" class="w-full lg:w-3/5 rounded-lg shadow-2xl bg-white mx-6 lg:mx-0">
+
+
+            <div class="p-4 md:p-12 text-center lg:text-left">
+                <!-- Image for mobile view-->
+                <div class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center" :style="'background-image: url(\'/img/investors/' + investor.img_portrait + '\')'"></div>
+
+                <h1 class="text-3xl font-bold pt-8 lg:pt-0">{{ investor.user.name }}</h1>
+                <div class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"></div>
+                <div class="flex flex-col align-items-center">
+                    <p class="pt-4 text-base font-bold flex items-center justify-center lg:justify-start">{{ investor.field }}</p>
+                    <p class="pt-8 text-center text-lg font-bold flex items-center justify-center">About</p>
+                    <p class="pt-4 text-sm">{{ investor.about }}</p>
                 </div>
-                <div>
-                    <button class="focus:outline-none mr-3 bg-transparent transition duration-150 ease-in-out rounded hover:bg-gray-700 text-white px-5 py-2 text-sm border border-white">Back</button>
-                    <button class="focus:outline-none transition duration-150 ease-in-out hover:bg-gray-200 border bg-white rounded text-indigo-700 px-8 py-2 text-sm">Edit Profile</button>
+                <div class="mt-6 pb-16 lg:pb-0 mx-auto">
+                    <p class="pt-4 text-center text-lg font-bold flex items-center justify-center">Portfolio</p>
+                    <img :src="'/img/investors/'+investor.img_portfolio">
                 </div>
             </div>
+
         </div>
-        <!-- Page title ends -->
-        <div class="container px-6 mx-auto">
-            <!-- Remove class [ h-64 ] when adding a card block -->
-            <div class="rounded shadow relative bg-white z-10 -mt-8 mb-8 w-full h-64">
-                <!-- Place your content here -->
-            </div>
+
+        <!--Img Col-->
+        <div class="w-full lg:w-2/5">
+            <!-- Big profile image for side bar (desktop) -->
+            <img :src="'/img/investors/'+investor.img_portrait" class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block">
+            <!-- Image from: http://unsplash.com/photos/MP0IUfwrn0A -->
+
         </div>
     </div>
 </template>
@@ -41,32 +37,6 @@
 <script>
 export default {
     name: "Investor",
-    data() {
-        return {
-            xmlns: "http://www.w3.org/2000/svg",
-            profilePhoto: "https://tuk-cdn.s3.amazonaws.com/assets/components/boxed_layout/bl_1.png",
-            titlePhoto: "https://cdn.tuk.dev/assets/webapp/master_layouts/boxed_layout/boxed_layout2.jpg",
-        };
-    },
-    methods: {
-        dropdownHandler(event) {
-            let single = event.currentTarget.getElementsByTagName("ul")[0];
-            single.classList.toggle("hidden");
-        },
-        MenuHandler(el, val) {
-            let MainList = el.currentTarget.parentElement.getElementsByTagName("ul")[0];
-            let closeIcon = el.currentTarget.parentElement.getElementsByClassName("close-m-menu")[0];
-            let showIcon = el.currentTarget.parentElement.getElementsByClassName("show-m-menu")[0];
-            if (val) {
-                MainList.classList.remove("hidden");
-                el.currentTarget.classList.add("hidden");
-                closeIcon.classList.remove("hidden");
-            } else {
-                showIcon.classList.remove("hidden");
-                MainList.classList.add("hidden");
-                el.currentTarget.classList.add("hidden");
-            }
-        },
-    },
+    props: ['investor']
 };
 </script>

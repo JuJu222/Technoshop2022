@@ -15,6 +15,10 @@ return new class extends Migration
     {
         Schema::create('judges', function (Blueprint $table) {
             $table->id();
+            $table->string('field');
+            $table->text('about');
+            $table->string('img_portrait');
+            $table->string('img_portfolio');
             $table->integer('points')->default(1000);
             $table->foreignId('user_id');
             $table->timestamps();

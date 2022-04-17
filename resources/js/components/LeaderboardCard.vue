@@ -1,24 +1,27 @@
 <template>
     <table class="mx-auto my-2 max-w-lg rounded overflow-hidden shadow-md text-xs table-auto">
-
         <tr class="bg-gray-200 px-2 py-2">
-            <td class="text-gray-700 text-left text-red-700">{{ index + 1 }}</td>
-            <td class="text-gray-700 text-left text-red-700">{{ index + 1 }}</td>
-                <td class="px-2 text-center">Prototype Score</td>
-                <td class="px-2 text-center">Idea Score</td>
+            <td v-if="index" class="text-gray-700 text-left text-xl font-bold">{{ ordinal(index) }}</td>
+            <td v-else class="text-gray-700 text-left text-xl font-bold"></td>
+            <td class="px-2 text-center">Prototype Score</td>
+            <td class="px-2 text-center">Idea Score</td>
             <td class="text-gray-700 text-center    ">Investment Points</td>
         </tr>
 
         <tr class="px-2 py-2 items-center bg-white">
-            <td class="text-sm font-bold">{{ team.user.name }}</td>
-                <td class="flex flex-col">
-                    <p class="sm:block">{{ team.mentors }}</p>
-                    <p class="sm:block text-gray-600">{{ team.members }}</p>
-                </td>
-            <td class="px-1 text-center">29</td>
-            <td class="px-1 text-center">23</td>
+            <td class="text-sm font-bold">{{ team.name }}</td>
+            <td class="px-1 text-center">{{ team.prototype }}</td>
+            <td class="px-1 text-center">{{ team.idea }}</td>
 
-            <td class="text-lg sm:text-xl font-bold text-center">109</td>
+            <td class="text-lg sm:text-xl font-bold text-center">{{ team.investment }}</td>
+        </tr>
+
+        <tr class="px-2 py-2 items-center bg-white">
+            <td class="text-xs" colspan="4">{{ team.mentors }}</td>
+        </tr>
+
+        <tr class="px-2 py-2 items-center bg-white">
+            <td class="text-xs" colspan="4">{{ team.members }}</td>
         </tr>
 
     </table>
@@ -28,7 +31,23 @@
 <script>
 export default {
     name: "LeaderboardCard",
-    props: ['index', 'team']
+    props: ['team', 'index'],
+    methods: {
+        ordinal(i) {
+            const j = i % 10,
+                k = i % 100;
+            if (j === 1 && k !== 11) {
+                return i + "st";
+            }
+            if (j === 2 && k !== 12) {
+                return i + "nd";
+            }
+            if (j === 3 && k !== 13) {
+                return i + "rd";
+            }
+            return i + "th";
+        }
+    }
 }
 </script>
 

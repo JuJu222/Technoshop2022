@@ -26,6 +26,11 @@ class UserSeeder extends Seeder
         ]);
         DB::table('judges')->insert([
             'user_id' => 1,
+            'field' => 'IoT, FnB, & Angel Investor',
+            'about' => 'I am interested in technology. I am interested in companies that have a clear vision and mission.
+            projects that can be useful for human life. All members have the same heart and support each other.',
+            'img_portrait' => 'pak_yuwono/pak_yuwono.png',
+            'img_portfolio' => 'pak_yuwono/portfolio_pak_yuwono.png',
             'created_at' => \Carbon\Carbon::now(),
             'updated_at' => \Carbon\Carbon::now()
         ]);
@@ -41,6 +46,12 @@ class UserSeeder extends Seeder
         ]);
         DB::table('judges')->insert([
             'user_id' => 2,
+            'field' => 'FnB, Service Tech, & Angel Investor',
+            'about' => 'I like a business that has a clear purpose. The vision and mission are built in accordance
+            with the principle of continously improving the quality of services, growing the country\'s economy,
+            and creating job opportunities for many people.',
+            'img_portrait' => 'pak_mychael/pak_mychael.png',
+            'img_portfolio' => 'pak_mychael/portfolio_pak_mychael.png',
             'created_at' => \Carbon\Carbon::now(),
             'updated_at' => \Carbon\Carbon::now()
         ]);
@@ -56,6 +67,12 @@ class UserSeeder extends Seeder
         ]);
         DB::table('judges')->insert([
             'user_id' => 3,
+            'field' => 'Deep Learning, Game, Self Driving Car, & Imaginary Tech',
+            'about' => 'Future, is about implementing your imaginary and make it sustain for the entire time.
+            To make something from unreal became real, I\'m here to help and support your dream not just to become real
+            but beyond.',
+            'img_portrait' => 'pak_evan/pak_evan.png',
+            'img_portfolio' => 'pak_evan/portfolio_pak_evan.png',
             'created_at' => \Carbon\Carbon::now(),
             'updated_at' => \Carbon\Carbon::now()
         ]);
@@ -71,6 +88,10 @@ class UserSeeder extends Seeder
         ]);
         DB::table('judges')->insert([
             'user_id' => 4,
+            'field' => 'Multi-sided Platforms & Angel Investor',
+            'about' => 'I love businesses that solve people\'s problems, support them, and make their lives easier!',
+            'img_portrait' => 'pak_eko/pak_eko.png',
+            'img_portfolio' => 'pak_eko/portfolio_pak_eko.png',
             'created_at' => \Carbon\Carbon::now(),
             'updated_at' => \Carbon\Carbon::now()
         ]);
@@ -86,6 +107,11 @@ class UserSeeder extends Seeder
         ]);
         DB::table('judges')->insert([
             'user_id' => 5,
+            'field' => 'IoT, Internet Security, FnB, Healthcare, Angel Investor, & Education',
+            'about' => 'Have interest in Data Communication, IT Security, Education and Healthcare. Love travelling
+            for a new place and culinary.',
+            'img_portrait' => 'pak_david/pak_david.png',
+            'img_portfolio' => 'pak_david/portfolio_pak_david.png',
             'created_at' => \Carbon\Carbon::now(),
             'updated_at' => \Carbon\Carbon::now()
         ]);
@@ -101,6 +127,11 @@ class UserSeeder extends Seeder
         ]);
         DB::table('judges')->insert([
             'user_id' => 6,
+            'field' => 'Renewable Energy, Healthcare & Wellbeing',
+            'about' => 'A sustainability development evangelist who also takes great interest in Healthcare and well-being
+            product especially concerning with senior and marginilized citizen.',
+            'img_portrait' => 'bu_theresia/bu_theresia.png',
+            'img_portfolio' => 'bu_theresia/portfolio_bu_theresia.png',
             'created_at' => \Carbon\Carbon::now(),
             'updated_at' => \Carbon\Carbon::now()
         ]);
@@ -116,6 +147,10 @@ class UserSeeder extends Seeder
         ]);
         DB::table('judges')->insert([
             'user_id' => 7,
+            'field' => 'Edu Tech, Retail, SaaS, & Angel Investor',
+            'about' => 'I like business ideas that are out of the box and i like it even more when they make tons of money.',
+            'img_portrait' => 'bu_laura/bu_laura    .png',
+            'img_portfolio' => 'bu_laura/portfolio_bu_laura.png',
             'created_at' => \Carbon\Carbon::now(),
             'updated_at' => \Carbon\Carbon::now()
         ]);
@@ -131,6 +166,11 @@ class UserSeeder extends Seeder
         ]);
         DB::table('judges')->insert([
             'user_id' => 8,
+            'field' => 'Angel Investor',
+            'about' => 'I like a business that has a balance between goodwill purpose and making money. I appreciate
+            business that has members who dedicated to the business and know what they\'re doing.',
+            'img_portrait' => 'bu_citra/bu_citra.png',
+            'img_portfolio' => 'bu_citra/portfolio_bu_citra.png',
             'created_at' => \Carbon\Carbon::now(),
             'updated_at' => \Carbon\Carbon::now()
         ]);

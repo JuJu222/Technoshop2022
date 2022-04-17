@@ -9,6 +9,7 @@ use App\Models\Team;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class JudgeController extends Controller
 {
@@ -32,7 +33,28 @@ class JudgeController extends Controller
      */
     public function judgeGet(Request $request, $id)
     {
-        $team = Team::with('user')->where('id', $id)->first();
+        $team = DB::table('points')
+            ->rightJoin(
+                'teams',
+                'teams.id',
+                '=',
+                'team_id')
+            ->join(
+                'users',
+                'users.id',
+                '=',
+                'user_id')
+            ->selectRaw('teams.id, name, mentors, members,
+                CAST(COALESCE(AVG(prototype), 0) AS DECIMAL(3,1)) AS prototype,
+                CAST(COALESCE(AVG(idea), 0) AS DECIMAL(3,1)) AS idea,
+                CAST(COALESCE(SUM(investment), 0) AS SIGNED INTEGER) AS investment')
+            ->where('teams.id', $id)
+            ->groupBy('teams.id')
+            ->groupBy('name')
+            ->groupBy('mentors')
+            ->groupBy('members')
+            ->first();
+        $team = json_encode($team);
         $judge = Judge::with('user')->where('user_id', Auth::id())->first();
 
         return view('judge', compact('team', 'judge'));
@@ -46,15 +68,38 @@ class JudgeController extends Controller
      */
     public function judgePost(Request $request, $id)
     {
-        Point::query()->create([
+        $query = Point::query()->create([
             'judge_id' => Judge::query()->where('user_id', Auth::id())->first()->user_id,
             'team_id' => $id,
             'prototype' => $request->prototype,
             'idea' => $request->idea,
             'investment' => $request->investment,
         ]);
+        $team = DB::table('points')
+            ->rightJoin(
+                'teams',
+                'teams.id',
+                '=',
+                'team_id')
+            ->join(
+                'users',
+                'users.id',
+                '=',
+                'user_id')
+            ->selectRaw('teams.id, name, mentors, members,
+                CAST(COALESCE(AVG(prototype), 0) AS DECIMAL(3,1)) AS prototype,
+                CAST(COALESCE(AVG(idea), 0) AS DECIMAL(3,1)) AS idea,
+                CAST(COALESCE(SUM(investment), 0) AS SIGNED INTEGER) AS investment')
+            ->where('teams.id', $id)
+            ->groupBy('teams.id')
+            ->groupBy('name')
+            ->groupBy('mentors')
+            ->groupBy('members')
+            ->first();
+        $team = json_encode($team);
+        $judge = Judge::with('user')->where('user_id', Auth::id())->first();
 
-        return Point::all();
+        return view('judge_success', compact('team', 'judge', 'query'));
     }
 
     /**
@@ -86,8 +131,47 @@ class JudgeController extends Controller
      */
     public function show($id)
     {
-        //
+        $investor = Judge::with('user')->where('judges.id', $id)->first();
+
+        return view('investor', compact('investor'));
     }
+
+//    /**
+//     * Display the specified resource.
+//     *
+//     * @param  int  $id
+//     * @return \Illuminate\Http\Response
+//     */
+//    public function judgeSuccess(Request $request, $id)
+//    {
+//        $team = DB::table('points')
+//            ->rightJoin(
+//                'teams',
+//                'teams.id',
+//                '=',
+//                'team_id')
+//            ->join(
+//                'users',
+//                'users.id',
+//                '=',
+//                'user_id')
+//            ->selectRaw('teams.id, name, mentors, members,
+//                CAST(COALESCE(AVG(prototype), 0) AS DECIMAL(3,1)) AS prototype,
+//                CAST(COALESCE(AVG(idea), 0) AS DECIMAL(3,1)) AS idea,
+//                CAST(COALESCE(SUM(investment), 0) AS SIGNED INTEGER) AS investment')
+//            ->where('teams.id', $id)
+//            ->groupBy('teams.id')
+//            ->groupBy('name')
+//            ->groupBy('mentors')
+//            ->groupBy('members')
+//            ->first();
+//        $team = json_encode($team);
+//        $judge = Judge::with('user')->where('user_id', Auth::id())->first();
+//        $latest = Point::query()->where('judge_id', $judge->id)->order_by('updated_at', 'desc')->first();
+//        return $latest;
+//
+//        return view('judge_success', compact('team', 'judge'));
+//    }
 
     /**
      * Show the form for editing the specified resource.

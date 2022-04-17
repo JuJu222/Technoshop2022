@@ -26,6 +26,7 @@ Vue.component('home', require('./components/Home.vue').default);
 Vue.component('investors', require('./components/Investors.vue').default);
 Vue.component('leaderboard', require('./components/Leaderboard.vue').default);
 Vue.component('judge', require('./components/Judge.vue').default);
+Vue.component('judge-success', require('./components/JudgeSuccess').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

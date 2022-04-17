@@ -28,6 +28,7 @@ Route::middleware(['auth'])->group(function () {
     Route::middleware(['judge'])->group(function () {
         Route::get('/judge/{id}', [JudgeController::class, 'judgeGet']);
         Route::post('/judge/{id}', [JudgeController::class, 'judgePost']);
+//        Route::get('/judge/{id}/success', [JudgeController::class, 'judgeSuccess']);
     });
 });
 
