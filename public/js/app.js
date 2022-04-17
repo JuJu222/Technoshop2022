@@ -58784,16 +58784,16 @@ var render = function () {
                         ]
                       ),
                       _vm._v(" "),
-                      _c(
-                        "li",
-                        {
-                          staticClass:
-                            "cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 flex items-center focus:text-indigo-700 focus:outline-none",
-                        },
-                        [
-                          _c("div", { staticClass: "flex items-center" }, [
-                            _vm.user
-                              ? _c(
+                      _vm.user
+                        ? _c(
+                            "li",
+                            {
+                              staticClass:
+                                "cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 flex items-center focus:text-indigo-700 focus:outline-none",
+                            },
+                            [
+                              _c("div", { staticClass: "flex items-center" }, [
+                                _c(
                                   "p",
                                   {
                                     staticClass: "text-sm ml-2 cursor-pointer",
@@ -58802,48 +58802,50 @@ var render = function () {
                                     _vm._v("Logged in as: "),
                                     _c("b", [_vm._v(_vm._s(_vm.user.name))]),
                                   ]
-                                )
-                              : _vm._e(),
-                            _vm._v(" "),
-                            _c(
-                              "div",
-                              { staticClass: "sm:ml-2 text-white relative" },
-                              [
+                                ),
+                                _vm._v(" "),
                                 _c(
-                                  "svg",
+                                  "div",
                                   {
-                                    staticClass:
-                                      "icon icon-tabler icon-tabler-chevron-down cursor-pointer",
-                                    attrs: {
-                                      xmlns: "http://www.w3.org/2000/svg",
-                                      width: "20",
-                                      height: "20",
-                                      viewBox: "0 0 24 24",
-                                      "stroke-width": "1.5",
-                                      stroke: "currentColor",
-                                      fill: "none",
-                                      "stroke-linecap": "round",
-                                      "stroke-linejoin": "round",
-                                    },
+                                    staticClass: "sm:ml-2 text-white relative",
                                   },
                                   [
-                                    _c("path", {
-                                      attrs: {
-                                        stroke: "none",
-                                        d: "M0 0h24v24H0z",
+                                    _c(
+                                      "svg",
+                                      {
+                                        staticClass:
+                                          "icon icon-tabler icon-tabler-chevron-down cursor-pointer",
+                                        attrs: {
+                                          xmlns: "http://www.w3.org/2000/svg",
+                                          width: "20",
+                                          height: "20",
+                                          viewBox: "0 0 24 24",
+                                          "stroke-width": "1.5",
+                                          stroke: "currentColor",
+                                          fill: "none",
+                                          "stroke-linecap": "round",
+                                          "stroke-linejoin": "round",
+                                        },
                                       },
-                                    }),
-                                    _vm._v(" "),
-                                    _c("polyline", {
-                                      attrs: { points: "6 9 12 15 18 9" },
-                                    }),
+                                      [
+                                        _c("path", {
+                                          attrs: {
+                                            stroke: "none",
+                                            d: "M0 0h24v24H0z",
+                                          },
+                                        }),
+                                        _vm._v(" "),
+                                        _c("polyline", {
+                                          attrs: { points: "6 9 12 15 18 9" },
+                                        }),
+                                      ]
+                                    ),
                                   ]
                                 ),
-                              ]
-                            ),
-                          ]),
-                        ]
-                      ),
+                              ]),
+                            ]
+                          )
+                        : _vm._e(),
                       _vm._v(" "),
                       _vm.user
                         ? _c(
@@ -58895,7 +58897,7 @@ var render = function () {
                                   ]
                                 ),
                                 _vm._v(" "),
-                                _c("span", { staticClass: "ml-2" }, [
+                                _c("span", { staticClass: "ml-2 font-bold" }, [
                                   _vm._v("Logout"),
                                 ]),
                               ]),

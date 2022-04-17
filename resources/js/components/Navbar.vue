@@ -31,9 +31,9 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li class="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 flex items-center focus:text-indigo-700 focus:outline-none">
+                                <li v-if="user" class="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 flex items-center focus:text-indigo-700 focus:outline-none">
                                     <div class="flex items-center">
-                                        <p v-if="user" class="text-sm ml-2 cursor-pointer">Logged in as: <b>{{ user.name }}</b></p>
+                                        <p class="text-sm ml-2 cursor-pointer">Logged in as: <b>{{ user.name }}</b></p>
                                         <div class="sm:ml-2 text-white relative">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down cursor-pointer" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                                 <path stroke="none" d="M0 0h24v24H0z"></path>
@@ -57,7 +57,7 @@
                                                 </g>
                                             </g>
                                         </svg>
-                                        <span class="ml-2">Logout</span>
+                                        <span class="ml-2 font-bold">Logout</span>
                                     </div>
                                 </li>
                             </ul>

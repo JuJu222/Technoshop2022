@@ -25,7 +25,7 @@
             <navbar is-guest="{{ json_encode(auth()->guest()) }}" logout-route="{{ route('logout') }}"></navbar>
         @endguest
         @auth
-            <navbar is-guest="{{ json_encode(auth()->guest()) }}" logout-route="{{ route('logout') }}" :user="{{ Auth::user()->name }}"></navbar>
+            <navbar is-guest="{{ json_encode(auth()->guest()) }}" logout-route="{{ route('logout') }}" :user="{{ Auth::user() }}"></navbar>
         @endauth
 {{--        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">--}}
 {{--            <div class="container">--}}
