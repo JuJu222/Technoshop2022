@@ -23,9 +23,10 @@
     <div id="app">
         @guest
             <navbar is-guest="{{ json_encode(auth()->guest()) }}" logout-route="{{ route('logout') }}"></navbar>
-        @elseguest()
-            <navbar is-guest="{{ json_encode(auth()->guest()) }}" logout-route="{{ route('logout') }}" :user="{{ Auth::user() }}"></navbar>
         @endguest
+        @auth
+            <navbar is-guest="{{ json_encode(auth()->guest()) }}" logout-route="{{ route('logout') }}" :user="{{ Auth::user()->name }}"></navbar>
+        @endauth
 {{--        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">--}}
 {{--            <div class="container">--}}
 {{--                <a class="navbar-brand" href="{{ url('/') }}">--}}

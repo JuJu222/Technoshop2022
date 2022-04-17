@@ -3,10 +3,9 @@
     <!-- replace appropriate tags after installing vue-router -->
     <section>
         <div class="w-full relative px-6 xl:px-0">
-            <img class="absolute w-full inset-0 h-full object-cover object-center" src="https://cdn.tuk.dev/assets/templates/weCare/hero2-bg.png" />
-            <div class="pt-32 lg:flex items-center relative z-10 container mx-auto">
-                <div class="w-full lg:w-1/2 h-full lg:pr-10 xl:pr-0">
-                    <img class="mx-auto" src="https://cdn.tuk.dev/assets/templates/weCare/hero2-left.png" />
+            <div class="pt-10 lg:pt-20 lg:flex items-center relative z-10 container mx-auto">
+                <div class="w-full lg:w-1/2 h-full lg:pr-10 xl:pr-0 mb-10 lg:mb-0">
+                    <img class="mx-auto w-100 md:w-3/5" src="img/asset_1.png" />
                 </div>
                 <div class="w-full lg:w-1/2 h-full">
                     <p class="uppercase text-2xl mb-4 text-purple">Qusique Tincidun sapien</p>
@@ -53,6 +52,7 @@
                 </div>
             </div>
         </div>
+        <ExampleComponent class="w-75 mx-auto my-20"></ExampleComponent>
     </section>
 </template>
 

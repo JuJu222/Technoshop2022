@@ -69,7 +69,7 @@ class JudgeController extends Controller
     public function judgePost(Request $request, $id)
     {
         $judge = Judge::query()->where('user_id', Auth::id())->first();
-        $teamName = Team::query()->findOrFail($id)->name;
+        $teamName = Team::query()->with('user')->where('teams.id', $id)->first()->user->name;
 
         if (Point::query()->where('judge_id', $judge->id)->where('team_id', $id)->exists()) {
             $message = 'You have already given points and scores to ' . $teamName;

@@ -11804,7 +11804,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n/* Top menu */\n.top-100[data-v-371e28c6] {\r\n    -webkit-animation: slideDown-data-v-371e28c6 0.5s ease-in-out;\r\n            animation: slideDown-data-v-371e28c6 0.5s ease-in-out;\n}\n@-webkit-keyframes slideDown-data-v-371e28c6 {\n0% {\r\n        top: -50%;\n}\n100% {\r\n        top: 0;\n}\n}\n@keyframes slideDown-data-v-371e28c6 {\n0% {\r\n        top: -50%;\n}\n100% {\r\n        top: 0;\n}\n}\n*[data-v-371e28c6] {\r\n    outline: none !important;\r\n    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\r\n    -webkit-tap-highlight-color: transparent;\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* Top menu */\n.top-100[data-v-371e28c6] {\n    -webkit-animation: slideDown-data-v-371e28c6 0.5s ease-in-out;\n            animation: slideDown-data-v-371e28c6 0.5s ease-in-out;\n}\n@-webkit-keyframes slideDown-data-v-371e28c6 {\n0% {\n        top: -50%;\n}\n100% {\n        top: 0;\n}\n}\n@keyframes slideDown-data-v-371e28c6 {\n0% {\n        top: -50%;\n}\n100% {\n        top: 0;\n}\n}\n*[data-v-371e28c6] {\n    outline: none !important;\n    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\n    -webkit-tap-highlight-color: transparent;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -57528,109 +57528,50 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("section", [
-    _c("div", { staticClass: "w-full relative px-6 xl:px-0" }, [
-      _c("img", {
-        staticClass:
-          "absolute w-full inset-0 h-full object-cover object-center",
-        attrs: {
-          src: "https://cdn.tuk.dev/assets/templates/weCare/hero2-bg.png",
-        },
-      }),
-      _vm._v(" "),
-      _c(
-        "div",
-        {
-          staticClass:
-            "pt-32 lg:flex items-center relative z-10 container mx-auto",
-        },
-        [
-          _vm._m(0),
-          _vm._v(" "),
-          _c("div", { staticClass: "w-full lg:w-1/2 h-full" }, [
-            _c("p", { staticClass: "uppercase text-2xl mb-4 text-purple" }, [
-              _vm._v("Qusique Tincidun sapien"),
-            ]),
+  return _c(
+    "section",
+    [
+      _c("div", { staticClass: "w-full relative px-6 xl:px-0" }, [
+        _c(
+          "div",
+          {
+            staticClass:
+              "pt-10 lg:pt-20 lg:flex items-center relative z-10 container mx-auto",
+          },
+          [
+            _vm._m(0),
             _vm._v(" "),
-            _c(
-              "h1",
-              { staticClass: "text-gray-900 text-4xl md:text-7xl mb-8" },
-              [_vm._v("All natural ingredients")]
-            ),
-            _vm._v(" "),
-            _c("p", { staticClass: "text-gray-800 font-regular mb-8" }, [
-              _vm._v(
-                "COMBINING SCIENCE WITH BEAUTY. L'Oreal Paris offers a wide range of skincare solutions for your beauty needs. Each of our skincare products is developed and rigorously tested with leading scientists. Indulge yourself in a luxurious and sensorial skincare experience. Cutting-edge innovations, proven by Science."
+            _c("div", { staticClass: "w-full lg:w-1/2 h-full" }, [
+              _c("p", { staticClass: "uppercase text-2xl mb-4 text-purple" }, [
+                _vm._v("Qusique Tincidun sapien"),
+              ]),
+              _vm._v(" "),
+              _c(
+                "h1",
+                { staticClass: "text-gray-900 text-4xl md:text-7xl mb-8" },
+                [_vm._v("All natural ingredients")]
               ),
-            ]),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass:
-                  "bg-white py-4 px-4 flex flex-col sm:flex-row justify-start sm:justify-between items-start sm:items-center shadow-lg rounded-lg",
-              },
-              [
-                _c("div", { staticClass: "sm:flex items-center py-2" }, [
-                  _c("div", { staticClass: "flex items-center" }, [
-                    _c(
-                      "svg",
-                      {
-                        staticClass:
-                          "text-indigo-500 icon icon-tabler icon-tabler-user",
-                        attrs: {
-                          xmlns: "http://www.w3.org/2000/svg",
-                          width: "16",
-                          height: "16",
-                          viewBox: "0 0 24 24",
-                          "stroke-width": "1.5",
-                          stroke: "currentColor",
-                          fill: "none",
-                          "stroke-linecap": "round",
-                          "stroke-linejoin": "round",
-                        },
-                      },
-                      [
-                        _c("path", {
-                          attrs: {
-                            stroke: "none",
-                            d: "M0 0h24v24H0z",
-                            fill: "none",
-                          },
-                        }),
-                        _vm._v(" "),
-                        _c("circle", { attrs: { cx: "12", cy: "7", r: "4" } }),
-                        _vm._v(" "),
-                        _c("path", {
-                          attrs: {
-                            d: "M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2",
-                          },
-                        }),
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "p",
-                      {
-                        staticClass:
-                          "leading-none tracking-normal text-gray-800 ml-2.5",
-                      },
-                      [_vm._v("Doctor Name")]
-                    ),
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    {
-                      staticClass:
-                        "flex items-center sm:mx-4 xl:mx-14 my-6 lg:my-0",
-                    },
-                    [
+              _vm._v(" "),
+              _c("p", { staticClass: "text-gray-800 font-regular mb-8" }, [
+                _vm._v(
+                  "COMBINING SCIENCE WITH BEAUTY. L'Oreal Paris offers a wide range of skincare solutions for your beauty needs. Each of our skincare products is developed and rigorously tested with leading scientists. Indulge yourself in a luxurious and sensorial skincare experience. Cutting-edge innovations, proven by Science."
+                ),
+              ]),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "bg-white py-4 px-4 flex flex-col sm:flex-row justify-start sm:justify-between items-start sm:items-center shadow-lg rounded-lg",
+                },
+                [
+                  _c("div", { staticClass: "sm:flex items-center py-2" }, [
+                    _c("div", { staticClass: "flex items-center" }, [
                       _c(
                         "svg",
                         {
                           staticClass:
-                            "text-indigo-500 icon icon-tabler icon-tabler-layout-bottombar",
+                            "text-indigo-500 icon icon-tabler icon-tabler-user",
                           attrs: {
                             xmlns: "http://www.w3.org/2000/svg",
                             width: "16",
@@ -57652,18 +57593,14 @@ var render = function () {
                             },
                           }),
                           _vm._v(" "),
-                          _c("rect", {
-                            attrs: {
-                              x: "4",
-                              y: "4",
-                              width: "16",
-                              height: "16",
-                              rx: "2",
-                            },
+                          _c("circle", {
+                            attrs: { cx: "12", cy: "7", r: "4" },
                           }),
                           _vm._v(" "),
-                          _c("line", {
-                            attrs: { x1: "4", y1: "15", x2: "20", y2: "15" },
+                          _c("path", {
+                            attrs: {
+                              d: "M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2",
+                            },
                           }),
                         ]
                       ),
@@ -57674,121 +57611,186 @@ var render = function () {
                           staticClass:
                             "leading-none tracking-normal text-gray-800 ml-2.5",
                         },
-                        [_vm._v("Zip code")]
+                        [_vm._v("Doctor Name")]
                       ),
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "flex items-center sm:mx-4 xl:mx-14 my-6 lg:my-0",
+                      },
+                      [
+                        _c(
+                          "svg",
+                          {
+                            staticClass:
+                              "text-indigo-500 icon icon-tabler icon-tabler-layout-bottombar",
+                            attrs: {
+                              xmlns: "http://www.w3.org/2000/svg",
+                              width: "16",
+                              height: "16",
+                              viewBox: "0 0 24 24",
+                              "stroke-width": "1.5",
+                              stroke: "currentColor",
+                              fill: "none",
+                              "stroke-linecap": "round",
+                              "stroke-linejoin": "round",
+                            },
+                          },
+                          [
+                            _c("path", {
+                              attrs: {
+                                stroke: "none",
+                                d: "M0 0h24v24H0z",
+                                fill: "none",
+                              },
+                            }),
+                            _vm._v(" "),
+                            _c("rect", {
+                              attrs: {
+                                x: "4",
+                                y: "4",
+                                width: "16",
+                                height: "16",
+                                rx: "2",
+                              },
+                            }),
+                            _vm._v(" "),
+                            _c("line", {
+                              attrs: { x1: "4", y1: "15", x2: "20", y2: "15" },
+                            }),
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "p",
+                          {
+                            staticClass:
+                              "leading-none tracking-normal text-gray-800 ml-2.5",
+                          },
+                          [_vm._v("Zip code")]
+                        ),
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "flex items-center" }, [
+                      _c(
+                        "svg",
+                        {
+                          staticClass:
+                            "text-indigo-500 icon icon-tabler icon-tabler-flag",
+                          attrs: {
+                            xmlns: "http://www.w3.org/2000/svg",
+                            width: "16",
+                            height: "16",
+                            viewBox: "0 0 24 24",
+                            "stroke-width": "1.5",
+                            stroke: "currentColor",
+                            fill: "none",
+                            "stroke-linecap": "round",
+                            "stroke-linejoin": "round",
+                          },
+                        },
+                        [
+                          _c("path", {
+                            attrs: {
+                              stroke: "none",
+                              d: "M0 0h24v24H0z",
+                              fill: "none",
+                            },
+                          }),
+                          _vm._v(" "),
+                          _c("line", {
+                            attrs: { x1: "5", y1: "5", x2: "5", y2: "21" },
+                          }),
+                          _vm._v(" "),
+                          _c("line", {
+                            attrs: { x1: "19", y1: "5", x2: "19", y2: "14" },
+                          }),
+                          _vm._v(" "),
+                          _c("path", {
+                            attrs: { d: "M5 5a5 5 0 0 1 7 0a5 5 0 0 0 7 0" },
+                          }),
+                          _vm._v(" "),
+                          _c("path", {
+                            attrs: { d: "M5 14a5 5 0 0 1 7 0a5 5 0 0 0 7 0" },
+                          }),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "p",
+                        {
+                          staticClass:
+                            "leading-none tracking-normal text-gray-800 ml-2.5",
+                        },
+                        [_vm._v("Insurance")]
+                      ),
+                    ]),
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "text-white bg-indigo-600 mt-4 sm:mt-0 p-3 rounded w-full sm:w-auto relative",
+                    },
+                    [
+                      _c(
+                        "svg",
+                        {
+                          staticClass:
+                            "absolute right-0 mr-2 sm:mr-auto sm:relative icon icon-tabler icon-tabler-search cursor-pointer",
+                          attrs: {
+                            xmlns: "http://www.w3.org/2000/svg",
+                            width: "24",
+                            height: "24",
+                            viewBox: "0 0 24 24",
+                            "stroke-width": "1.5",
+                            stroke: "currentColor",
+                            fill: "none",
+                            "stroke-linecap": "round",
+                            "stroke-linejoin": "round",
+                          },
+                        },
+                        [
+                          _c("path", {
+                            attrs: {
+                              stroke: "none",
+                              d: "M0 0h24v24H0z",
+                              fill: "none",
+                            },
+                          }),
+                          _vm._v(" "),
+                          _c("circle", {
+                            attrs: { cx: "10", cy: "10", r: "7" },
+                          }),
+                          _vm._v(" "),
+                          _c("line", {
+                            attrs: { x1: "21", y1: "21", x2: "15", y2: "15" },
+                          }),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("input", {
+                        staticClass:
+                          "sm:hidden border-b border-gray-300 w-full bg-transparent pr-6",
+                      }),
                     ]
                   ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "flex items-center" }, [
-                    _c(
-                      "svg",
-                      {
-                        staticClass:
-                          "text-indigo-500 icon icon-tabler icon-tabler-flag",
-                        attrs: {
-                          xmlns: "http://www.w3.org/2000/svg",
-                          width: "16",
-                          height: "16",
-                          viewBox: "0 0 24 24",
-                          "stroke-width": "1.5",
-                          stroke: "currentColor",
-                          fill: "none",
-                          "stroke-linecap": "round",
-                          "stroke-linejoin": "round",
-                        },
-                      },
-                      [
-                        _c("path", {
-                          attrs: {
-                            stroke: "none",
-                            d: "M0 0h24v24H0z",
-                            fill: "none",
-                          },
-                        }),
-                        _vm._v(" "),
-                        _c("line", {
-                          attrs: { x1: "5", y1: "5", x2: "5", y2: "21" },
-                        }),
-                        _vm._v(" "),
-                        _c("line", {
-                          attrs: { x1: "19", y1: "5", x2: "19", y2: "14" },
-                        }),
-                        _vm._v(" "),
-                        _c("path", {
-                          attrs: { d: "M5 5a5 5 0 0 1 7 0a5 5 0 0 0 7 0" },
-                        }),
-                        _vm._v(" "),
-                        _c("path", {
-                          attrs: { d: "M5 14a5 5 0 0 1 7 0a5 5 0 0 0 7 0" },
-                        }),
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "p",
-                      {
-                        staticClass:
-                          "leading-none tracking-normal text-gray-800 ml-2.5",
-                      },
-                      [_vm._v("Insurance")]
-                    ),
-                  ]),
-                ]),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass:
-                      "text-white bg-indigo-600 mt-4 sm:mt-0 p-3 rounded w-full sm:w-auto relative",
-                  },
-                  [
-                    _c(
-                      "svg",
-                      {
-                        staticClass:
-                          "absolute right-0 mr-2 sm:mr-auto sm:relative icon icon-tabler icon-tabler-search cursor-pointer",
-                        attrs: {
-                          xmlns: "http://www.w3.org/2000/svg",
-                          width: "24",
-                          height: "24",
-                          viewBox: "0 0 24 24",
-                          "stroke-width": "1.5",
-                          stroke: "currentColor",
-                          fill: "none",
-                          "stroke-linecap": "round",
-                          "stroke-linejoin": "round",
-                        },
-                      },
-                      [
-                        _c("path", {
-                          attrs: {
-                            stroke: "none",
-                            d: "M0 0h24v24H0z",
-                            fill: "none",
-                          },
-                        }),
-                        _vm._v(" "),
-                        _c("circle", { attrs: { cx: "10", cy: "10", r: "7" } }),
-                        _vm._v(" "),
-                        _c("line", {
-                          attrs: { x1: "21", y1: "21", x2: "15", y2: "15" },
-                        }),
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("input", {
-                      staticClass:
-                        "sm:hidden border-b border-gray-300 w-full bg-transparent pr-6",
-                    }),
-                  ]
-                ),
-              ]
-            ),
-          ]),
-        ]
-      ),
-    ]),
-  ])
+                ]
+              ),
+            ]),
+          ]
+        ),
+      ]),
+      _vm._v(" "),
+      _c("ExampleComponent", { staticClass: "w-75 mx-auto my-20" }),
+    ],
+    1
+  )
 }
 var staticRenderFns = [
   function () {
@@ -57797,13 +57799,11 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
-      { staticClass: "w-full lg:w-1/2 h-full lg:pr-10 xl:pr-0" },
+      { staticClass: "w-full lg:w-1/2 h-full lg:pr-10 xl:pr-0 mb-10 lg:mb-0" },
       [
         _c("img", {
-          staticClass: "mx-auto",
-          attrs: {
-            src: "https://cdn.tuk.dev/assets/templates/weCare/hero2-left.png",
-          },
+          staticClass: "mx-auto w-100 md:w-3/5",
+          attrs: { src: "img/asset_1.png" },
         }),
       ]
     )
@@ -58784,16 +58784,16 @@ var render = function () {
                         ]
                       ),
                       _vm._v(" "),
-                      _vm.user
-                        ? _c(
-                            "li",
-                            {
-                              staticClass:
-                                "cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 flex items-center focus:text-indigo-700 focus:outline-none",
-                            },
-                            [
-                              _c("div", { staticClass: "flex items-center" }, [
-                                _c(
+                      _c(
+                        "li",
+                        {
+                          staticClass:
+                            "cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 flex items-center focus:text-indigo-700 focus:outline-none",
+                        },
+                        [
+                          _c("div", { staticClass: "flex items-center" }, [
+                            _vm.user
+                              ? _c(
                                   "p",
                                   {
                                     staticClass: "text-sm ml-2 cursor-pointer",
@@ -58802,50 +58802,48 @@ var render = function () {
                                     _vm._v("Logged in as: "),
                                     _c("b", [_vm._v(_vm._s(_vm.user.name))]),
                                   ]
-                                ),
-                                _vm._v(" "),
+                                )
+                              : _vm._e(),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              { staticClass: "sm:ml-2 text-white relative" },
+                              [
                                 _c(
-                                  "div",
+                                  "svg",
                                   {
-                                    staticClass: "sm:ml-2 text-white relative",
+                                    staticClass:
+                                      "icon icon-tabler icon-tabler-chevron-down cursor-pointer",
+                                    attrs: {
+                                      xmlns: "http://www.w3.org/2000/svg",
+                                      width: "20",
+                                      height: "20",
+                                      viewBox: "0 0 24 24",
+                                      "stroke-width": "1.5",
+                                      stroke: "currentColor",
+                                      fill: "none",
+                                      "stroke-linecap": "round",
+                                      "stroke-linejoin": "round",
+                                    },
                                   },
                                   [
-                                    _c(
-                                      "svg",
-                                      {
-                                        staticClass:
-                                          "icon icon-tabler icon-tabler-chevron-down cursor-pointer",
-                                        attrs: {
-                                          xmlns: "http://www.w3.org/2000/svg",
-                                          width: "20",
-                                          height: "20",
-                                          viewBox: "0 0 24 24",
-                                          "stroke-width": "1.5",
-                                          stroke: "currentColor",
-                                          fill: "none",
-                                          "stroke-linecap": "round",
-                                          "stroke-linejoin": "round",
-                                        },
+                                    _c("path", {
+                                      attrs: {
+                                        stroke: "none",
+                                        d: "M0 0h24v24H0z",
                                       },
-                                      [
-                                        _c("path", {
-                                          attrs: {
-                                            stroke: "none",
-                                            d: "M0 0h24v24H0z",
-                                          },
-                                        }),
-                                        _vm._v(" "),
-                                        _c("polyline", {
-                                          attrs: { points: "6 9 12 15 18 9" },
-                                        }),
-                                      ]
-                                    ),
+                                    }),
+                                    _vm._v(" "),
+                                    _c("polyline", {
+                                      attrs: { points: "6 9 12 15 18 9" },
+                                    }),
                                   ]
                                 ),
-                              ]),
-                            ]
-                          )
-                        : _vm._e(),
+                              ]
+                            ),
+                          ]),
+                        ]
+                      ),
                       _vm._v(" "),
                       _vm.user
                         ? _c(
