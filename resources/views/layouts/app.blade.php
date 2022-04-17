@@ -21,7 +21,11 @@
 </head>
 <body>
     <div id="app">
-        <navbar is-guest="{{ json_encode(auth()->guest()) }}" logout-route="{{ route('logout') }}" :user="{{ Auth::user() }}"></navbar>
+        @guest
+            <navbar is-guest="{{ json_encode(auth()->guest()) }}" logout-route="{{ route('logout') }}"></navbar>
+        @elseguest()
+            <navbar is-guest="{{ json_encode(auth()->guest()) }}" logout-route="{{ route('logout') }}" :user="{{ Auth::user() }}"></navbar>
+        @endguest
 {{--        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">--}}
 {{--            <div class="container">--}}
 {{--                <a class="navbar-brand" href="{{ url('/') }}">--}}

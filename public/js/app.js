@@ -11804,7 +11804,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* Top menu */\n.top-100[data-v-371e28c6] {\n    -webkit-animation: slideDown-data-v-371e28c6 0.5s ease-in-out;\n            animation: slideDown-data-v-371e28c6 0.5s ease-in-out;\n}\n@-webkit-keyframes slideDown-data-v-371e28c6 {\n0% {\n        top: -50%;\n}\n100% {\n        top: 0;\n}\n}\n@keyframes slideDown-data-v-371e28c6 {\n0% {\n        top: -50%;\n}\n100% {\n        top: 0;\n}\n}\n*[data-v-371e28c6] {\n    outline: none !important;\n    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\n    -webkit-tap-highlight-color: transparent;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n/* Top menu */\n.top-100[data-v-371e28c6] {\r\n    -webkit-animation: slideDown-data-v-371e28c6 0.5s ease-in-out;\r\n            animation: slideDown-data-v-371e28c6 0.5s ease-in-out;\n}\n@-webkit-keyframes slideDown-data-v-371e28c6 {\n0% {\r\n        top: -50%;\n}\n100% {\r\n        top: 0;\n}\n}\n@keyframes slideDown-data-v-371e28c6 {\n0% {\r\n        top: -50%;\n}\n100% {\r\n        top: 0;\n}\n}\n*[data-v-371e28c6] {\r\n    outline: none !important;\r\n    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\r\n    -webkit-tap-highlight-color: transparent;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -58784,118 +58784,126 @@ var render = function () {
                         ]
                       ),
                       _vm._v(" "),
-                      _c(
-                        "li",
-                        {
-                          staticClass:
-                            "cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 flex items-center focus:text-indigo-700 focus:outline-none",
-                        },
-                        [
-                          _c("div", { staticClass: "flex items-center" }, [
-                            _c(
-                              "p",
-                              { staticClass: "text-sm ml-2 cursor-pointer" },
-                              [
-                                _vm._v("Logged in as: "),
-                                _c("b", [_vm._v(_vm._s(_vm.user.name))]),
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "div",
-                              { staticClass: "sm:ml-2 text-white relative" },
-                              [
+                      _vm.user
+                        ? _c(
+                            "li",
+                            {
+                              staticClass:
+                                "cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 flex items-center focus:text-indigo-700 focus:outline-none",
+                            },
+                            [
+                              _c("div", { staticClass: "flex items-center" }, [
+                                _c(
+                                  "p",
+                                  {
+                                    staticClass: "text-sm ml-2 cursor-pointer",
+                                  },
+                                  [
+                                    _vm._v("Logged in as: "),
+                                    _c("b", [_vm._v(_vm._s(_vm.user.name))]),
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass: "sm:ml-2 text-white relative",
+                                  },
+                                  [
+                                    _c(
+                                      "svg",
+                                      {
+                                        staticClass:
+                                          "icon icon-tabler icon-tabler-chevron-down cursor-pointer",
+                                        attrs: {
+                                          xmlns: "http://www.w3.org/2000/svg",
+                                          width: "20",
+                                          height: "20",
+                                          viewBox: "0 0 24 24",
+                                          "stroke-width": "1.5",
+                                          stroke: "currentColor",
+                                          fill: "none",
+                                          "stroke-linecap": "round",
+                                          "stroke-linejoin": "round",
+                                        },
+                                      },
+                                      [
+                                        _c("path", {
+                                          attrs: {
+                                            stroke: "none",
+                                            d: "M0 0h24v24H0z",
+                                          },
+                                        }),
+                                        _vm._v(" "),
+                                        _c("polyline", {
+                                          attrs: { points: "6 9 12 15 18 9" },
+                                        }),
+                                      ]
+                                    ),
+                                  ]
+                                ),
+                              ]),
+                            ]
+                          )
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _vm.user
+                        ? _c(
+                            "li",
+                            {
+                              staticClass:
+                                "cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none",
+                            },
+                            [
+                              _c("div", { staticClass: "flex items-center" }, [
                                 _c(
                                   "svg",
                                   {
                                     staticClass:
-                                      "icon icon-tabler icon-tabler-chevron-down cursor-pointer",
+                                      "icon icon-tabler icon-tabler-user",
+                                    staticStyle: {
+                                      "enable-background":
+                                        "new 0 0 384.971 384.971",
+                                    },
                                     attrs: {
                                       xmlns: "http://www.w3.org/2000/svg",
-                                      width: "20",
-                                      height: "20",
-                                      viewBox: "0 0 24 24",
-                                      "stroke-width": "1.5",
+                                      width: "15",
+                                      height: "15",
+                                      "stroke-width": "3",
                                       stroke: "currentColor",
-                                      fill: "none",
+                                      fill: "#B23B3B",
                                       "stroke-linecap": "round",
                                       "stroke-linejoin": "round",
+                                      viewBox: "0 0 384.971 384.971",
+                                      "xml:space": "preserve",
                                     },
                                   },
                                   [
-                                    _c("path", {
-                                      attrs: {
-                                        stroke: "none",
-                                        d: "M0 0h24v24H0z",
-                                      },
-                                    }),
-                                    _vm._v(" "),
-                                    _c("polyline", {
-                                      attrs: { points: "6 9 12 15 18 9" },
-                                    }),
+                                    _c("g", [
+                                      _c("g", { attrs: { id: "Sign_Out" } }, [
+                                        _c("path", {
+                                          attrs: {
+                                            d: "M180.455,360.91H24.061V24.061h156.394c6.641,0,12.03-5.39,12.03-12.03s-5.39-12.03-12.03-12.03H12.03\n                                                    C5.39,0.001,0,5.39,0,12.031V372.94c0,6.641,5.39,12.03,12.03,12.03h168.424c6.641,0,12.03-5.39,12.03-12.03\n                                                    C192.485,366.299,187.095,360.91,180.455,360.91z",
+                                          },
+                                        }),
+                                        _vm._v(" "),
+                                        _c("path", {
+                                          attrs: {
+                                            d: "M381.481,184.088l-83.009-84.2c-4.704-4.752-12.319-4.74-17.011,0c-4.704,4.74-4.704,12.439,0,17.179l62.558,63.46H96.279\n                                                    c-6.641,0-12.03,5.438-12.03,12.151c0,6.713,5.39,12.151,12.03,12.151h247.74l-62.558,63.46c-4.704,4.752-4.704,12.439,0,17.179\n                                                    c4.704,4.752,12.319,4.752,17.011,0l82.997-84.2C386.113,196.588,386.161,188.756,381.481,184.088z",
+                                          },
+                                        }),
+                                      ]),
+                                    ]),
                                   ]
                                 ),
-                              ]
-                            ),
-                          ]),
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "li",
-                        {
-                          staticClass:
-                            "cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none",
-                        },
-                        [
-                          _c("div", { staticClass: "flex items-center" }, [
-                            _c(
-                              "svg",
-                              {
-                                staticClass:
-                                  "icon icon-tabler icon-tabler-user",
-                                staticStyle: {
-                                  "enable-background":
-                                    "new 0 0 384.971 384.971",
-                                },
-                                attrs: {
-                                  xmlns: "http://www.w3.org/2000/svg",
-                                  width: "15",
-                                  height: "15",
-                                  "stroke-width": "3",
-                                  stroke: "currentColor",
-                                  fill: "#B23B3B",
-                                  "stroke-linecap": "round",
-                                  "stroke-linejoin": "round",
-                                  viewBox: "0 0 384.971 384.971",
-                                  "xml:space": "preserve",
-                                },
-                              },
-                              [
-                                _c("g", [
-                                  _c("g", { attrs: { id: "Sign_Out" } }, [
-                                    _c("path", {
-                                      attrs: {
-                                        d: "M180.455,360.91H24.061V24.061h156.394c6.641,0,12.03-5.39,12.03-12.03s-5.39-12.03-12.03-12.03H12.03\n\t\t\tC5.39,0.001,0,5.39,0,12.031V372.94c0,6.641,5.39,12.03,12.03,12.03h168.424c6.641,0,12.03-5.39,12.03-12.03\n\t\t\tC192.485,366.299,187.095,360.91,180.455,360.91z",
-                                      },
-                                    }),
-                                    _vm._v(" "),
-                                    _c("path", {
-                                      attrs: {
-                                        d: "M381.481,184.088l-83.009-84.2c-4.704-4.752-12.319-4.74-17.011,0c-4.704,4.74-4.704,12.439,0,17.179l62.558,63.46H96.279\n\t\t\tc-6.641,0-12.03,5.438-12.03,12.151c0,6.713,5.39,12.151,12.03,12.151h247.74l-62.558,63.46c-4.704,4.752-4.704,12.439,0,17.179\n\t\t\tc4.704,4.752,12.319,4.752,17.011,0l82.997-84.2C386.113,196.588,386.161,188.756,381.481,184.088z",
-                                      },
-                                    }),
-                                  ]),
+                                _vm._v(" "),
+                                _c("span", { staticClass: "ml-2" }, [
+                                  _vm._v("Logout"),
                                 ]),
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c("span", { staticClass: "ml-2" }, [
-                              _vm._v("Logout"),
-                            ]),
-                          ]),
-                        ]
-                      ),
+                              ]),
+                            ]
+                          )
+                        : _vm._e(),
                     ]
                   ),
                   _vm._v(" "),
@@ -59070,7 +59078,7 @@ var render = function () {
                     ),
                   ]),
                   _vm._v(
-                    "\n                            Leaderboard\n                        "
+                    "\n                        Leaderboard\n                    "
                   ),
                 ]
               ),
@@ -59114,7 +59122,7 @@ var render = function () {
                     ),
                   ]),
                   _vm._v(
-                    "\n                            Investors\n                        "
+                    "\n                        Investors\n                    "
                   ),
                 ]
               ),
@@ -59259,7 +59267,7 @@ var render = function () {
                                   staticClass: "ml-2",
                                   attrs: {
                                     onclick:
-                                      "event.preventDefault();\n                                                     document.getElementById('logout-form').submit();",
+                                      "event.preventDefault();\n                                                 document.getElementById('logout-form').submit();",
                                   },
                                 },
                                 [_vm._v("Logout")]
