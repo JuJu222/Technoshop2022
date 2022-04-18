@@ -57541,21 +57541,27 @@ var render = function () {
             _vm._m(0),
             _vm._v(" "),
             _c("div", { staticClass: "w-full lg:w-1/2 h-full" }, [
-              _c("p", { staticClass: "uppercase text-2xl mb-4 text-purple" }, [
-                _vm._v("Qusique Tincidun sapien"),
+              _c("p", { staticClass: "uppercase text-2xl mb-4" }, [
+                _vm._v("Universitas Ciputra - SU IMT"),
               ]),
               _vm._v(" "),
               _c(
                 "h1",
-                { staticClass: "text-gray-900 text-4xl md:text-7xl mb-8" },
-                [_vm._v("All natural ingredients")]
+                {
+                  staticClass: "text-purple text-4xl md:text-7xl mb-8 fw-bold",
+                },
+                [_vm._v("Technopreneurship Workshop 2022")]
               ),
               _vm._v(" "),
-              _c("p", { staticClass: "text-gray-800 font-regular mb-8" }, [
-                _vm._v(
-                  "COMBINING SCIENCE WITH BEAUTY. L'Oreal Paris offers a wide range of skincare solutions for your beauty needs. Each of our skincare products is developed and rigorously tested with leading scientists. Indulge yourself in a luxurious and sensorial skincare experience. Cutting-edge innovations, proven by Science."
-                ),
-              ]),
+              _c(
+                "p",
+                { staticClass: "text-gray-800 font-regular mb-8 text-base" },
+                [
+                  _vm._v(
+                    "Technopreneurship Workshop merupakan workshop bertemakan teknologi yang dikemas dalam bentuk camp jurusan. Melalui workshop ini, peserta diharapkan dapat lebih paham tentang program studi Informatika, meningkatkan koneksi yang baik antar angkatan,serta untuk melatih dan mempersiapkan peserta untuk menjadi technopreneur muda yang berintegritas dan profesional di masa depan."
+                  ),
+                ]
+              ),
               _vm._v(" "),
               _c(
                 "div",

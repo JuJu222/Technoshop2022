@@ -8,9 +8,9 @@
                     <img class="mx-auto w-100 md:w-3/5" src="img/asset_1.png" />
                 </div>
                 <div class="w-full lg:w-1/2 h-full">
-                    <p class="uppercase text-2xl mb-4 text-purple">Qusique Tincidun sapien</p>
-                    <h1 class="text-gray-900 text-4xl md:text-7xl mb-8">All natural ingredients</h1>
-                    <p class="text-gray-800 font-regular mb-8">COMBINING SCIENCE WITH BEAUTY. L'Oreal Paris offers a wide range of skincare solutions for your beauty needs. Each of our skincare products is developed and rigorously tested with leading scientists. Indulge yourself in a luxurious and sensorial skincare experience. Cutting-edge innovations, proven by Science.</p>
+                    <p class="uppercase text-2xl mb-4">Universitas Ciputra - SU IMT</p>
+                    <h1 class="text-purple text-4xl md:text-7xl mb-8 fw-bold">Technopreneurship Workshop 2022</h1>
+                    <p class="text-gray-800 font-regular mb-8 text-base">Technopreneurship Workshop merupakan workshop bertemakan teknologi yang dikemas dalam bentuk camp jurusan. Melalui workshop ini, peserta diharapkan dapat lebih paham tentang program studi Informatika, meningkatkan koneksi yang baik antar angkatan,serta untuk melatih dan mempersiapkan peserta untuk menjadi technopreneur muda yang berintegritas dan profesional di masa depan.</p>
                     <div class="bg-white py-4 px-4 flex flex-col sm:flex-row justify-start sm:justify-between items-start sm:items-center shadow-lg rounded-lg">
                         <div class="sm:flex items-center py-2">
                             <div class="flex items-center">
