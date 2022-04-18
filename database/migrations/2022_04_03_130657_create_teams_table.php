@@ -15,6 +15,8 @@ return new class extends Migration
     {
         Schema::create('teams', function (Blueprint $table) {
             $table->id();
+            $table->string('qr_judge');
+            $table->string('qr_game');
             $table->string('mentors');
             $table->string('members');
             $table->integer('points')->default(0);

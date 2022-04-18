@@ -186,6 +186,8 @@ class UserSeeder extends Seeder
         ]);
         DB::table('teams')->insert([
             'user_id' => 9,
+            'qr_judge' => 'judge_1.png',
+            'qr_game' => 'log_1.png',
             'mentors' => 'Lanovia Liem, Atallah Dafa',
             'members' => 'Ileene Trinia Santoso, Rifqie Tilqa Reamizard, Nick Devano Sulistio, William Johnson Wongge, Kenneth Raffelino Sugianto',
             'created_at' => \Carbon\Carbon::now(),
@@ -203,6 +205,8 @@ class UserSeeder extends Seeder
         ]);
         DB::table('teams')->insert([
             'user_id' => 10,
+            'qr_judge' => 'judge_2.png',
+            'qr_game' => 'log_2.png',
             'mentors' => 'Bryan, Albert Gavra Septiawan',
             'members' => 'M. Yusrizal, Dave Nathaniel Yoseph, Kevin Christian ,Fadhil Muhammad Rizki Bahri, Adriel Alessandro Christian',
             'created_at' => \Carbon\Carbon::now(),
@@ -220,6 +224,8 @@ class UserSeeder extends Seeder
         ]);
         DB::table('teams')->insert([
             'user_id' => 11,
+            'qr_judge' => 'judge_3.png',
+            'qr_game' => 'log_3.png',
             'mentors' => 'Daniel Aprillio, Jeffrey Verdianto',
             'members' => 'Joseph Karunia Wijaya, Risky, Marcell Jeremy Wiradinata, Darell Aditya Sean Darmayasa, Edward Hartantio',
             'created_at' => \Carbon\Carbon::now(),
@@ -237,6 +243,8 @@ class UserSeeder extends Seeder
         ]);
         DB::table('teams')->insert([
             'user_id' => 12,
+            'qr_judge' => 'judge_4.png',
+            'qr_game' => 'log_4.png',
             'mentors' => 'Kezia Ferdinandus, Feliza Faizal',
             'members' => 'I Gede Nengah Rama Adi Nugraha, Vebrillia Santoso, Nuzulul Salsabila, Putri Buana Ningtyas, Jovan Louis Lemuel',
             'created_at' => \Carbon\Carbon::now(),
@@ -254,6 +262,8 @@ class UserSeeder extends Seeder
         ]);
         DB::table('teams')->insert([
             'user_id' => 13,
+            'qr_judge' => 'judge_5.png',
+            'qr_game' => 'log_5.png',
             'mentors' => 'Timothyus Kevin Dewanto, Ferdy Putra Asmara',
             'members' => 'Bryan Anthony, Hagen Kwik, Dhammiko Dharmawan, Stefanus Reynaldo, Owen indrawan',
             'created_at' => \Carbon\Carbon::now(),
@@ -271,6 +281,8 @@ class UserSeeder extends Seeder
         ]);
         DB::table('teams')->insert([
             'user_id' => 14,
+            'qr_judge' => 'judge_6.png',
+            'qr_game' => 'log_6.png',
             'mentors' => 'Sintya, Armaida, Gholia Lestari',
             'members' => 'Alfonsus Reklin Natanael, Muhammad Irsyaad Nurrahman, Michelle Alvera Lolang, Michelle Swastika Bianglala Nusantara, Rivas Mardani',
             'created_at' => \Carbon\Carbon::now(),
@@ -288,6 +300,8 @@ class UserSeeder extends Seeder
         ]);
         DB::table('teams')->insert([
             'user_id' => 15,
+            'qr_judge' => 'judge_7.png',
+            'qr_game' => 'log_7.png',
             'mentors' => 'Nur Azizah, Haning Galih Rani Kumbara',
             'members' => 'Jeshaiah Jesse, Devano Anggara Putra Herwanto, Ardhitya Herdiansyah Pranata, Vincent Farellio Gunawan, Nicholas Dylan Lienardi',
             'created_at' => \Carbon\Carbon::now(),
@@ -305,6 +319,8 @@ class UserSeeder extends Seeder
         ]);
         DB::table('teams')->insert([
             'user_id' => 16,
+            'qr_judge' => 'judge_8.png',
+            'qr_game' => 'log_8.png',
             'mentors' => 'Selyandaru Riskanadi, Enrico Almer Tahara',
             'members' => 'Kenneth Winston Tjandra, Jevon Cledwyn Subagio, Steven Rafael Sunarto, Jason Emanuel Susanto, Evan Aradhy Cahyono',
             'created_at' => \Carbon\Carbon::now(),
@@ -322,6 +338,8 @@ class UserSeeder extends Seeder
         ]);
         DB::table('teams')->insert([
             'user_id' => 17,
+            'qr_judge' => 'judge_9.png',
+            'qr_game' => 'log_9.png',
             'mentors' => 'Achmad Rijalu Arianindita, Syamsuddin Putra Riefli',
             'members' => 'Tegar Marino, Gabriela Bernice Handoko, Miranda Utami, Kathlyne Sarah Fania Panggabean, Ilham Risqi Rudyansyach',
             'created_at' => \Carbon\Carbon::now(),
@@ -339,6 +357,8 @@ class UserSeeder extends Seeder
         ]);
         DB::table('teams')->insert([
             'user_id' => 18,
+            'qr_judge' => 'judge_10.png',
+            'qr_game' => 'log_10.png',
             'mentors' => 'Kenny Jinhiro Wibowo, Joey Wiryawan',
             'members' => 'Nicholas Christian Irawan, Hans Joachim Wiryonoputro, Arya Winesa Sipayung, Davina Teresa Wijaya, Marsha Alexis Likorawung',
             'created_at' => \Carbon\Carbon::now(),
@@ -356,6 +376,8 @@ class UserSeeder extends Seeder
         ]);
         DB::table('teams')->insert([
             'user_id' => 19,
+            'qr_judge' => 'judge_11.png',
+            'qr_game' => 'log_11.png',
             'mentors' => 'Timothy, Billy Jason',
             'members' => 'Muhammad Gathfan Fasha, Evelyn Callista Yaurentius, Micheila Jiemesha, Alexander Hartono, Muhammad Ghifari Febriansyah',
             'created_at' => \Carbon\Carbon::now(),
