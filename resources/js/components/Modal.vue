@@ -3,7 +3,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Modal title</h4>
+                    <h4 class="modal-title">{{ name }}'s QR code for {{ type }}</h4>
                     <button type="button" class="btn btn-sm" v-on:click="closeModal">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -22,7 +22,7 @@
 <script>
 export default {
     name: 'Modal',
-    props: ['qrCode'],
+    props: ['name', 'type', 'qrCode'],
     data(){
         return {
             //

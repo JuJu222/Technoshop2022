@@ -6312,6 +6312,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 
 
@@ -6326,15 +6327,22 @@ __webpack_require__.r(__webpack_exports__);
   props: ['team'],
   data: function data() {
     return {
-      isModalVisible: false
+      isModalVisibleJudge: false,
+      isModalVisibleGame: false
     };
   },
   methods: {
-    openModal: function openModal() {
-      this.isModalVisible = true;
+    openModalJudge: function openModalJudge() {
+      this.isModalVisibleJudge = true;
     },
-    closeModal: function closeModal() {
-      this.isModalVisible = false;
+    closeModalJudge: function closeModalJudge() {
+      this.isModalVisibleJudge = false;
+    },
+    openModalGame: function openModalGame() {
+      this.isModalVisibleGame = true;
+    },
+    closeModalGame: function closeModalGame() {
+      this.isModalVisibleGame = false;
     }
   }
 });
@@ -6766,7 +6774,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'Modal',
-  props: ['qrCode'],
+  props: ['name', 'type', 'qrCode'],
   data: function data() {
     return {//
     };
@@ -12164,7 +12172,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* Top menu */\n.top-100[data-v-27a22972] {\n    -webkit-animation: slideDown-data-v-27a22972 0.5s ease-in-out;\n            animation: slideDown-data-v-27a22972 0.5s ease-in-out;\n}\n@-webkit-keyframes slideDown-data-v-27a22972 {\n0% {\n        top: -50%;\n}\n100% {\n        top: 0;\n}\n}\n@keyframes slideDown-data-v-27a22972 {\n0% {\n        top: -50%;\n}\n100% {\n        top: 0;\n}\n}\n*[data-v-27a22972] {\n    outline: none !important;\n    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\n    -webkit-tap-highlight-color: transparent;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* Top menu */\n.top-100[data-v-27a22972] {\n    -webkit-animation: slideDown-data-v-27a22972 0.5s ease-in-out;\n            animation: slideDown-data-v-27a22972 0.5s ease-in-out;\n}\n@-webkit-keyframes slideDown-data-v-27a22972 {\n0% {\n        top: -50%;\n}\n100% {\n        top: 0;\n}\n}\n@keyframes slideDown-data-v-27a22972 {\n0% {\n        top: -50%;\n}\n100% {\n        top: 0;\n}\n}\n*[data-v-27a22972] {\n    outline: none !important;\n    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\n    -webkit-tap-highlight-color: transparent;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -59372,7 +59380,7 @@ var render = function () {
                       staticClass:
                         "block w-full text-center my-4 border rounded-md px-3 sm:px-16 py-3 bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50",
                       attrs: { href: "/" },
-                      on: { click: _vm.openModal },
+                      on: { click: _vm.openModalJudge },
                     },
                     [_vm._v("Show QR Code for Investor")]
                   ),
@@ -59383,7 +59391,7 @@ var render = function () {
                       staticClass:
                         "block w-full text-center my-4 border rounded-md px-3 sm:px-16 py-3 bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50",
                       attrs: { href: "/" },
-                      on: { click: _vm.openModal },
+                      on: { click: _vm.openModalGame },
                     },
                     [_vm._v("Show QR Code for Minigames")]
                   ),
@@ -59401,12 +59409,33 @@ var render = function () {
           {
             name: "show",
             rawName: "v-show",
-            value: _vm.isModalVisible,
-            expression: "isModalVisible",
+            value: _vm.isModalVisibleJudge,
+            expression: "isModalVisibleJudge",
           },
         ],
-        attrs: { "qr-code": _vm.team.qr_judge },
-        on: { "close-modal": _vm.closeModal },
+        attrs: {
+          name: _vm.team.name,
+          type: "Investors",
+          "qr-code": _vm.team.qr_judge,
+        },
+        on: { "close-modal": _vm.closeModalJudge },
+      }),
+      _vm._v(" "),
+      _c("Modal", {
+        directives: [
+          {
+            name: "show",
+            rawName: "v-show",
+            value: _vm.isModalVisibleGame,
+            expression: "isModalVisibleGame",
+          },
+        ],
+        attrs: {
+          name: _vm.team.name,
+          type: "Minigames",
+          "qr-code": _vm.team.qr_game,
+        },
+        on: { "close-modal": _vm.closeModalGame },
       }),
     ],
     1
@@ -60198,7 +60227,9 @@ var render = function () {
     _c("div", { staticClass: "modal-dialog" }, [
       _c("div", { staticClass: "modal-content" }, [
         _c("div", { staticClass: "modal-header" }, [
-          _c("h4", { staticClass: "modal-title" }, [_vm._v("Modal title")]),
+          _c("h4", { staticClass: "modal-title" }, [
+            _vm._v(_vm._s(_vm.name) + "'s QR code for " + _vm._s(_vm.type)),
+          ]),
           _vm._v(" "),
           _c(
             "button",

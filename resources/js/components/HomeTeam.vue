@@ -15,14 +15,15 @@
                         <LeaderboardCard :team="team"></LeaderboardCard>
                     </div>
                     <div>
-                        <button @click="openModal" href="/" class="block w-full text-center my-4 border rounded-md px-3 sm:px-16 py-3 bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50">Show QR Code for Investor</button>
-                        <button @click="openModal" href="/" class="block w-full text-center my-4 border rounded-md px-3 sm:px-16 py-3 bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50">Show QR Code for Minigames</button>
+                        <button @click="openModalJudge" href="/" class="block w-full text-center my-4 border rounded-md px-3 sm:px-16 py-3 bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50">Show QR Code for Investor</button>
+                        <button @click="openModalGame" href="/" class="block w-full text-center my-4 border rounded-md px-3 sm:px-16 py-3 bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50">Show QR Code for Minigames</button>
                     </div>
                 </div>
             </div>
         </div>
         <ExampleComponent class="w-75 mx-auto my-20"></ExampleComponent>
-        <Modal v-show="isModalVisible" @close-modal="closeModal" :qr-code="team.qr_judge"/>
+        <Modal v-show="isModalVisibleJudge" @close-modal="closeModalJudge" :name="team.name" :type="'Investors'" :qr-code="team.qr_judge"/>
+        <Modal v-show="isModalVisibleGame" @close-modal="closeModalGame" :name="team.name" :type="'Minigames'" :qr-code="team.qr_game"/>
     </section>
 </template>
 
@@ -38,15 +39,22 @@ export default {
     props: ['team'],
     data(){
         return {
-            isModalVisible: false,
+            isModalVisibleJudge: false,
+            isModalVisibleGame: false,
         }
     },
     methods: {
-        openModal() {
-            this.isModalVisible = true;
+        openModalJudge() {
+            this.isModalVisibleJudge = true;
         },
-        closeModal() {
-            this.isModalVisible = false;
+        closeModalJudge() {
+            this.isModalVisibleJudge = false;
+        },
+        openModalGame() {
+            this.isModalVisibleGame = true;
+        },
+        closeModalGame() {
+            this.isModalVisibleGame = false;
         },
     }
 };
