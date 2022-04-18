@@ -15,14 +15,14 @@
                         <LeaderboardCard :team="team"></LeaderboardCard>
                     </div>
                     <div>
-                        <a href="/" class="block w-full text-center my-4 border rounded-md px-3 sm:px-16 py-3 bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50">Show QR Code for Investor</a>
-                        <a href="/" class="block w-full text-center my-4 border rounded-md px-3 sm:px-16 py-3 bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50">Show QR Code for Minigames</a>
+                        <button @click="openModal" href="/" class="block w-full text-center my-4 border rounded-md px-3 sm:px-16 py-3 bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50">Show QR Code for Investor</button>
+                        <button @click="openModal" href="/" class="block w-full text-center my-4 border rounded-md px-3 sm:px-16 py-3 bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50">Show QR Code for Minigames</button>
                     </div>
                 </div>
             </div>
         </div>
         <ExampleComponent class="w-75 mx-auto my-20"></ExampleComponent>
-
+        <Modal v-show="isModalVisible" @close-modal="closeModal" :qr-code="team.qr_judge"/>
     </section>
 </template>
 
@@ -30,26 +30,25 @@
 import JudgeCard from "./InvestorCard";
 import ExampleComponent from "./ExampleComponent";
 import LeaderboardCard from "./LeaderboardCard";
+import Modal from './Modal'
 
 export default {
     name: "HomeTeam",
-    components: {JudgeCard, LeaderboardCard},
+    components: {JudgeCard, LeaderboardCard, Modal},
     props: ['team'],
-    methods: {
-        MenuHandler(flag) {
-            if (flag) {
-                document.getElementById("list").classList.add("top-100");
-                document.getElementById("list").classList.remove("hidden");
-                document.getElementById("close").classList.remove("hidden");
-                document.getElementById("open").classList.add("hidden");
-            } else {
-                document.getElementById("list").classList.remove("top-100");
-                document.getElementById("list").classList.add("hidden");
-                document.getElementById("close").classList.add("hidden");
-                document.getElementById("open").classList.remove("hidden");
-            }
-        },
+    data(){
+        return {
+            isModalVisible: false,
+        }
     },
+    methods: {
+        openModal() {
+            this.isModalVisible = true;
+        },
+        closeModal() {
+            this.isModalVisible = false;
+        },
+    }
 };
 </script>
 
