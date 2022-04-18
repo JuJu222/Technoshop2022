@@ -2,7 +2,7 @@
     <!-- for vue instead of using a href, vue router links will be used -->
     <!-- replace appropriate tags after installing vue-router -->
     <section>
-        <div class="w-full relative px-6 xl:px-0">
+        <div class="w-full relative px-2 xl:px-0">
             <div class="pt-10 lg:pt-20 lg:flex items-center relative z-10 container mx-auto">
                 <div class="w-full lg:w-1/2 h-full lg:pr-10 xl:pr-0 mb-10 lg:mb-0">
                     <img class="mx-auto w-100 md:w-3/5" src="img/asset_1.png" />

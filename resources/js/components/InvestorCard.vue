@@ -1,7 +1,7 @@
 <template>
     <a :href="/investors/ + investor.id">
         <div class="relative">
-            <div class="h-300 rounded overflow-hidden shadow-md bg-white">
+            <div class="h-300 rounded-2xl overflow-hidden shadow-md bg-white">
                 <div class="absolute -mt-20 w-full flex justify-center">
                     <div class="h-32 w-32">
                         <img :src="'/img/investors/'+investor.judge.img_portrait" alt="" class="rounded-full object-cover h-full w-full shadow-md" />

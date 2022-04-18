@@ -5949,6 +5949,160 @@ function onScanFailure(error) {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Footer.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Footer.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  name: "Footer"
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Home.vue?vue&type=script&lang=js&":
 /*!***********************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Home.vue?vue&type=script&lang=js& ***!
@@ -5991,42 +6145,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "HomeJudge",
   components: {
-    JudgeCard: _InvestorCard__WEBPACK_IMPORTED_MODULE_0__["default"],
-    ExampleComponent: _ExampleComponent__WEBPACK_IMPORTED_MODULE_1__["default"]
+    JudgeCard: _InvestorCard__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
   methods: {
     MenuHandler: function MenuHandler(flag) {
@@ -6156,12 +6280,62 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _InvestorCard__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./InvestorCard */ "./resources/js/components/InvestorCard.vue");
+/* harmony import */ var _ExampleComponent__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ExampleComponent */ "./resources/js/components/ExampleComponent.vue");
+/* harmony import */ var _LeaderboardCard__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./LeaderboardCard */ "./resources/js/components/LeaderboardCard.vue");
 //
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: "HomeTeam"
+  name: "HomeTeam",
+  components: {
+    JudgeCard: _InvestorCard__WEBPACK_IMPORTED_MODULE_0__["default"],
+    LeaderboardCard: _LeaderboardCard__WEBPACK_IMPORTED_MODULE_2__["default"]
+  },
+  props: ['team'],
+  methods: {
+    MenuHandler: function MenuHandler(flag) {
+      if (flag) {
+        document.getElementById("list").classList.add("top-100");
+        document.getElementById("list").classList.remove("hidden");
+        document.getElementById("close").classList.remove("hidden");
+        document.getElementById("open").classList.add("hidden");
+      } else {
+        document.getElementById("list").classList.remove("top-100");
+        document.getElementById("list").classList.add("hidden");
+        document.getElementById("close").classList.add("hidden");
+        document.getElementById("open").classList.remove("hidden");
+      }
+    }
+  }
 });
 
 /***/ }),
@@ -6715,16 +6889,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "Navbar",
   data: function data() {
@@ -6802,6 +6966,7 @@ window.Vue = (__webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js
 Vue.component('example-component', (__webpack_require__(/*! ./components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue")["default"]));
 Vue.component('investor', (__webpack_require__(/*! ./components/Investor.vue */ "./resources/js/components/Investor.vue")["default"]));
 Vue.component('navbar', (__webpack_require__(/*! ./components/Navbar.vue */ "./resources/js/components/Navbar.vue")["default"]));
+Vue.component('foot', (__webpack_require__(/*! ./components/Footer.vue */ "./resources/js/components/Footer.vue")["default"]));
 Vue.component('home', (__webpack_require__(/*! ./components/Home.vue */ "./resources/js/components/Home.vue")["default"]));
 Vue.component('home-judge', (__webpack_require__(/*! ./components/HomeJudge.vue */ "./resources/js/components/HomeJudge.vue")["default"]));
 Vue.component('home-team', (__webpack_require__(/*! ./components/HomeTeam.vue */ "./resources/js/components/HomeTeam.vue")["default"]));
@@ -11902,7 +12067,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* Top menu */\n.top-100[data-v-f2b6376c] {\n    -webkit-animation: slideDown-data-v-f2b6376c 0.5s ease-in-out;\n            animation: slideDown-data-v-f2b6376c 0.5s ease-in-out;\n}\n@-webkit-keyframes slideDown-data-v-f2b6376c {\n0% {\n        top: -50%;\n}\n100% {\n        top: 0;\n}\n}\n@keyframes slideDown-data-v-f2b6376c {\n0% {\n        top: -50%;\n}\n100% {\n        top: 0;\n}\n}\n*[data-v-f2b6376c] {\n    outline: none !important;\n    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\n    -webkit-tap-highlight-color: transparent;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* Top menu */\n.top-100[data-v-f2b6376c] {\n    -webkit-animation: slideDown-data-v-f2b6376c 0.5s ease-in-out;\n            animation: slideDown-data-v-f2b6376c 0.5s ease-in-out;\n}\n@-webkit-keyframes slideDown-data-v-f2b6376c {\n0% {\n        top: -50%;\n}\n100% {\n        top: 0;\n}\n}\n@keyframes slideDown-data-v-f2b6376c {\n0% {\n        top: -50%;\n}\n100% {\n        top: 0;\n}\n}\n*[data-v-f2b6376c] {\n    outline: none !important;\n    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\n    -webkit-tap-highlight-color: transparent;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -11927,6 +12092,30 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* Top menu */\n.top-100[data-v-371e28c6] {\n    -webkit-animation: slideDown-data-v-371e28c6 0.5s ease-in-out;\n            animation: slideDown-data-v-371e28c6 0.5s ease-in-out;\n}\n@-webkit-keyframes slideDown-data-v-371e28c6 {\n0% {\n        top: -50%;\n}\n100% {\n        top: 0;\n}\n}\n@keyframes slideDown-data-v-371e28c6 {\n0% {\n        top: -50%;\n}\n100% {\n        top: 0;\n}\n}\n*[data-v-371e28c6] {\n    outline: none !important;\n    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\n    -webkit-tap-highlight-color: transparent;\n}\n", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/HomeTeam.vue?vue&type=style&index=0&id=27a22972&scoped=true&lang=css&":
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/HomeTeam.vue?vue&type=style&index=0&id=27a22972&scoped=true&lang=css& ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* Top menu */\n.top-100[data-v-27a22972] {\n    -webkit-animation: slideDown-data-v-27a22972 0.5s ease-in-out;\n            animation: slideDown-data-v-27a22972 0.5s ease-in-out;\n}\n@-webkit-keyframes slideDown-data-v-27a22972 {\n0% {\n        top: -50%;\n}\n100% {\n        top: 0;\n}\n}\n@keyframes slideDown-data-v-27a22972 {\n0% {\n        top: -50%;\n}\n100% {\n        top: 0;\n}\n}\n*[data-v-27a22972] {\n    outline: none !important;\n    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\n    -webkit-tap-highlight-color: transparent;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -56508,6 +56697,36 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/HomeTeam.vue?vue&type=style&index=0&id=27a22972&scoped=true&lang=css&":
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/HomeTeam.vue?vue&type=style&index=0&id=27a22972&scoped=true&lang=css& ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_clonedRuleSet_10_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_10_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_HomeTeam_vue_vue_type_style_index_0_id_27a22972_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[1]!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[2]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./HomeTeam.vue?vue&type=style&index=0&id=27a22972&scoped=true&lang=css& */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/HomeTeam.vue?vue&type=style&index=0&id=27a22972&scoped=true&lang=css&");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_clonedRuleSet_10_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_10_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_HomeTeam_vue_vue_type_style_index_0_id_27a22972_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_clonedRuleSet_10_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_10_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_HomeTeam_vue_vue_type_style_index_0_id_27a22972_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/LeaderboardCard.vue?vue&type=style&index=0&id=7c337e12&scoped=true&lang=css&":
 /*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/LeaderboardCard.vue?vue&type=style&index=0&id=7c337e12&scoped=true&lang=css& ***!
@@ -56856,6 +57075,45 @@ component.options.__file = "resources/js/components/ExampleComponent.vue"
 
 /***/ }),
 
+/***/ "./resources/js/components/Footer.vue":
+/*!********************************************!*\
+  !*** ./resources/js/components/Footer.vue ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Footer_vue_vue_type_template_id_61a7c374___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Footer.vue?vue&type=template&id=61a7c374& */ "./resources/js/components/Footer.vue?vue&type=template&id=61a7c374&");
+/* harmony import */ var _Footer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Footer.vue?vue&type=script&lang=js& */ "./resources/js/components/Footer.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Footer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Footer_vue_vue_type_template_id_61a7c374___WEBPACK_IMPORTED_MODULE_0__.render,
+  _Footer_vue_vue_type_template_id_61a7c374___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/Footer.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
 /***/ "./resources/js/components/Home.vue":
 /*!******************************************!*\
   !*** ./resources/js/components/Home.vue ***!
@@ -56951,15 +57209,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _HomeTeam_vue_vue_type_template_id_27a22972_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./HomeTeam.vue?vue&type=template&id=27a22972&scoped=true& */ "./resources/js/components/HomeTeam.vue?vue&type=template&id=27a22972&scoped=true&");
 /* harmony import */ var _HomeTeam_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HomeTeam.vue?vue&type=script&lang=js& */ "./resources/js/components/HomeTeam.vue?vue&type=script&lang=js&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _HomeTeam_vue_vue_type_style_index_0_id_27a22972_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./HomeTeam.vue?vue&type=style&index=0&id=27a22972&scoped=true&lang=css& */ "./resources/js/components/HomeTeam.vue?vue&type=style&index=0&id=27a22972&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
+;
 
 
 /* normalize component */
-;
-var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
   _HomeTeam_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _HomeTeam_vue_vue_type_template_id_27a22972_scoped_true___WEBPACK_IMPORTED_MODULE_0__.render,
   _HomeTeam_vue_vue_type_template_id_27a22972_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
@@ -57307,6 +57567,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/Footer.vue?vue&type=script&lang=js&":
+/*!*********************************************************************!*\
+  !*** ./resources/js/components/Footer.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Footer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Footer.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Footer.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Footer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
 /***/ "./resources/js/components/Home.vue?vue&type=script&lang=js&":
 /*!*******************************************************************!*\
   !*** ./resources/js/components/Home.vue?vue&type=script&lang=js& ***!
@@ -57509,6 +57785,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/HomeTeam.vue?vue&type=style&index=0&id=27a22972&scoped=true&lang=css&":
+/*!*******************************************************************************************************!*\
+  !*** ./resources/js/components/HomeTeam.vue?vue&type=style&index=0&id=27a22972&scoped=true&lang=css& ***!
+  \*******************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_10_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_10_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_HomeTeam_vue_vue_type_style_index_0_id_27a22972_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[1]!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[2]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./HomeTeam.vue?vue&type=style&index=0&id=27a22972&scoped=true&lang=css& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/HomeTeam.vue?vue&type=style&index=0&id=27a22972&scoped=true&lang=css&");
+
+
+/***/ }),
+
 /***/ "./resources/js/components/LeaderboardCard.vue?vue&type=style&index=0&id=7c337e12&scoped=true&lang=css&":
 /*!**************************************************************************************************************!*\
   !*** ./resources/js/components/LeaderboardCard.vue?vue&type=style&index=0&id=7c337e12&scoped=true&lang=css& ***!
@@ -57535,6 +57824,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ExampleComponent_vue_vue_type_template_id_299e239e___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ExampleComponent_vue_vue_type_template_id_299e239e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./ExampleComponent.vue?vue&type=template&id=299e239e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ExampleComponent.vue?vue&type=template&id=299e239e&");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/Footer.vue?vue&type=template&id=61a7c374&":
+/*!***************************************************************************!*\
+  !*** ./resources/js/components/Footer.vue?vue&type=template&id=61a7c374& ***!
+  \***************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Footer_vue_vue_type_template_id_61a7c374___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Footer_vue_vue_type_template_id_61a7c374___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Footer_vue_vue_type_template_id_61a7c374___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Footer.vue?vue&type=template&id=61a7c374& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Footer.vue?vue&type=template&id=61a7c374&");
 
 
 /***/ }),
@@ -57751,6 +58057,608 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Footer.vue?vue&type=template&id=61a7c374&":
+/*!******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Footer.vue?vue&type=template&id=61a7c374& ***!
+  \******************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "pt-16" }, [
+    _c(
+      "div",
+      {
+        staticClass:
+          "w-full border-gray-300 border-t lg:w-11/12 md:w-11/12 lg:mx-auto md:mx-auto",
+      },
+      [
+        _c("div", { staticClass: "container mx-auto py-4" }, [
+          _vm._m(0),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass:
+                "xl:flex flex-wrap justify-between xl:mt-14 mt-10 pb-6  sm:pl-0 text-center sm:!text-left",
+            },
+            [
+              _vm._m(1),
+              _vm._v(" "),
+              _vm._m(2),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "w-11/12 xl:w-1/6 lg:w-1/6 sm:w-11/12 mx-auto lg:mx-0 xl:mx-0 mb-6 lg:mb-0 xl:mb-0 mt-8 lg:mt-8 xl:mt-0",
+                },
+                [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "flex justify-center sm:justify-center xl:justify-end space-x-6 pr-2 xl:pr-0 lg:pr-0 md:pr-0 sm:pr-0",
+                    },
+                    [
+                      _c("div", [
+                        _c("a", { attrs: { href: "javascript:void(0)" } }, [
+                          _c(
+                            "svg",
+                            {
+                              staticClass: "feather feather-twitter",
+                              attrs: {
+                                "aria-label": "Twitter",
+                                xmlns: "http://www.w3.org/2000/svg",
+                                width: "24",
+                                height: "24",
+                                viewBox: "0 0 24 24",
+                                fill: "none",
+                                stroke: "#718096",
+                                "stroke-width": "1.5",
+                                "stroke-linecap": "round",
+                                "stroke-linejoin": "round",
+                              },
+                            },
+                            [
+                              _c("path", {
+                                attrs: {
+                                  d: "M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z",
+                                },
+                              }),
+                            ]
+                          ),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", [
+                        _c("a", { attrs: { href: "javascript:void(0)" } }, [
+                          _c(
+                            "svg",
+                            {
+                              staticClass: "feather feather-instagram",
+                              attrs: {
+                                "aria-label": "Instagram",
+                                xmlns: "http://www.w3.org/2000/svg",
+                                width: "24",
+                                height: "24",
+                                viewBox: "0 0 24 24",
+                                fill: "none",
+                                stroke: "#718096",
+                                "stroke-width": "1.5",
+                                "stroke-linecap": "round",
+                                "stroke-linejoin": "round",
+                              },
+                            },
+                            [
+                              _c("rect", {
+                                attrs: {
+                                  x: "2",
+                                  y: "2",
+                                  width: "20",
+                                  height: "20",
+                                  rx: "5",
+                                  ry: "5",
+                                },
+                              }),
+                              _vm._v(" "),
+                              _c("path", {
+                                attrs: {
+                                  d: "M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z",
+                                },
+                              }),
+                              _vm._v(" "),
+                              _c("line", {
+                                attrs: {
+                                  x1: "17.5",
+                                  y1: "6.5",
+                                  x2: "17.51",
+                                  y2: "6.5",
+                                },
+                              }),
+                            ]
+                          ),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", [
+                        _c("a", { attrs: { href: "javascript:void(0)" } }, [
+                          _c(
+                            "svg",
+                            {
+                              staticClass:
+                                "icon icon-tabler icon-tabler-dribbble",
+                              attrs: {
+                                "aria-label": "Dribble",
+                                xmlns: "http://www.w3.org/2000/svg",
+                                width: "24",
+                                height: "24",
+                                viewBox: "0 0 24 24",
+                                "stroke-width": "1.5",
+                                stroke: "#718096",
+                                fill: "none",
+                                "stroke-linecap": "round",
+                                "stroke-linejoin": "round",
+                              },
+                            },
+                            [
+                              _c("path", {
+                                attrs: { stroke: "none", d: "M0 0h24v24H0z" },
+                              }),
+                              _vm._v(" "),
+                              _c("circle", {
+                                attrs: { cx: "12", cy: "12", r: "9" },
+                              }),
+                              _vm._v(" "),
+                              _c("path", {
+                                attrs: { d: "M9 3.6c5 6 7 10.5 7.5 16.2" },
+                              }),
+                              _vm._v(" "),
+                              _c("path", {
+                                attrs: { d: "M6.4 19c3.5-3.5 6-6.5 14.5-6.4" },
+                              }),
+                              _vm._v(" "),
+                              _c("path", {
+                                attrs: {
+                                  d: "M3.1 10.75c5 0 9.814-.38 15.314-5",
+                                },
+                              }),
+                            ]
+                          ),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", [
+                        _c("a", { attrs: { href: "javascript:void(0)" } }, [
+                          _c(
+                            "svg",
+                            {
+                              staticClass: "feather feather-github",
+                              attrs: {
+                                "aria-label": "Github",
+                                xmlns: "http://www.w3.org/2000/svg",
+                                width: "24",
+                                height: "24",
+                                viewBox: "0 0 24 24",
+                                fill: "none",
+                                stroke: "#718096",
+                                "stroke-width": "1.5",
+                                "stroke-linecap": "round",
+                                "stroke-linejoin": "round",
+                              },
+                            },
+                            [
+                              _c("path", {
+                                attrs: {
+                                  d: "M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22",
+                                },
+                              }),
+                            ]
+                          ),
+                        ]),
+                      ]),
+                    ]
+                  ),
+                ]
+              ),
+            ]
+          ),
+        ]),
+      ]
+    ),
+  ])
+}
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass:
+          "xl:flex lg:flex md:flex text-center md:!text-left pt-6 justify",
+      },
+      [
+        _c(
+          "div",
+          { staticClass: "w-11/12 xl:w-3/6 lg:w-2/5 mx-auto lg:mx-0 xl:mx-0" },
+          [
+            _c(
+              "div",
+              {
+                staticClass:
+                  "flex items-center md:justify-start justify-center mb-6 xl:mb-0 lg:mb-0",
+              },
+              [
+                _c("img", {
+                  staticClass: "w-10 mr-2",
+                  attrs: { src: "/img/logo_uc.png", alt: "Logo UC" },
+                }),
+                _vm._v(" "),
+                _c("img", {
+                  staticClass: "w-10 mr-0 xl:mr-3",
+                  attrs: { src: "/img/logo_su.png", alt: "Logo SU" },
+                }),
+                _vm._v(" "),
+                _c(
+                  "p",
+                  { staticClass: "ml-3 font-bold text-xl hidden xl:block" },
+                  [_vm._v("Technopreneurship Workshop 2022")]
+                ),
+              ]
+            ),
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass:
+              "w-11/12 xl:w-1/6 lg:w-2/5 mx-auto lg:mx-0 xl:mx-0 pt-3 xl:flex xl:justify-end  sm:pl-0",
+          },
+          [
+            _c("ul", [
+              _c(
+                "li",
+                { staticClass: "text-gray-800 font-bold text-xl mb-6" },
+                [_vm._v("Community")]
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                {
+                  staticClass:
+                    "text-base text-gray-600 hover:text-gray-700 mb-2",
+                },
+                [
+                  _c("a", { attrs: { href: "javascript:void(0)" } }, [
+                    _vm._v("About Us"),
+                  ]),
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                {
+                  staticClass:
+                    "text-base text-gray-600 hover:text-gray-700 mb-2",
+                },
+                [
+                  _c("a", { attrs: { href: "javascript:void(0)" } }, [
+                    _vm._v("Guidelines and how to"),
+                  ]),
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                {
+                  staticClass:
+                    "text-base text-gray-600 hover:text-gray-700 mb-2",
+                },
+                [
+                  _c("a", { attrs: { href: "javascript:void(0)" } }, [
+                    _vm._v("Quote from the best"),
+                  ]),
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                {
+                  staticClass:
+                    "text-base text-gray-600 hover:text-gray-700 mb-2",
+                },
+                [
+                  _c("a", { attrs: { href: "javascript:void(0)" } }, [
+                    _vm._v("How to start a blog"),
+                  ]),
+                ]
+              ),
+            ]),
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass:
+              "w-11/12 xl:w-1/6 lg:w-2/5 mx-auto lg:mx-0 xl:mx-0 pt-3 xl:flex xl:justify-end  sm:pl-0",
+          },
+          [
+            _c("ul", [
+              _c(
+                "li",
+                { staticClass: "text-gray-800 font-bold text-xl mb-6" },
+                [_vm._v("Getting Started")]
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                {
+                  staticClass:
+                    "text-base text-gray-600 hover:text-gray-700 mb-2",
+                },
+                [
+                  _c("a", { attrs: { href: "javascript:void(0)" } }, [
+                    _vm._v("About Us"),
+                  ]),
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                {
+                  staticClass:
+                    "text-base text-gray-600 hover:text-gray-700 mb-2",
+                },
+                [
+                  _c("a", { attrs: { href: "javascript:void(0)" } }, [
+                    _vm._v("Guidelines and how to"),
+                  ]),
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                {
+                  staticClass:
+                    "text-base text-gray-600 hover:text-gray-700 mb-2",
+                },
+                [
+                  _c("a", { attrs: { href: "javascript:void(0)" } }, [
+                    _vm._v("Quote from the best"),
+                  ]),
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                {
+                  staticClass:
+                    "text-base text-gray-600 hover:text-gray-700 mb-2",
+                },
+                [
+                  _c("a", { attrs: { href: "javascript:void(0)" } }, [
+                    _vm._v("How to start a blog"),
+                  ]),
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                {
+                  staticClass:
+                    "text-base text-gray-600 hover:text-gray-700 mb-2",
+                },
+                [
+                  _c("a", { attrs: { href: "javascript:void(0)" } }, [
+                    _vm._v("Quote from the best"),
+                  ]),
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                {
+                  staticClass:
+                    "text-base text-gray-600 hover:text-gray-700 mb-2",
+                },
+                [
+                  _c("a", { attrs: { href: "javascript:void(0)" } }, [
+                    _vm._v("Guidelines and how to"),
+                  ]),
+                ]
+              ),
+            ]),
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass:
+              "w-11/12 xl:w-1/6 lg:w-2/5 mx-auto lg:mx-0 xl:mx-0 pt-3 xl:flex xl:justify-end  sm:pl-0",
+          },
+          [
+            _c("ul", [
+              _c(
+                "li",
+                { staticClass: "text-gray-800 font-bold text-xl mb-6" },
+                [_vm._v("Resources")]
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                {
+                  staticClass:
+                    "text-base text-gray-600 hover:text-gray-700 mb-2",
+                },
+                [
+                  _c("a", { attrs: { href: "javascript:void(0)" } }, [
+                    _vm._v("Accessibility"),
+                  ]),
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                {
+                  staticClass:
+                    "text-base text-gray-600 hover:text-gray-700 mb-2",
+                },
+                [
+                  _c("a", { attrs: { href: "javascript:void(0)" } }, [
+                    _vm._v("Usability"),
+                  ]),
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                {
+                  staticClass:
+                    "text-base text-gray-600 hover:text-gray-700 mb-2",
+                },
+                [
+                  _c("a", { attrs: { href: "javascript:void(0)" } }, [
+                    _vm._v("Marketplace"),
+                  ]),
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                {
+                  staticClass:
+                    "text-base text-gray-600 hover:text-gray-700 mb-2",
+                },
+                [
+                  _c("a", { attrs: { href: "javascript:void(0)" } }, [
+                    _vm._v("Design & Dev"),
+                  ]),
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                {
+                  staticClass:
+                    "text-base text-gray-600 hover:text-gray-700 mb-2",
+                },
+                [
+                  _c("a", { attrs: { href: "javascript:void(0)" } }, [
+                    _vm._v("Marketplace"),
+                  ]),
+                ]
+              ),
+            ]),
+          ]
+        ),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "w-11/12 xl:w-2/6 mx-auto lg:mx-0 xl:mx-0 mb-6 xl:mb-0" },
+      [
+        _c("p", { staticClass: "text-gray-800" }, [
+          _vm._v("2022 SU IMT Universitas Ciputra. All Rights Reserved"),
+        ]),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass:
+          "w-11/12 xl:w-2/6 mx-auto lg:mx-0 xl:mx-0 mb-6 lg:mb-0 xl:mb-0",
+      },
+      [
+        _c(
+          "ul",
+          { staticClass: "xl:flex lg:flex md:flex sm:flex justify-between" },
+          [
+            _c(
+              "li",
+              {
+                staticClass:
+                  "text-gray-800 hover:text-gray-900 text-base mb-4 sm:mb-0",
+              },
+              [
+                _c("a", { attrs: { href: "javascript:void(0)" } }, [
+                  _vm._v("Terms of service"),
+                ]),
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "li",
+              {
+                staticClass:
+                  "text-gray-800 hover:text-gray-900 text-base mb-4 sm:mb-0",
+              },
+              [
+                _c("a", { attrs: { href: "javascript:void(0)" } }, [
+                  _vm._v("Privacy Policy"),
+                ]),
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "li",
+              {
+                staticClass:
+                  "text-gray-800 hover:text-gray-900 text-base mb-4 sm:mb-0",
+              },
+              [
+                _c("a", { attrs: { href: "javascript:void(0)" } }, [
+                  _vm._v("Security"),
+                ]),
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "li",
+              {
+                staticClass:
+                  "text-gray-800 hover:text-gray-900 text-base mb-4 sm:mb-0",
+              },
+              [
+                _c("a", { attrs: { href: "javascript:void(0)" } }, [
+                  _vm._v("Sitemap"),
+                ]),
+              ]
+            ),
+          ]
+        ),
+      ]
+    )
+  },
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Home.vue?vue&type=template&id=f2b6376c&scoped=true&":
 /*!****************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Home.vue?vue&type=template&id=f2b6376c&scoped=true& ***!
@@ -57767,275 +58675,98 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "section",
-    [
-      _c("div", { staticClass: "w-full relative px-6 xl:px-0" }, [
-        _c(
-          "div",
-          {
-            staticClass:
-              "pt-10 lg:pt-20 lg:flex items-center relative z-10 container mx-auto",
-          },
-          [
-            _vm._m(0),
+  return _c("section", [
+    _c("div", { staticClass: "w-full relative px-6 xl:px-0" }, [
+      _c(
+        "div",
+        {
+          staticClass:
+            "pt-10 lg:pt-20 lg:flex items-center relative z-10 container mx-auto",
+        },
+        [
+          _vm._m(0),
+          _vm._v(" "),
+          _c("div", { staticClass: "w-full lg:w-1/2 h-full" }, [
+            _c("p", { staticClass: "uppercase text-2xl mb-4" }, [
+              _vm._v("Universitas Ciputra - SU IMT"),
+            ]),
             _vm._v(" "),
-            _c("div", { staticClass: "w-full lg:w-1/2 h-full" }, [
-              _c("p", { staticClass: "uppercase text-2xl mb-4" }, [
-                _vm._v("Universitas Ciputra - SU IMT"),
-              ]),
-              _vm._v(" "),
-              _c(
-                "h1",
-                {
-                  staticClass: "text-purple text-4xl md:text-7xl mb-8 fw-bold",
-                },
-                [_vm._v("Technopreneurship Workshop 2022")]
-              ),
-              _vm._v(" "),
-              _c(
-                "p",
-                { staticClass: "text-gray-800 font-regular mb-8 text-base" },
-                [
-                  _vm._v(
-                    "Technopreneurship Workshop merupakan workshop bertemakan teknologi yang dikemas dalam bentuk camp jurusan. Melalui workshop ini, peserta diharapkan dapat meningkatkan koneksi yang baik antar angkatan serta melatih dan mempersiapkan peserta untuk menjadi technopreneur muda yang berintegritas dan profesional di masa depan."
-                  ),
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "bg-white py-4 px-4 flex flex-col sm:flex-row justify-start sm:justify-between items-start sm:items-center shadow-lg rounded-lg",
-                },
-                [
-                  _c("div", { staticClass: "sm:flex items-center py-2" }, [
-                    _c("div", { staticClass: "flex items-center" }, [
-                      _c(
-                        "svg",
-                        {
-                          staticClass:
-                            "text-indigo-500 icon icon-tabler icon-tabler-user",
-                          attrs: {
-                            xmlns: "http://www.w3.org/2000/svg",
-                            width: "16",
-                            height: "16",
-                            viewBox: "0 0 24 24",
-                            "stroke-width": "1.5",
-                            stroke: "currentColor",
-                            fill: "none",
-                            "stroke-linecap": "round",
-                            "stroke-linejoin": "round",
-                          },
-                        },
-                        [
-                          _c("path", {
-                            attrs: {
-                              stroke: "none",
-                              d: "M0 0h24v24H0z",
-                              fill: "none",
-                            },
-                          }),
-                          _vm._v(" "),
-                          _c("circle", {
-                            attrs: { cx: "12", cy: "7", r: "4" },
-                          }),
-                          _vm._v(" "),
-                          _c("path", {
-                            attrs: {
-                              d: "M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2",
-                            },
-                          }),
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "p",
-                        {
-                          staticClass:
-                            "leading-none tracking-normal text-gray-800 ml-2.5",
-                        },
-                        [_vm._v("Doctor Name")]
-                      ),
-                    ]),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "flex items-center sm:mx-4 xl:mx-14 my-6 lg:my-0",
-                      },
-                      [
-                        _c(
-                          "svg",
-                          {
-                            staticClass:
-                              "text-indigo-500 icon icon-tabler icon-tabler-layout-bottombar",
-                            attrs: {
-                              xmlns: "http://www.w3.org/2000/svg",
-                              width: "16",
-                              height: "16",
-                              viewBox: "0 0 24 24",
-                              "stroke-width": "1.5",
-                              stroke: "currentColor",
-                              fill: "none",
-                              "stroke-linecap": "round",
-                              "stroke-linejoin": "round",
-                            },
-                          },
-                          [
-                            _c("path", {
-                              attrs: {
-                                stroke: "none",
-                                d: "M0 0h24v24H0z",
-                                fill: "none",
-                              },
-                            }),
-                            _vm._v(" "),
-                            _c("rect", {
-                              attrs: {
-                                x: "4",
-                                y: "4",
-                                width: "16",
-                                height: "16",
-                                rx: "2",
-                              },
-                            }),
-                            _vm._v(" "),
-                            _c("line", {
-                              attrs: { x1: "4", y1: "15", x2: "20", y2: "15" },
-                            }),
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "p",
-                          {
-                            staticClass:
-                              "leading-none tracking-normal text-gray-800 ml-2.5",
-                          },
-                          [_vm._v("Zip code")]
-                        ),
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "flex items-center" }, [
-                      _c(
-                        "svg",
-                        {
-                          staticClass:
-                            "text-indigo-500 icon icon-tabler icon-tabler-flag",
-                          attrs: {
-                            xmlns: "http://www.w3.org/2000/svg",
-                            width: "16",
-                            height: "16",
-                            viewBox: "0 0 24 24",
-                            "stroke-width": "1.5",
-                            stroke: "currentColor",
-                            fill: "none",
-                            "stroke-linecap": "round",
-                            "stroke-linejoin": "round",
-                          },
-                        },
-                        [
-                          _c("path", {
-                            attrs: {
-                              stroke: "none",
-                              d: "M0 0h24v24H0z",
-                              fill: "none",
-                            },
-                          }),
-                          _vm._v(" "),
-                          _c("line", {
-                            attrs: { x1: "5", y1: "5", x2: "5", y2: "21" },
-                          }),
-                          _vm._v(" "),
-                          _c("line", {
-                            attrs: { x1: "19", y1: "5", x2: "19", y2: "14" },
-                          }),
-                          _vm._v(" "),
-                          _c("path", {
-                            attrs: { d: "M5 5a5 5 0 0 1 7 0a5 5 0 0 0 7 0" },
-                          }),
-                          _vm._v(" "),
-                          _c("path", {
-                            attrs: { d: "M5 14a5 5 0 0 1 7 0a5 5 0 0 0 7 0" },
-                          }),
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "p",
-                        {
-                          staticClass:
-                            "leading-none tracking-normal text-gray-800 ml-2.5",
-                        },
-                        [_vm._v("Insurance")]
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
+            _c(
+              "h1",
+              { staticClass: "text-purple text-4xl md:text-7xl mb-8 fw-bold" },
+              [_vm._v("Technopreneurship Workshop 2022")]
+            ),
+            _vm._v(" "),
+            _c(
+              "p",
+              { staticClass: "text-gray-800 font-regular mb-8 text-base" },
+              [
+                _vm._v(
+                  "Technopreneurship Workshop merupakan workshop bertemakan teknologi yang dikemas dalam bentuk camp jurusan. Melalui workshop ini, peserta diharapkan dapat meningkatkan koneksi yang baik antar angkatan serta melatih dan mempersiapkan peserta untuk menjadi technopreneur muda yang berintegritas dan profesional di masa depan."
+                ),
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass:
+                  "bg-white py-4 px-4 flex flex-col sm:flex-row justify-start sm:justify-between items-start sm:items-center shadow-lg rounded-lg",
+              },
+              [
+                _c("div", { staticClass: "flex items-center" }, [
                   _c(
-                    "div",
+                    "svg",
                     {
                       staticClass:
-                        "text-white bg-indigo-600 mt-4 sm:mt-0 p-3 rounded w-full sm:w-auto relative",
+                        "text-indigo-500 icon icon-tabler icon-tabler-user",
+                      attrs: {
+                        xmlns: "http://www.w3.org/2000/svg",
+                        width: "40",
+                        height: "40",
+                        viewBox: "0 0 24 24",
+                        "stroke-width": "1.5",
+                        stroke: "currentColor",
+                        fill: "none",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round",
+                      },
                     },
                     [
-                      _c(
-                        "svg",
-                        {
-                          staticClass:
-                            "absolute right-0 mr-2 sm:mr-auto sm:relative icon icon-tabler icon-tabler-search cursor-pointer",
-                          attrs: {
-                            xmlns: "http://www.w3.org/2000/svg",
-                            width: "24",
-                            height: "24",
-                            viewBox: "0 0 24 24",
-                            "stroke-width": "1.5",
-                            stroke: "currentColor",
-                            fill: "none",
-                            "stroke-linecap": "round",
-                            "stroke-linejoin": "round",
-                          },
+                      _c("path", {
+                        attrs: {
+                          stroke: "none",
+                          d: "M0 0h24v24H0z",
+                          fill: "none",
                         },
-                        [
-                          _c("path", {
-                            attrs: {
-                              stroke: "none",
-                              d: "M0 0h24v24H0z",
-                              fill: "none",
-                            },
-                          }),
-                          _vm._v(" "),
-                          _c("circle", {
-                            attrs: { cx: "10", cy: "10", r: "7" },
-                          }),
-                          _vm._v(" "),
-                          _c("line", {
-                            attrs: { x1: "21", y1: "21", x2: "15", y2: "15" },
-                          }),
-                        ]
-                      ),
+                      }),
                       _vm._v(" "),
-                      _c("input", {
-                        staticClass:
-                          "sm:hidden border-b border-gray-300 w-full bg-transparent pr-6",
+                      _c("circle", { attrs: { cx: "12", cy: "7", r: "4" } }),
+                      _vm._v(" "),
+                      _c("path", {
+                        attrs: {
+                          d: "M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2",
+                        },
                       }),
                     ]
                   ),
-                ]
-              ),
-            ]),
-          ]
-        ),
-      ]),
-      _vm._v(" "),
-      _c("ExampleComponent", { staticClass: "w-75 mx-auto my-20" }),
-    ],
-    1
-  )
+                  _vm._v(" "),
+                  _c(
+                    "p",
+                    {
+                      staticClass:
+                        "leading-none tracking-normal text-gray-800 ml-2.5",
+                    },
+                    [_vm._v("Please login to use this website's full features")]
+                  ),
+                ]),
+              ]
+            ),
+          ]),
+        ]
+      ),
+    ]),
+  ])
 }
 var staticRenderFns = [
   function () {
@@ -58079,7 +58810,7 @@ var render = function () {
   return _c(
     "section",
     [
-      _c("div", { staticClass: "w-full relative px-6 xl:px-0" }, [
+      _c("div", { staticClass: "w-full relative px-2 xl:px-0" }, [
         _c(
           "div",
           {
@@ -58385,9 +59116,105 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div")
+  return _c(
+    "section",
+    [
+      _c("div", { staticClass: "w-full relative px-2 xl:px-0" }, [
+        _c(
+          "div",
+          {
+            staticClass:
+              "pt-10 lg:pt-20 lg:flex items-center relative z-10 container mx-auto",
+          },
+          [
+            _c("div", { staticClass: "w-full lg:w-1/2 h-full" }, [
+              _c("p", { staticClass: "uppercase text-2xl mb-4" }, [
+                _vm._v("Technopreneurship Workshop 2022"),
+              ]),
+              _vm._v(" "),
+              _c(
+                "h1",
+                {
+                  staticClass: "text-purple text-4xl md:text-7xl mb-8 fw-bold",
+                },
+                [_vm._v("Welcome, " + _vm._s(_vm.team.name))]
+              ),
+              _vm._v(" "),
+              _c(
+                "p",
+                { staticClass: "text-gray-800 font-regular mb-8 text-base" },
+                [
+                  _vm._v(
+                    "Technopreneurship Workshop merupakan workshop bertemakan teknologi yang dikemas dalam bentuk camp jurusan. Melalui workshop ini, peserta diharapkan dapat meningkatkan koneksi yang baik antar angkatan serta melatih dan mempersiapkan peserta untuk menjadi technopreneur muda yang berintegritas dan profesional di masa depan."
+                  ),
+                ]
+              ),
+            ]),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass:
+                  "w-full lg:w-1/2 h-full lg:pr-10 xl:pr-0 mb-10 lg:mb-0",
+              },
+              [
+                _c(
+                  "div",
+                  [
+                    _c(
+                      "h1",
+                      {
+                        staticClass:
+                          "text-purple text-2xl md:text-3xl mb-3 fw-bold",
+                      },
+                      [_vm._v("Your current scores and points: ")]
+                    ),
+                    _vm._v(" "),
+                    _c("LeaderboardCard", { attrs: { team: _vm.team } }),
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _vm._m(0),
+              ]
+            ),
+          ]
+        ),
+      ]),
+      _vm._v(" "),
+      _c("ExampleComponent", { staticClass: "w-75 mx-auto my-20" }),
+    ],
+    1
+  )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c(
+        "a",
+        {
+          staticClass:
+            "block w-full text-center my-4 border rounded-md px-3 sm:px-16 py-3 bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50",
+          attrs: { href: "/" },
+        },
+        [_vm._v("Show QR Code for Investor")]
+      ),
+      _vm._v(" "),
+      _c(
+        "a",
+        {
+          staticClass:
+            "block w-full text-center my-4 border rounded-md px-3 sm:px-16 py-3 bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50",
+          attrs: { href: "/" },
+        },
+        [_vm._v("Show QR Code for Minigames")]
+      ),
+    ])
+  },
+]
 render._withStripped = true
 
 
@@ -58522,7 +59349,7 @@ var render = function () {
     _c("div", { staticClass: "relative" }, [
       _c(
         "div",
-        { staticClass: "h-300 rounded overflow-hidden shadow-md bg-white" },
+        { staticClass: "h-300 rounded-2xl overflow-hidden shadow-md bg-white" },
         [
           _c(
             "div",
@@ -58960,6 +59787,7 @@ var render = function () {
             { key: team.id },
             [
               _c("LeaderboardCard", {
+                staticClass: "mx-auto",
                 attrs: { team: team, index: index + 1 },
               }),
             ],
@@ -59014,7 +59842,7 @@ var render = function () {
     "table",
     {
       staticClass:
-        "mx-auto my-2 max-w-lg rounded overflow-hidden shadow-md text-xs table-auto",
+        "my-2 max-w-lg rounded overflow-hidden shadow-md text-xs table-auto",
     },
     [
       _vm.index === 1
@@ -59562,7 +60390,7 @@ var render = function () {
           [
             _vm._m(0),
             _vm._v(" "),
-            _c("div", { staticClass: "hidden xl:flex md:ml-6 xl:ml-16" }, [
+            _c("div", { staticClass: "hidden xl:flex md:ml-6" }, [
               _c(
                 "a",
                 {
@@ -59720,66 +60548,14 @@ var render = function () {
                         "ul",
                         {
                           staticClass:
-                            "p-2 w-40 border-r bg-white absolute rounded right-0 shadow top-0 mt-16 hidden",
+                            "p-2 w-40 border-r bg-white absolute rounded right-0 shadow top-0 mt-12 hidden",
                         },
                         [
                           _c(
                             "li",
                             {
                               staticClass:
-                                "cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none",
-                            },
-                            [
-                              _c("div", { staticClass: "flex items-center" }, [
-                                _c(
-                                  "svg",
-                                  {
-                                    staticClass:
-                                      "icon icon-tabler icon-tabler-user",
-                                    attrs: {
-                                      xmlns: "http://www.w3.org/2000/svg",
-                                      width: "20",
-                                      height: "20",
-                                      viewBox: "0 0 24 24",
-                                      "stroke-width": "1.5",
-                                      stroke: "currentColor",
-                                      fill: "none",
-                                      "stroke-linecap": "round",
-                                      "stroke-linejoin": "round",
-                                    },
-                                  },
-                                  [
-                                    _c("path", {
-                                      attrs: {
-                                        stroke: "none",
-                                        d: "M0 0h24v24H0z",
-                                      },
-                                    }),
-                                    _vm._v(" "),
-                                    _c("circle", {
-                                      attrs: { cx: "12", cy: "7", r: "4" },
-                                    }),
-                                    _vm._v(" "),
-                                    _c("path", {
-                                      attrs: {
-                                        d: "M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2",
-                                      },
-                                    }),
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c("span", { staticClass: "ml-2" }, [
-                                  _vm._v("My Profile"),
-                                ]),
-                              ]),
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "li",
-                            {
-                              staticClass:
-                                "cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-indigo-700 flex items-center focus:text-indigo-700 focus:outline-none",
+                                "cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 flex items-center focus:text-indigo-700 focus:outline-none",
                               attrs: {
                                 onclick:
                                   "event.preventDefault(); document.getElementById('logout-form').submit();",
@@ -59856,10 +60632,14 @@ var render = function () {
                             "cursor-pointer flex text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-white transition duration-150 ease-in-out",
                         },
                         [
-                          _c("img", {
-                            staticClass: "rounded-full h-10 w-10 object-cover",
-                            attrs: { src: _vm.profilePhoto, alt: "logo" },
-                          }),
+                          _c(
+                            "p",
+                            { staticClass: "text-sm ml-2 cursor-pointer" },
+                            [
+                              _vm._v("Logged in as: "),
+                              _c("b", [_vm._v(_vm._s(_vm.user.name))]),
+                            ]
+                          ),
                         ]
                       ),
                       _vm._v(" "),

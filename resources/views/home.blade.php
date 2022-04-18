@@ -6,9 +6,9 @@
     @endguest
     @auth
         @if (Auth::user()->role == 'judge')
-            <home-judge></home-judge>
+            <home-judge :judge="{{ Auth::user() }}"></home-judge>
         @else
-            <home-team></home-team>
+            <home-team :team="{{ $team }}"></home-team>
         @endif
     @endauth
 @endsection
