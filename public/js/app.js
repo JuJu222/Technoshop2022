@@ -57798,7 +57798,7 @@ var render = function () {
                 { staticClass: "text-gray-800 font-regular mb-8 text-base" },
                 [
                   _vm._v(
-                    "Technopreneurship Workshop merupakan workshop bertemakan teknologi yang dikemas dalam bentuk camp jurusan. Melalui workshop ini, peserta diharapkan dapat lebih paham tentang program studi Informatika, meningkatkan koneksi yang baik antar angkatan,serta untuk melatih dan mempersiapkan peserta untuk menjadi technopreneur muda yang berintegritas dan profesional di masa depan."
+                    "Technopreneurship Workshop merupakan workshop bertemakan teknologi yang dikemas dalam bentuk camp jurusan. Melalui workshop ini, peserta diharapkan dapat meningkatkan koneksi yang baik antar angkatan serta melatih dan mempersiapkan peserta untuk menjadi technopreneur muda yang berintegritas dan profesional di masa depan."
                   ),
                 ]
               ),
