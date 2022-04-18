@@ -22,6 +22,7 @@ window.Vue = require('vue').default;
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('investor', require('./components/Investor.vue').default);
 Vue.component('navbar', require('./components/Navbar.vue').default);
+Vue.component('home', require('./components/Home.vue').default);
 Vue.component('home-judge', require('./components/HomeJudge.vue').default);
 Vue.component('home-team', require('./components/HomeTeam.vue').default);
 Vue.component('investors', require('./components/Investors.vue').default);

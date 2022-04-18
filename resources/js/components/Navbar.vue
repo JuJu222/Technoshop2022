@@ -82,7 +82,7 @@
                             <img src="/img/logo_su.png" alt="Logo SU" class="w-10 mr-3">
                             <div class="flex flex-col">
                                 <h2 class="hidden sm:block text-base text-gray-700 font-bold leading-normal">Technopreneruship Workshop</h2>
-                                <h2 class="hidden sm:block text-base text-gray-700 font-bold leading-normal">2022</h2>
+                                <h2 class="hidden sm:block text-tiny text-gray-700 font-bold leading-normal">2022</h2>
                             </div>
                         </a>
                     <div class="hidden xl:flex md:ml-6 xl:ml-16">
