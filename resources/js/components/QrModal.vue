@@ -21,7 +21,7 @@
 </template>
 <script>
 export default {
-    name: 'Modal',
+    name: 'QrModal',
     props: ['name', 'type', 'qrCode'],
     data(){
         return {

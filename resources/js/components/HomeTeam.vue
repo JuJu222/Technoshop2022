@@ -1,7 +1,5 @@
 <template>
-    <!-- for vue instead of using a href, vue router links will be used -->
-    <!-- replace appropriate tags after installing vue-router -->
-    <section>
+    <div>
         <div class="w-full relative px-2 xl:px-0">
             <div class="pt-10 lg:pt-20 lg:flex items-center relative z-10 container mx-auto">
                 <div class="w-full lg:w-1/2 h-full">
@@ -12,30 +10,30 @@
                 <div class="w-full lg:w-1/2 h-full lg:pr-10 xl:pr-0 mb-10 lg:mb-0">
                     <div>
                         <h1 class="text-purple text-2xl md:text-3xl mb-3 fw-bold">Your current scores and points: </h1>
-                        <LeaderboardCard :team="team"></LeaderboardCard>
+                        <LeaderboardCard class="w-full" :team="team"></LeaderboardCard>
                     </div>
                     <div>
-                        <button @click="openModalJudge" href="/" class="block w-full text-center my-4 border rounded-md px-3 sm:px-16 py-3 bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50">Show QR Code for Investor</button>
-                        <button @click="openModalGame" href="/" class="block w-full text-center my-4 border rounded-md px-3 sm:px-16 py-3 bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50">Show QR Code for Minigames</button>
+                        <button @click="openModalJudge" class="block w-full text-center my-4 border rounded-md px-3 sm:px-16 py-3 bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50">Show QR Code for Investor</button>
+                        <button @click="openModalGame" class="block w-full text-center my-4 border rounded-md px-3 sm:px-16 py-3 bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50">Show QR Code for Minigames</button>
                     </div>
                 </div>
             </div>
         </div>
-        <ExampleComponent class="w-75 mx-auto my-20"></ExampleComponent>
-        <Modal v-show="isModalVisibleJudge" @close-modal="closeModalJudge" :name="team.name" :type="'Investors'" :qr-code="team.qr_judge"/>
-        <Modal v-show="isModalVisibleGame" @close-modal="closeModalGame" :name="team.name" :type="'Minigames'" :qr-code="team.qr_game"/>
-    </section>
+        <QrModal v-show="isModalVisibleJudge" @close-modal="closeModalJudge" :name="team.name" :type="'Investors'" :qr-code="team.qr_judge"/>
+        <QrModal v-show="isModalVisibleGame" @close-modal="closeModalGame" :name="team.name" :type="'Minigames'" :qr-code="team.qr_game"/>
+    </div>
 </template>
 
 <script>
 import JudgeCard from "./InvestorCard";
 import ExampleComponent from "./ExampleComponent";
 import LeaderboardCard from "./LeaderboardCard";
-import Modal from './Modal'
+import Modal from './QrModal'
+import QrModal from "./QrModal";
 
 export default {
     name: "HomeTeam",
-    components: {JudgeCard, LeaderboardCard, Modal},
+    components: {QrModal, JudgeCard, LeaderboardCard},
     props: ['team'],
     data(){
         return {

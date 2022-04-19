@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\JudgeController;
 use App\Http\Controllers\TeamController;
+use App\Models\Team;
+use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
@@ -20,7 +22,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     if (Auth::check()) {
         if (Auth::user()->role == 'judge') {
-        return view('home');
+            $judge = User::query()->with('judge')->findOrFail(Auth::id());
+            $teams = Team::query()->with('user')->get();
+            return view('home', compact('judge', 'teams'));
         } else {
             $id = Auth::user()->team->id;
             $team = DB::table('points')

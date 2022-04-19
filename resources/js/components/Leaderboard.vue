@@ -5,8 +5,8 @@
         </div>
         <div class="py-6 lg:px-20 md:px-6 px-4">
             <div>
-                <div v-for="(team, index) in teams" :key="team.id">
-                    <LeaderboardCard class="mx-auto" :team="team" :index="index + 1"></LeaderboardCard>
+                <div v-for="(team, index) in teams" class="md:px-40 lg:px-60" :key="team.id">
+                    <LeaderboardCard class="mx-auto w-full" :team="team" :index="index + 1"></LeaderboardCard>
                 </div>
             </div>
         </div>

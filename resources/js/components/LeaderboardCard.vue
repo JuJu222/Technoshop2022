@@ -1,32 +1,32 @@
 <template>
-    <table class="my-2 max-w-lg rounded overflow-hidden shadow-md text-xs table-auto">
-        <tr v-if="index === 1" class="text-gold px-2 py-2">
-            <td v-if="index" class="text-purple text-left text-xl font-bold">{{ ordinal(index) }}</td>
-            <td v-else class="text-gray-700 text-left text-xl font-bold"></td>
+    <table class="my-2 rounded overflow-hidden shadow-md text-xs table-auto">
+        <tr v-if="index === 1" class="gold px-2 py-2 text-white">
+            <td v-if="index" class="text-left text-xl font-bold">{{ ordinal(index) }}</td>
+            <td v-else class="text-left text-xl font-bold"></td>
             <td class="px-2 text-center">Prototype Score</td>
             <td class="px-2 text-center">Idea Score</td>
-            <td class="text-gray-700 text-center    ">Investment Points</td>
+            <td class="text-center">Investment Points</td>
         </tr>
-        <tr v-else-if="index === 2" class="text-silver px-2 py-2">
-            <td v-if="index" class="text-purple text-left text-xl font-bold">{{ ordinal(index) }}</td>
-            <td v-else class="text-gray-700 text-left text-xl font-bold"></td>
+        <tr v-else-if="index === 2" class="silver px-2 py-2 text-white">
+            <td v-if="index" class="text-left text-xl font-bold">{{ ordinal(index) }}</td>
+            <td v-else class="text-left text-xl font-bold"></td>
             <td class="px-2 text-center">Prototype Score</td>
             <td class="px-2 text-center">Idea Score</td>
-            <td class="text-gray-700 text-center    ">Investment Points</td>
+            <td class="text-center">Investment Points</td>
         </tr>
-        <tr v-else-if="index === 3" class="text-bronze px-2 py-2">
-            <td v-if="index" class="text-purple text-left text-xl font-bold">{{ ordinal(index) }}</td>
-            <td v-else class="text-gray-700 text-left text-xl font-bold"></td>
+        <tr v-else-if="index === 3" class="bronze px-2 py-2 text-white">
+            <td v-if="index" class="text-left text-xl font-bold">{{ ordinal(index) }}</td>
+            <td v-else class="text-left text-xl font-bold"></td>
             <td class="px-2 text-center">Prototype Score</td>
             <td class="px-2 text-center">Idea Score</td>
-            <td class="text-gray-700 text-center    ">Investment Points</td>
+            <td class="text-center">Investment Points</td>
         </tr>
-        <tr v-else class="bg-gray-200 px-2 py-2">
-            <td v-if="index" class="text-purple text-left text-xl font-bold">{{ ordinal(index) }}</td>
-            <td v-else class="text-gray-700 text-left text-xl font-bold"></td>
+        <tr v-else class="bg-gray-200 px-2 py-2 purple text-white">
+            <td v-if="index" class="text-left text-xl font-bold">{{ ordinal(index) }}</td>
+            <td v-else class="text-left text-xl font-bold"></td>
             <td class="px-2 text-center">Prototype Score</td>
             <td class="px-2 text-center">Idea Score</td>
-            <td class="text-gray-700 text-center    ">Investment Points</td>
+            <td class="text-center">Investment Points</td>
         </tr>
 
         <tr class="px-2 py-2 items-center bg-white">
