@@ -47,27 +47,14 @@ class TeamController extends Controller
             ->orderBy('teams.id')
             ->get();
 
-//        $teams = DB::table('points')
-//            ->join(
-//                'teams',
-//                'teams.id',
-//                '=',
-//                'team_id')
-//            ->join(
-//                'users',
-//                'users.id',
-//                '=',
-//                'user_id')
-//            ->selectRaw('teams.id, name, mentors, members,
-//                CAST(SUM(prototype) AS SIGNED INTEGER) AS prototype,
-//                CAST(SUM(idea) AS SIGNED INTEGER) AS idea,
-//                CAST(SUM(investment) AS SIGNED INTEGER) AS investment')
-//            ->groupBy('teams.id')
-//            ->groupBy('name')
-//            ->groupBy('mentors')
-//            ->groupBy('members')
-//            ->orderByDesc('investment')
-//            ->get();
+        foreach ($teams as $team) {
+            $investors = Team::with('point')->where('teams.id', $team->id)->first();
+            $pictures = array();
+            foreach ($investors->point as $point) {
+                array_push($pictures, Judge::with('user')->where('judges.id', $point->judge_id)->first()->img_portrait);
+            }
+            $team->pictures = $pictures;
+        }
 
         return view('leaderboard', compact('teams'));
     }

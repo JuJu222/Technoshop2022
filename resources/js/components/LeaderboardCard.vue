@@ -45,6 +45,16 @@
             <td class="text-xs" colspan="4">{{ team.members }}</td>
         </tr>
 
+        <tr class="px-2 py-2 items-center bg-white">
+            <td class="text-xs" colspan="4">
+                <div class="flex items-center flex-no-wrap mb-1">
+                    <div v-for="picture in team.pictures" class="w-11 h-11 bg-cover bg-center rounded-md">
+                        <img :src="'/img/investors/' + picture" alt="" class="h-full w-full overflow-hidden object-cover rounded-full border-2 border-white dark:border-gray-700 shadow" />
+                    </div>
+                    <p class="ml-2">has invested</p>
+                </div>
+            </td>
+        </tr>
     </table>
 
 </template>

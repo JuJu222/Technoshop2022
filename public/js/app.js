@@ -6913,6 +6913,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "LeaderboardCard",
   props: ['team', 'index'],
@@ -61209,6 +61219,33 @@ var render = function () {
       _c("tr", { staticClass: "px-2 py-2 items-center bg-white" }, [
         _c("td", { staticClass: "text-xs", attrs: { colspan: "4" } }, [
           _vm._v(_vm._s(_vm.team.members)),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("tr", { staticClass: "px-2 py-2 items-center bg-white" }, [
+        _c("td", { staticClass: "text-xs", attrs: { colspan: "4" } }, [
+          _c(
+            "div",
+            { staticClass: "flex items-center flex-no-wrap mb-1" },
+            [
+              _vm._l(_vm.team.pictures, function (picture) {
+                return _c(
+                  "div",
+                  { staticClass: "w-11 h-11 bg-cover bg-center rounded-md" },
+                  [
+                    _c("img", {
+                      staticClass:
+                        "h-full w-full overflow-hidden object-cover rounded-full border-2 border-white dark:border-gray-700 shadow",
+                      attrs: { src: "/img/investors/" + picture, alt: "" },
+                    }),
+                  ]
+                )
+              }),
+              _vm._v(" "),
+              _c("p", { staticClass: "ml-2" }, [_vm._v("has invested")]),
+            ],
+            2
+          ),
         ]),
       ]),
     ]

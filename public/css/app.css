@@ -11931,6 +11931,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mb-0 {
   margin-bottom: 0px;
 }
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
 .block {
   display: block;
 }
@@ -11969,6 +11972,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .h-32 {
   height: 8rem;
+}
+.h-12 {
+  height: 3rem;
+}
+.h-10 {
+  height: 2.5rem;
+}
+.h-11 {
+  height: 2.75rem;
 }
 .max-h-max {
   max-height: -webkit-max-content;
@@ -12016,6 +12028,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .w-16 {
   width: 4rem;
+}
+.w-11 {
+  width: 2.75rem;
 }
 .max-w-6xl {
   max-width: 72rem;
@@ -12131,6 +12146,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .border-transparent {
   border-color: transparent;
+}
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 .bg-white {
   --tw-bg-opacity: 1;
