@@ -45,7 +45,7 @@
             <td class="text-xs" colspan="4">{{ team.members }}</td>
         </tr>
 
-        <tr class="px-2 py-2 items-center bg-white">
+        <tr v-if="team.pictures.length > 0" class="px-2 py-2 items-center bg-white">
             <td class="text-xs" colspan="4">
                 <div class="flex items-center flex-no-wrap mb-1">
                     <div v-for="picture in team.pictures" class="w-11 h-11 bg-cover bg-center rounded-md">
