@@ -9,7 +9,7 @@ class Team extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['points', 'mentors', 'members'];
+    protected $fillable = ['mentors', 'members'];
 
     public function user() {
         return $this->belongsTo(User::class, 'user_id');

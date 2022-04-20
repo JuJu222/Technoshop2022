@@ -19,7 +19,6 @@ return new class extends Migration
             $table->string('qr_game');
             $table->string('mentors');
             $table->string('members');
-            $table->integer('points')->default(0);
             $table->foreignId('user_id');
             $table->timestamps();
 

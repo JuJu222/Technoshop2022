@@ -48,6 +48,8 @@ Route::get('/', function () {
                 ->groupBy('name')
                 ->groupBy('mentors')
                 ->groupBy('members')
+                ->groupBy('qr_judge')
+                ->groupBy('qr_game')
                 ->first();
             $team = json_encode($team);
 
