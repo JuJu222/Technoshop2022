@@ -3,6 +3,7 @@
 use App\Http\Controllers\GameController;
 use App\Http\Controllers\JudgeController;
 use App\Http\Controllers\TeamController;
+use App\Models\Judge;
 use App\Models\Team;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
@@ -51,6 +52,14 @@ Route::get('/', function () {
                 ->groupBy('qr_judge')
                 ->groupBy('qr_game')
                 ->first();
+
+            $investors = Team::with('point')->where('teams.id', $team->id)->first();
+            $pictures = array();
+            foreach ($investors->point as $point) {
+                array_push($pictures, Judge::with('user')->where('judges.id', $point->judge_id)->first()->img_portrait);
+            }
+            $team->pictures = $pictures;
+
             $team = json_encode($team);
 
             return view('home', compact('team'));

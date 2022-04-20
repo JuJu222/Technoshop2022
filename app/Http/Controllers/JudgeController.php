@@ -58,6 +58,14 @@ class JudgeController extends Controller
                 ->groupBy('mentors')
                 ->groupBy('members')
                 ->first();
+
+            $investors = Team::with('point')->where('teams.id', $team->id)->first();
+            $pictures = array();
+            foreach ($investors->point as $point) {
+                array_push($pictures, Judge::with('user')->where('judges.id', $point->judge_id)->first()->img_portrait);
+            }
+            $team->pictures = $pictures;
+
             $team = json_encode($team);
             $message = 'You have already given points and scores to ' . $teamName;
             $query = Point::query()->where('judge_id', $judge->id)->where('team_id', $id)->first();
@@ -84,6 +92,14 @@ class JudgeController extends Controller
                 ->groupBy('mentors')
                 ->groupBy('members')
                 ->first();
+
+            $investors = Team::with('point')->where('teams.id', $team->id)->first();
+            $pictures = array();
+            foreach ($investors->point as $point) {
+                array_push($pictures, Judge::with('user')->where('judges.id', $point->judge_id)->first()->img_portrait);
+            }
+            $team->pictures = $pictures;
+
             $team = json_encode($team);
             $judge = Judge::with('user')->where('user_id', Auth::id())->first();
 
@@ -140,6 +156,14 @@ class JudgeController extends Controller
             ->groupBy('mentors')
             ->groupBy('members')
             ->first();
+
+        $investors = Team::with('point')->where('teams.id', $team->id)->first();
+        $pictures = array();
+        foreach ($investors->point as $point) {
+            array_push($pictures, Judge::with('user')->where('judges.id', $point->judge_id)->first()->img_portrait);
+        }
+        $team->pictures = $pictures;
+
         $team = json_encode($team);
 
         return redirect()->to('/judge_result')->with(['team' => $team, 'judge' => $judge, 'query' => $query, 'message' => $message]);
