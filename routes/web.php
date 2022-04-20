@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\GameController;
 use App\Http\Controllers\JudgeController;
 use App\Http\Controllers\TeamController;
 use App\Models\Team;
@@ -25,7 +26,7 @@ Route::get('/', function () {
             $judge = User::query()->with('judge')->findOrFail(Auth::id());
             $teams = Team::query()->with('user')->get();
             return view('home', compact('judge', 'teams'));
-        } else {
+        } else if (Auth::user()->role == 'team') {
             $id = Auth::user()->team->id;
             $team = DB::table('points')
                 ->rightJoin(
@@ -51,6 +52,10 @@ Route::get('/', function () {
             $team = json_encode($team);
 
             return view('home', compact('team'));
+        } else {
+            $user = Auth::user();
+            $teams = Team::query()->with('user')->get();
+            return view('home', compact('user', 'teams'));
         }
     } else {
         return view('home');
@@ -63,8 +68,14 @@ Route::resource('investors', JudgeController::class);
 Route::middleware(['auth'])->group(function () {
     Route::middleware(['judge'])->group(function () {
         Route::get('/judge/{id}', [JudgeController::class, 'judgeGet']);
+        Route::get('/judge_result', [JudgeController::class, 'judgeGetResult']);
         Route::post('/judge/{id}', [JudgeController::class, 'judgePost']);
-//        Route::get('/judge/{id}/success', [JudgeController::class, 'judgeSuccess']);
+    });
+
+    Route::middleware(['game'])->group(function () {
+        Route::get('/log/{id}', [GameController::class, 'gameLogGet']);
+        Route::get('/log_result', [GameController::class, 'gameLogGetResult']);
+        Route::post('/log/{id}', [GameController::class, 'gameLogPost']);
     });
 });
 

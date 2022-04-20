@@ -26,10 +26,13 @@ Vue.component('foot', require('./components/Footer.vue').default);
 Vue.component('home', require('./components/Home.vue').default);
 Vue.component('home-judge', require('./components/HomeJudge.vue').default);
 Vue.component('home-team', require('./components/HomeTeam.vue').default);
+Vue.component('home-game', require('./components/HomeGame').default);
 Vue.component('investors', require('./components/Investors.vue').default);
 Vue.component('leaderboard', require('./components/Leaderboard.vue').default);
 Vue.component('judge', require('./components/Judge.vue').default);
 Vue.component('judge-success', require('./components/JudgeSuccess').default);
+Vue.component('game-log', require('./components/GameLog').default);
+Vue.component('game-success', require('./components/GameSuccess').default);
 Vue.component(VueNumberInput.name, VueNumberInput);
 
 /**

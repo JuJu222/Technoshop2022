@@ -12,22 +12,22 @@
                     <p tabindex="0" class="focus:outline-none text-2xl font-extrabold leading-6 text-gray-800">Enter points and scores for {{ team.name }}</p>
                     <p class="focus:outline-none mt-2 text-xl font-medium leading-6 text-gray-800">Remaining Points: <b>{{ judge.points }}</b></p>
                     <div class="mt-6 w-full">
-                        <label for="investment" class="text-sm font-medium leading-none text-gray-800">Investment</label>
+                        <label for="investment" class="text-sm font-medium leading-none text-gray-800">Investment (Min: 1 & Max: {{ judge.points }})</label>
                         <input hidden id="investment" type="number" class="border rounded text-xs font-medium leading-none placeholder-gray-800 text-gray-800 py-3 w-full pl-3 mt-2" name="investment" required autofocus>
                         <number-input controls size="large" :min="1" :max="judge.points" @change="onChange3"></number-input>
                     </div>
                     <div class="mt-6">
-                        <label for="prototype" class="text-sm font-medium leading-none text-gray-800">Prototype</label>
+                        <label for="prototype" class="text-sm font-medium leading-none text-gray-800">Prototype (Min: 1 & Max: 10)</label>
                         <input hidden id="prototype" type="number" class="border rounded text-xs font-medium leading-none placeholder-gray-800 text-gray-800 py-3 w-full pl-3 mt-2" name="prototype" required autofocus>
                         <number-input controls size="large" :min="1" :max="10" @change="onChange1"></number-input>
                     </div>
                     <div class="mt-6 w-full">
-                        <label for="idea" class="text-sm font-medium leading-none text-gray-800">Idea</label>
+                        <label for="idea" class="text-sm font-medium leading-none text-gray-800">Idea (Min: 1 & Max: 10)</label>
                         <input hidden id="idea" type="number" class="border rounded text-xs font-medium leading-none placeholder-gray-800 text-gray-800 py-3 w-full pl-3 mt-2" name="idea" required autofocus>
                         <number-input controls size="large" :min="1" :max="10" @change="onChange2"></number-input>
                     </div>
                     <div class="mt-8">
-                        <button type="submit" class="focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 text-sm font-semibold leading-none text-white focus:outline-none bg-indigo-700 border rounded hover:bg-indigo-600 py-4 w-full">Login</button>
+                        <button :disabled="buttonDisabled" type="submit" class="focus:ring-2 focus:ring-offset-2 disabled:!bg-gray-300 disabled:!text-gray-400 focus:ring-indigo-700 text-sm font-semibold leading-none text-white focus:outline-none bg-indigo-700 border rounded hover:bg-indigo-600 py-4 w-full">Login</button>
                     </div>
                 </form>
             </div>
@@ -37,24 +37,49 @@
 
 <script>
 import LeaderboardCard from "./LeaderboardCard";
+
+let input1filled = false;
+let input2filled = false;
+let input3filled = false;
+
 export default {
     name: "Judge",
     components: {LeaderboardCard},
     data() {
         return {
-            csrf: document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+            csrf: document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
+            buttonDisabled: true
         };
     },
     props: ['team', 'judge'],
     methods: {
         onChange1(event) {
             document.getElementById("prototype").value = event;
+            if (event) {
+                input1filled = true;
+            }
+            this.checkButton()
         },
         onChange2(event) {
-            document.getElementById("idea").value = event;
+            document.getElementById("idea").value = event
+            if (event) {
+                input2filled = true;
+            }
+            this.checkButton()
         },
         onChange3(event) {
             document.getElementById("investment").value = event;
+            if (event) {
+                input3filled = true;
+            }
+            this.checkButton()
+        },
+        checkButton() {
+            if (input1filled && input2filled && input3filled) {
+                this.buttonDisabled = false;
+            } else {
+                this.buttonDisabled = true;
+            }
         },
     }
 }

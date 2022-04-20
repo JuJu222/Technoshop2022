@@ -111,7 +111,26 @@ class JudgeController extends Controller
             ->first();
         $team = json_encode($team);
 
-        return view('judge_success', compact('team', 'judge', 'query', 'message'));
+        return redirect()->to('/judge_result')->with(['team' => $team, 'judge' => $judge, 'query' => $query, 'message' => $message]);
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function judgeGetResult()
+    {
+        if (session('message')) {
+            $team = session('team');
+            $judge = session('judge');
+            $query = session('query');
+            $message = session('message');
+
+            return view('judge_success', compact('team', 'judge', 'query', 'message'));
+        } else {
+            return redirect()->to('/');
+        }
     }
 
     /**

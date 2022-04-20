@@ -1,5 +1,5 @@
 <template>
-    <table class="my-2 rounded overflow-hidden shadow-md text-xs table-auto">
+    <table class="my-2 rounded-lg overflow-hidden shadow-lg text-xs table-auto">
         <tr v-if="index === 1" class="gold px-2 py-2 text-white">
             <td v-if="index" class="text-left text-xl font-bold">{{ ordinal(index) }}</td>
             <td v-else class="text-left text-xl font-bold"></td>

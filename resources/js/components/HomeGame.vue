@@ -6,16 +6,10 @@
             <div class="pt-10 lg:pt-20 lg:flex items-center relative z-10 container mx-auto">
                 <div class="w-full lg:w-1/2 h-full">
                     <p class="uppercase text-2xl mb-4">Technopreneurship Workshop 2022</p>
-                    <h1 class="text-purple text-4xl md:text-7xl mb-8 fw-bold">Welcome, {{ judge.name }}</h1>
+                    <h1 class="text-purple text-4xl md:text-7xl mb-8 fw-bold">Welcome, {{ user.name }}</h1>
                     <p class="text-gray-800 font-regular mb-8 text-base">Technopreneurship Workshop merupakan workshop bertemakan teknologi yang dikemas dalam bentuk camp jurusan. Melalui workshop ini, peserta diharapkan dapat meningkatkan koneksi yang baik antar angkatan serta melatih dan mempersiapkan peserta untuk menjadi technopreneur muda yang berintegritas dan profesional di masa depan.</p>
                 </div>
                 <div class="w-full lg:w-1/2 h-full lg:pr-10 xl:pr-0 mb-10 lg:mb-0">
-                    <div>
-                        <h1 class="text-purple text-2xl md:text-3xl mb-3 fw-bold">Your remaining points: </h1>
-                        <div class="bg-white py-4 px-4 flex flex-col sm:flex-row justify-start sm:justify-between items-start sm:items-center shadow-lg rounded-lg">
-                            <h1 class="text-center mx-auto tracking-normal text-purple text-4xl fw-bold">{{ judge.judge.points }}</h1>
-                        </div>
-                    </div>
                     <div>
                         <button @click="openModal" class="block w-full text-center my-4 border rounded-md px-3 sm:px-16 py-3 bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50">Show QR Scanner</button>
                     </div>
@@ -38,7 +32,7 @@
                                 <p class="text-xs">{{ team.members }}</p>
                             </div>
                             <div class="w-full flex align-items-center justify-content-end pr-4 mb-2">
-                                <a :href="'/judge/'+team.id" class="block text-center w-32 border rounded-md px-3 sm:px-16 py-3 bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50">Invest</a>
+                                <a :href="'/log/'+team.id" class="block text-center w-32 border rounded-md px-3 sm:px-16 py-3 bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50">Log</a>
                             </div>
                         </div>
                     </div>
@@ -55,9 +49,9 @@ import ExampleComponent from "./ExampleComponent";
 import ScannerModal from "./ScannerModal";
 
 export default {
-    name: "HomeJudge",
+    name: "HomeGame",
     components: {ScannerModal, JudgeCard},
-    props: ['judge', 'teams'],
+    props: ['user', 'teams'],
     data(){
         return {
             isModalVisible: false,

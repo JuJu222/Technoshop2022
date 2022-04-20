@@ -149,7 +149,7 @@ class UserSeeder extends Seeder
             'user_id' => 7,
             'field' => 'Edu Tech, Retail, SaaS, & Angel Investor',
             'about' => 'I like business ideas that are out of the box and i like it even more when they make tons of money.',
-            'img_portrait' => 'bu_laura/bu_laura    .png',
+            'img_portrait' => 'bu_laura.png',
             'img_portfolio' => 'bu_laura/portfolio_bu_laura.png',
             'created_at' => \Carbon\Carbon::now(),
             'updated_at' => \Carbon\Carbon::now()
@@ -380,6 +380,96 @@ class UserSeeder extends Seeder
             'qr_game' => 'log_11.png',
             'mentors' => 'Timothy, Billy Jason',
             'members' => 'Muhammad Gathfan Fasha, Evelyn Callista Yaurentius, Micheila Jiemesha, Alexander Hartono, Muhammad Ghifari Febriansyah',
+            'created_at' => \Carbon\Carbon::now(),
+            'updated_at' => \Carbon\Carbon::now()
+        ]);
+
+        DB::table('users')->insert([
+            'id' => 20,
+            'name' => 'Minigames 1',
+            'username' => 'minigames_1',
+            'password' => bcrypt('minigames_1'),
+            'role' => 'game',
+            'created_at' => \Carbon\Carbon::now(),
+            'updated_at' => \Carbon\Carbon::now()
+        ]);
+
+        DB::table('users')->insert([
+            'id' => 21,
+            'name' => 'Minigames 2',
+            'username' => 'minigames_2',
+            'password' => bcrypt('minigames_2'),
+            'role' => 'game',
+            'created_at' => \Carbon\Carbon::now(),
+            'updated_at' => \Carbon\Carbon::now()
+        ]);
+
+        DB::table('users')->insert([
+            'id' => 22,
+            'name' => 'Minigames 3',
+            'username' => 'minigames_3',
+            'password' => bcrypt('minigames_3'),
+            'role' => 'game',
+            'created_at' => \Carbon\Carbon::now(),
+            'updated_at' => \Carbon\Carbon::now()
+        ]);
+
+        DB::table('users')->insert([
+            'id' => 23,
+            'name' => 'Minigames 4',
+            'username' => 'minigames_4',
+            'password' => bcrypt('minigames_4'),
+            'role' => 'game',
+            'created_at' => \Carbon\Carbon::now(),
+            'updated_at' => \Carbon\Carbon::now()
+        ]);
+
+        DB::table('users')->insert([
+            'id' => 24,
+            'name' => 'Minigames 5',
+            'username' => 'minigames_5',
+            'password' => bcrypt('minigames_5'),
+            'role' => 'game',
+            'created_at' => \Carbon\Carbon::now(),
+            'updated_at' => \Carbon\Carbon::now()
+        ]);
+
+        DB::table('users')->insert([
+            'id' => 25,
+            'name' => 'Minigames 6',
+            'username' => 'minigames_6',
+            'password' => bcrypt('minigames_6'),
+            'role' => 'game',
+            'created_at' => \Carbon\Carbon::now(),
+            'updated_at' => \Carbon\Carbon::now()
+        ]);
+
+        DB::table('users')->insert([
+            'id' => 26,
+            'name' => 'Minigames 7',
+            'username' => 'minigames_7',
+            'password' => bcrypt('minigames_7'),
+            'role' => 'game',
+            'created_at' => \Carbon\Carbon::now(),
+            'updated_at' => \Carbon\Carbon::now()
+        ]);
+
+        DB::table('users')->insert([
+            'id' => 27,
+            'name' => 'Minigames 8',
+            'username' => 'minigames_8',
+            'password' => bcrypt('minigames_8'),
+            'role' => 'game',
+            'created_at' => \Carbon\Carbon::now(),
+            'updated_at' => \Carbon\Carbon::now()
+        ]);
+
+        DB::table('users')->insert([
+            'id' => 28,
+            'name' => 'Minigames 9',
+            'username' => 'minigames_9',
+            'password' => bcrypt('minigames_9'),
+            'role' => 'game',
             'created_at' => \Carbon\Carbon::now(),
             'updated_at' => \Carbon\Carbon::now()
         ]);

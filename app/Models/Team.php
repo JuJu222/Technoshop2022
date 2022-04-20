@@ -18,4 +18,8 @@ class Team extends Model
     public function point() {
         return $this->hasMany(Point::class);
     }
+
+    public function game() {
+        return $this->hasMany(Game::class);
+    }
 }
