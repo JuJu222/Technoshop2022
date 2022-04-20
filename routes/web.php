@@ -3,6 +3,7 @@
 use App\Http\Controllers\GameController;
 use App\Http\Controllers\JudgeController;
 use App\Http\Controllers\TeamController;
+use App\Models\Game;
 use App\Models\Judge;
 use App\Models\Team;
 use App\Models\User;
@@ -64,8 +65,29 @@ Route::get('/', function () {
 
             return view('home', compact('team'));
         } else {
-            $user = Auth::user();
+            $user = User::with('game')->where('id', Auth::id())->first();
             $teams = Team::query()->with('user')->get();
+
+            foreach ($teams as $team) {
+                if (Game::query()->where('user_id', Auth::id())->where('team_id', $team->id)->exists()) {
+                    $game = Game::query()->where('user_id', Auth::id())->where('team_id', $team->id)->first();
+                    $team->start_at = $game->start_at;
+                    if ($game->finish_at) {
+                        $team->finish_at = $game->finish_at;
+                        $s = \Carbon\Carbon::createFromFormat('Y-m-d H:i:s', $game->start_at);
+                        $f = \Carbon\Carbon::createFromFormat('Y-m-d H:i:s', $game->finish_at);
+                        $team->delta = gmdate('H:i:s', $f->diffInSeconds($s));
+                    } else {
+                        $team->finish_at = null;
+                        $team->delta = null;
+                    }
+                } else {
+                    $team->start_at = null;
+                    $team->finish_at = null;
+                    $team->delta = null;
+                }
+            }
+            
             return view('home', compact('user', 'teams'));
         }
     } else {

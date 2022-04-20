@@ -32,7 +32,16 @@
                                 <p class="text-xs">{{ team.members }}</p>
                             </div>
                             <div class="w-full flex align-items-center justify-content-end pr-4 mb-2">
-                                <a :href="'/log/'+team.id" class="block text-center w-32 border rounded-md px-3 sm:px-16 py-3 bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50">Log</a>
+                                <span v-if="team.delta" class="block text-center w-32 border rounded-md px-3 sm:px-16 py-3 bg-gray-300 text-gray-500 disabled focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50">Log</span>
+                                <a v-else :href="'/log/'+team.id" class="block text-center w-32 border rounded-md px-3 sm:px-16 py-3 bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50">Log</a>
+                            </div>
+                        </div>
+                        <div v-if="team.start_at" class="flex flex-row">
+                            <div v-if="team.delta" class="px-2 py-2 items-center max-h-max flex">
+                                <p class="text-xs align-items-center">Time Taken: {{ team.delta }}</p>
+                            </div>
+                            <div class="px-2 py-2 items-center max-h-max flex">
+                                <p class="text-xs align-items-center">({{ team.start_at }} -> {{ team.finish_at }})</p>
                             </div>
                         </div>
                     </div>

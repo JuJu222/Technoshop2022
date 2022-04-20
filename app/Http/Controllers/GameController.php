@@ -44,10 +44,12 @@ class GameController extends Controller
                 return redirect()->to('/log_result')->with(['message' => $message, 'team' => $team]);
             } else {
                 $team['finish_at'] = '-';
+                $team['delta'] = '-';
             }
         } else {
             $team['start_at'] = '-';
             $team['finish_at'] = '-';
+            $team['delta'] = '-';
         }
         return view('game_log', compact('team'));
     }
@@ -94,10 +96,12 @@ class GameController extends Controller
                 $team['delta'] = gmdate('H:i:s', $f->diffInSeconds($s));
             } else {
                 $team['finish_at'] = '-';
+                $team['delta'] = '-';
             }
         } else {
             $team['start_at'] = '-';
             $team['finish_at'] = '-';
+            $team['delta'] = '-';
         }
 
         return redirect()->to('/log_result')->with(['message' => $message, 'team' => $team]);

@@ -6316,6 +6316,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -60043,18 +60052,78 @@ var render = function () {
                               "w-full flex align-items-center justify-content-end pr-4 mb-2",
                           },
                           [
-                            _c(
-                              "a",
-                              {
-                                staticClass:
-                                  "block text-center w-32 border rounded-md px-3 sm:px-16 py-3 bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50",
-                                attrs: { href: "/log/" + team.id },
-                              },
-                              [_vm._v("Log")]
-                            ),
+                            team.delta
+                              ? _c(
+                                  "span",
+                                  {
+                                    staticClass:
+                                      "block text-center w-32 border rounded-md px-3 sm:px-16 py-3 bg-gray-300 text-gray-500 disabled focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50",
+                                  },
+                                  [_vm._v("Log")]
+                                )
+                              : _c(
+                                  "a",
+                                  {
+                                    staticClass:
+                                      "block text-center w-32 border rounded-md px-3 sm:px-16 py-3 bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50",
+                                    attrs: { href: "/log/" + team.id },
+                                  },
+                                  [_vm._v("Log")]
+                                ),
                           ]
                         ),
                       ]),
+                      _vm._v(" "),
+                      team.start_at
+                        ? _c("div", { staticClass: "flex flex-row" }, [
+                            team.delta
+                              ? _c(
+                                  "div",
+                                  {
+                                    staticClass:
+                                      "px-2 py-2 items-center max-h-max flex",
+                                  },
+                                  [
+                                    _c(
+                                      "p",
+                                      {
+                                        staticClass:
+                                          "text-xs align-items-center",
+                                      },
+                                      [
+                                        _vm._v(
+                                          "Time Taken: " + _vm._s(team.delta)
+                                        ),
+                                      ]
+                                    ),
+                                  ]
+                                )
+                              : _vm._e(),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "px-2 py-2 items-center max-h-max flex",
+                              },
+                              [
+                                _c(
+                                  "p",
+                                  { staticClass: "text-xs align-items-center" },
+                                  [
+                                    _vm._v(
+                                      "(" +
+                                        _vm._s(team.start_at) +
+                                        " -> " +
+                                        _vm._s(team.finish_at) +
+                                        ")"
+                                    ),
+                                  ]
+                                ),
+                              ]
+                            ),
+                          ])
+                        : _vm._e(),
                     ]
                   ),
                 ]
