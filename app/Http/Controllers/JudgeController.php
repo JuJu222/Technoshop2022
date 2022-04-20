@@ -33,31 +33,62 @@ class JudgeController extends Controller
      */
     public function judgeGet(Request $request, $id)
     {
-        $team = DB::table('points')
-            ->rightJoin(
-                'teams',
-                'teams.id',
-                '=',
-                'team_id')
-            ->join(
-                'users',
-                'users.id',
-                '=',
-                'user_id')
-            ->selectRaw('teams.id, name, mentors, members,
+        $judge = Judge::query()->where('user_id', Auth::id())->first();
+
+        if (Point::query()->where('judge_id', $judge->id)->where('team_id', $id)->exists()) {
+            $teamName = Team::query()->with('user')->where('teams.id', $id)->first()->user->name;
+            $team = DB::table('points')
+                ->rightJoin(
+                    'teams',
+                    'teams.id',
+                    '=',
+                    'team_id')
+                ->join(
+                    'users',
+                    'users.id',
+                    '=',
+                    'user_id')
+                ->selectRaw('teams.id, name, mentors, members,
                 CAST(COALESCE(AVG(prototype), 0) AS DECIMAL(3,1)) AS prototype,
                 CAST(COALESCE(AVG(idea), 0) AS DECIMAL(3,1)) AS idea,
                 CAST(COALESCE(SUM(investment), 0) AS SIGNED INTEGER) AS investment')
-            ->where('teams.id', $id)
-            ->groupBy('teams.id')
-            ->groupBy('name')
-            ->groupBy('mentors')
-            ->groupBy('members')
-            ->first();
-        $team = json_encode($team);
-        $judge = Judge::with('user')->where('user_id', Auth::id())->first();
+                ->where('teams.id', $id)
+                ->groupBy('teams.id')
+                ->groupBy('name')
+                ->groupBy('mentors')
+                ->groupBy('members')
+                ->first();
+            $team = json_encode($team);
+            $message = 'You have already given points and scores to ' . $teamName;
+            $query = Point::query()->where('judge_id', $judge->id)->where('team_id', $id)->first();
+            return redirect()->to('/judge_result')->with(['team' => $team, 'judge' => $judge, 'query' => $query, 'message' => $message]);
+        } else {
+            $team = DB::table('points')
+                ->rightJoin(
+                    'teams',
+                    'teams.id',
+                    '=',
+                    'team_id')
+                ->join(
+                    'users',
+                    'users.id',
+                    '=',
+                    'user_id')
+                ->selectRaw('teams.id, name, mentors, members,
+                CAST(COALESCE(AVG(prototype), 0) AS DECIMAL(3,1)) AS prototype,
+                CAST(COALESCE(AVG(idea), 0) AS DECIMAL(3,1)) AS idea,
+                CAST(COALESCE(SUM(investment), 0) AS SIGNED INTEGER) AS investment')
+                ->where('teams.id', $id)
+                ->groupBy('teams.id')
+                ->groupBy('name')
+                ->groupBy('mentors')
+                ->groupBy('members')
+                ->first();
+            $team = json_encode($team);
+            $judge = Judge::with('user')->where('user_id', Auth::id())->first();
 
-        return view('judge', compact('team', 'judge'));
+            return view('judge', compact('team', 'judge'));
+        }
     }
 
     /**

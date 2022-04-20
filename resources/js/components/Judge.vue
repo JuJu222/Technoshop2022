@@ -27,7 +27,7 @@
                         <number-input controls size="large" :min="1" :max="10" @change="onChange2"></number-input>
                     </div>
                     <div class="mt-8">
-                        <button :disabled="buttonDisabled" type="submit" class="focus:ring-2 focus:ring-offset-2 disabled:!bg-gray-300 disabled:!text-gray-400 focus:ring-indigo-700 text-sm font-semibold leading-none text-white focus:outline-none bg-indigo-700 border rounded hover:bg-indigo-600 py-4 w-full">Login</button>
+                        <button :disabled="buttonDisabled" type="submit" class="focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 text-sm font-semibold leading-none text-white focus:outline-none bg-indigo-700 border rounded hover:bg-indigo-600 py-4 w-full">Submit</button>
                     </div>
                 </form>
             </div>

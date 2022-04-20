@@ -40,6 +40,8 @@ class GameController extends Controller
                 $s = \Carbon\Carbon::createFromFormat('Y-m-d H:i:s', $game->start_at);
                 $f = \Carbon\Carbon::createFromFormat('Y-m-d H:i:s', $game->finish_at);
                 $team['delta'] = gmdate('H:i:s', $f->diffInSeconds($s));
+                $message = 'You have already logged ' . $team->user->name . "'s time!";
+                return redirect()->to('/log_result')->with(['message' => $message, 'team' => $team]);
             } else {
                 $team['finish_at'] = '-';
             }
@@ -69,7 +71,7 @@ class GameController extends Controller
 
                 $message = 'You have succesfully logged ' . $teamName . ' finish time';
             } else {
-                $message = $teamName . "'s time is already logged!";
+                $message = 'You have already logged ' . $teamName . "'s time!";
             }
         } else {
             $message = 'You have succesfully logged ' . $teamName . ' start time';

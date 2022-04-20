@@ -60142,7 +60142,7 @@ var render = function () {
     "div",
     {
       staticClass:
-        "flex items-center flex-col justify-center lg:flex-row py-28 px-6 md:px-24 md:py-20 lg:py-32 gap-16 lg:gap-28",
+        "flex items-center flex-col justify-center lg:flex-row pt-10 px-3 md:px-24 md:pt-20 gap-16 lg:gap-28",
     },
     [
       _c(
@@ -60396,7 +60396,7 @@ var render = function () {
           "div",
           {
             staticClass:
-              "relative z-10 container mx-auto pt-6 lg:px-20 md:px-6 px-2",
+              "relative z-10 container mx-auto pt-6 lg:px-20 md:px-6 px-1",
           },
           [
             _c(
@@ -60616,7 +60616,7 @@ var render = function () {
           "div",
           {
             staticClass:
-              "relative z-10 container mx-auto pt-6 lg:px-20 md:px-6 px-2",
+              "relative z-10 container mx-auto pt-6 lg:px-20 md:px-6 px-1",
           },
           [
             _c(
@@ -61351,10 +61351,10 @@ var render = function () {
                     "button",
                     {
                       staticClass:
-                        "focus:ring-2 focus:ring-offset-2 disabled:!bg-gray-300 disabled:!text-gray-400 focus:ring-indigo-700 text-sm font-semibold leading-none text-white focus:outline-none bg-indigo-700 border rounded hover:bg-indigo-600 py-4 w-full",
+                        "focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 text-sm font-semibold leading-none text-white focus:outline-none bg-indigo-700 border rounded hover:bg-indigo-600 py-4 w-full",
                       attrs: { disabled: _vm.buttonDisabled, type: "submit" },
                     },
-                    [_vm._v("Login")]
+                    [_vm._v("Submit")]
                   ),
                 ]),
               ]
@@ -61392,7 +61392,7 @@ var render = function () {
     "div",
     {
       staticClass:
-        "flex items-center flex-col justify-center lg:flex-row py-28 px-6 md:px-24 md:py-20 lg:py-32 gap-16 lg:gap-28",
+        "flex items-center flex-col justify-center lg:flex-row pt-10 px-3 md:px-24 md:pt-20 gap-16 lg:gap-28",
     },
     [
       _c(
