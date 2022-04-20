@@ -21,7 +21,7 @@
                     </div>
                 </div>
             </div>
-            <div class="relative z-10 container mx-auto pt-6 lg:px-20 md:px-6 px-2">
+            <div class="relative z-10 container mx-auto pt-6 lg:px-20 md:px-6 px-1">
                 <h1 class="text-purple text-2xl md:text-3xl mb-3 fw-bold mx-auto max-w-max">Or use the list below if you are having problems: </h1>
                 <div v-for="(team, index) in teams" :key="team.id" class="md:!mb-5 mb-3 text-xs flex flex-row w-full">
                     <div class="px-2 py-2 items-center bg-white rounded-lg shadow-lg w-full">
