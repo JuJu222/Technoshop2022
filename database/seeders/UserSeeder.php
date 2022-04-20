@@ -149,7 +149,7 @@ class UserSeeder extends Seeder
             'user_id' => 7,
             'field' => 'Edu Tech, Retail, SaaS, & Angel Investor',
             'about' => 'I like business ideas that are out of the box and i like it even more when they make tons of money.',
-            'img_portrait' => 'bu_laura.png',
+            'img_portrait' => 'bu_laura/bu_laura.png',
             'img_portfolio' => 'bu_laura/portfolio_bu_laura.png',
             'created_at' => \Carbon\Carbon::now(),
             'updated_at' => \Carbon\Carbon::now()

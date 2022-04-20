@@ -6013,91 +6013,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "Footer"
 });
@@ -59372,164 +59287,66 @@ var render = function () {
                     "div",
                     {
                       staticClass:
-                        "flex justify-center sm:justify-center xl:justify-end space-x-6 pr-2 xl:pr-0 lg:pr-0 md:pr-0 sm:pr-0",
+                        "flex justify-center sm:justify-center xl:justify-end space-x-6",
                     },
                     [
                       _c("div", [
-                        _c("a", { attrs: { href: "javascript:void(0)" } }, [
-                          _c(
-                            "svg",
-                            {
-                              staticClass: "feather feather-twitter",
-                              attrs: {
-                                "aria-label": "Twitter",
-                                xmlns: "http://www.w3.org/2000/svg",
-                                width: "24",
-                                height: "24",
-                                viewBox: "0 0 24 24",
-                                fill: "none",
-                                stroke: "#718096",
-                                "stroke-width": "1.5",
-                                "stroke-linecap": "round",
-                                "stroke-linejoin": "round",
-                              },
+                        _c(
+                          "a",
+                          {
+                            attrs: {
+                              href: "https://www.instagram.com/uc_imtsu/",
+                              target: "_blank",
                             },
-                            [
-                              _c("path", {
+                          },
+                          [
+                            _c(
+                              "svg",
+                              {
+                                staticClass: "feather feather-instagram",
                                 attrs: {
-                                  d: "M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z",
+                                  "aria-label": "Instagram",
+                                  xmlns: "http://www.w3.org/2000/svg",
+                                  width: "24",
+                                  height: "24",
+                                  viewBox: "0 0 24 24",
+                                  fill: "none",
+                                  stroke: "#718096",
+                                  "stroke-width": "1.5",
+                                  "stroke-linecap": "round",
+                                  "stroke-linejoin": "round",
                                 },
-                              }),
-                            ]
-                          ),
-                        ]),
-                      ]),
-                      _vm._v(" "),
-                      _c("div", [
-                        _c("a", { attrs: { href: "javascript:void(0)" } }, [
-                          _c(
-                            "svg",
-                            {
-                              staticClass: "feather feather-instagram",
-                              attrs: {
-                                "aria-label": "Instagram",
-                                xmlns: "http://www.w3.org/2000/svg",
-                                width: "24",
-                                height: "24",
-                                viewBox: "0 0 24 24",
-                                fill: "none",
-                                stroke: "#718096",
-                                "stroke-width": "1.5",
-                                "stroke-linecap": "round",
-                                "stroke-linejoin": "round",
                               },
-                            },
-                            [
-                              _c("rect", {
-                                attrs: {
-                                  x: "2",
-                                  y: "2",
-                                  width: "20",
-                                  height: "20",
-                                  rx: "5",
-                                  ry: "5",
-                                },
-                              }),
-                              _vm._v(" "),
-                              _c("path", {
-                                attrs: {
-                                  d: "M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z",
-                                },
-                              }),
-                              _vm._v(" "),
-                              _c("line", {
-                                attrs: {
-                                  x1: "17.5",
-                                  y1: "6.5",
-                                  x2: "17.51",
-                                  y2: "6.5",
-                                },
-                              }),
-                            ]
-                          ),
-                        ]),
-                      ]),
-                      _vm._v(" "),
-                      _c("div", [
-                        _c("a", { attrs: { href: "javascript:void(0)" } }, [
-                          _c(
-                            "svg",
-                            {
-                              staticClass:
-                                "icon icon-tabler icon-tabler-dribbble",
-                              attrs: {
-                                "aria-label": "Dribble",
-                                xmlns: "http://www.w3.org/2000/svg",
-                                width: "24",
-                                height: "24",
-                                viewBox: "0 0 24 24",
-                                "stroke-width": "1.5",
-                                stroke: "#718096",
-                                fill: "none",
-                                "stroke-linecap": "round",
-                                "stroke-linejoin": "round",
-                              },
-                            },
-                            [
-                              _c("path", {
-                                attrs: { stroke: "none", d: "M0 0h24v24H0z" },
-                              }),
-                              _vm._v(" "),
-                              _c("circle", {
-                                attrs: { cx: "12", cy: "12", r: "9" },
-                              }),
-                              _vm._v(" "),
-                              _c("path", {
-                                attrs: { d: "M9 3.6c5 6 7 10.5 7.5 16.2" },
-                              }),
-                              _vm._v(" "),
-                              _c("path", {
-                                attrs: { d: "M6.4 19c3.5-3.5 6-6.5 14.5-6.4" },
-                              }),
-                              _vm._v(" "),
-                              _c("path", {
-                                attrs: {
-                                  d: "M3.1 10.75c5 0 9.814-.38 15.314-5",
-                                },
-                              }),
-                            ]
-                          ),
-                        ]),
-                      ]),
-                      _vm._v(" "),
-                      _c("div", [
-                        _c("a", { attrs: { href: "javascript:void(0)" } }, [
-                          _c(
-                            "svg",
-                            {
-                              staticClass: "feather feather-github",
-                              attrs: {
-                                "aria-label": "Github",
-                                xmlns: "http://www.w3.org/2000/svg",
-                                width: "24",
-                                height: "24",
-                                viewBox: "0 0 24 24",
-                                fill: "none",
-                                stroke: "#718096",
-                                "stroke-width": "1.5",
-                                "stroke-linecap": "round",
-                                "stroke-linejoin": "round",
-                              },
-                            },
-                            [
-                              _c("path", {
-                                attrs: {
-                                  d: "M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22",
-                                },
-                              }),
-                            ]
-                          ),
-                        ]),
+                              [
+                                _c("rect", {
+                                  attrs: {
+                                    x: "2",
+                                    y: "2",
+                                    width: "20",
+                                    height: "20",
+                                    rx: "5",
+                                    ry: "5",
+                                  },
+                                }),
+                                _vm._v(" "),
+                                _c("path", {
+                                  attrs: {
+                                    d: "M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z",
+                                  },
+                                }),
+                                _vm._v(" "),
+                                _c("line", {
+                                  attrs: {
+                                    x1: "17.5",
+                                    y1: "6.5",
+                                    x2: "17.51",
+                                    y2: "6.5",
+                                  },
+                                }),
+                              ]
+                            ),
+                          ]
+                        ),
                       ]),
                     ]
                   ),
@@ -59556,7 +59373,9 @@ var staticRenderFns = [
       [
         _c(
           "div",
-          { staticClass: "w-11/12 xl:w-3/6 lg:w-2/5 mx-auto lg:mx-0 xl:mx-0" },
+          {
+            staticClass: "md:w-11/12 xl:w-3/6 lg:w-2/5 lg:mx-0 xl:mx-0 w-full",
+          },
           [
             _c(
               "div",
@@ -59577,257 +59396,11 @@ var staticRenderFns = [
                 _vm._v(" "),
                 _c(
                   "p",
-                  { staticClass: "ml-3 font-bold text-xl hidden xl:block" },
+                  { staticClass: "ml-3 font-bold text-xl hidden md:block" },
                   [_vm._v("Technopreneurship Workshop 2022")]
                 ),
               ]
             ),
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass:
-              "w-11/12 xl:w-1/6 lg:w-2/5 mx-auto lg:mx-0 xl:mx-0 pt-3 xl:flex xl:justify-end  sm:pl-0",
-          },
-          [
-            _c("ul", [
-              _c(
-                "li",
-                { staticClass: "text-gray-800 font-bold text-xl mb-6" },
-                [_vm._v("Community")]
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                {
-                  staticClass:
-                    "text-base text-gray-600 hover:text-gray-700 mb-2",
-                },
-                [
-                  _c("a", { attrs: { href: "javascript:void(0)" } }, [
-                    _vm._v("About Us"),
-                  ]),
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                {
-                  staticClass:
-                    "text-base text-gray-600 hover:text-gray-700 mb-2",
-                },
-                [
-                  _c("a", { attrs: { href: "javascript:void(0)" } }, [
-                    _vm._v("Guidelines and how to"),
-                  ]),
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                {
-                  staticClass:
-                    "text-base text-gray-600 hover:text-gray-700 mb-2",
-                },
-                [
-                  _c("a", { attrs: { href: "javascript:void(0)" } }, [
-                    _vm._v("Quote from the best"),
-                  ]),
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                {
-                  staticClass:
-                    "text-base text-gray-600 hover:text-gray-700 mb-2",
-                },
-                [
-                  _c("a", { attrs: { href: "javascript:void(0)" } }, [
-                    _vm._v("How to start a blog"),
-                  ]),
-                ]
-              ),
-            ]),
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass:
-              "w-11/12 xl:w-1/6 lg:w-2/5 mx-auto lg:mx-0 xl:mx-0 pt-3 xl:flex xl:justify-end  sm:pl-0",
-          },
-          [
-            _c("ul", [
-              _c(
-                "li",
-                { staticClass: "text-gray-800 font-bold text-xl mb-6" },
-                [_vm._v("Getting Started")]
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                {
-                  staticClass:
-                    "text-base text-gray-600 hover:text-gray-700 mb-2",
-                },
-                [
-                  _c("a", { attrs: { href: "javascript:void(0)" } }, [
-                    _vm._v("About Us"),
-                  ]),
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                {
-                  staticClass:
-                    "text-base text-gray-600 hover:text-gray-700 mb-2",
-                },
-                [
-                  _c("a", { attrs: { href: "javascript:void(0)" } }, [
-                    _vm._v("Guidelines and how to"),
-                  ]),
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                {
-                  staticClass:
-                    "text-base text-gray-600 hover:text-gray-700 mb-2",
-                },
-                [
-                  _c("a", { attrs: { href: "javascript:void(0)" } }, [
-                    _vm._v("Quote from the best"),
-                  ]),
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                {
-                  staticClass:
-                    "text-base text-gray-600 hover:text-gray-700 mb-2",
-                },
-                [
-                  _c("a", { attrs: { href: "javascript:void(0)" } }, [
-                    _vm._v("How to start a blog"),
-                  ]),
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                {
-                  staticClass:
-                    "text-base text-gray-600 hover:text-gray-700 mb-2",
-                },
-                [
-                  _c("a", { attrs: { href: "javascript:void(0)" } }, [
-                    _vm._v("Quote from the best"),
-                  ]),
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                {
-                  staticClass:
-                    "text-base text-gray-600 hover:text-gray-700 mb-2",
-                },
-                [
-                  _c("a", { attrs: { href: "javascript:void(0)" } }, [
-                    _vm._v("Guidelines and how to"),
-                  ]),
-                ]
-              ),
-            ]),
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass:
-              "w-11/12 xl:w-1/6 lg:w-2/5 mx-auto lg:mx-0 xl:mx-0 pt-3 xl:flex xl:justify-end  sm:pl-0",
-          },
-          [
-            _c("ul", [
-              _c(
-                "li",
-                { staticClass: "text-gray-800 font-bold text-xl mb-6" },
-                [_vm._v("Resources")]
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                {
-                  staticClass:
-                    "text-base text-gray-600 hover:text-gray-700 mb-2",
-                },
-                [
-                  _c("a", { attrs: { href: "javascript:void(0)" } }, [
-                    _vm._v("Accessibility"),
-                  ]),
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                {
-                  staticClass:
-                    "text-base text-gray-600 hover:text-gray-700 mb-2",
-                },
-                [
-                  _c("a", { attrs: { href: "javascript:void(0)" } }, [
-                    _vm._v("Usability"),
-                  ]),
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                {
-                  staticClass:
-                    "text-base text-gray-600 hover:text-gray-700 mb-2",
-                },
-                [
-                  _c("a", { attrs: { href: "javascript:void(0)" } }, [
-                    _vm._v("Marketplace"),
-                  ]),
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                {
-                  staticClass:
-                    "text-base text-gray-600 hover:text-gray-700 mb-2",
-                },
-                [
-                  _c("a", { attrs: { href: "javascript:void(0)" } }, [
-                    _vm._v("Design & Dev"),
-                  ]),
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                {
-                  staticClass:
-                    "text-base text-gray-600 hover:text-gray-700 mb-2",
-                },
-                [
-                  _c("a", { attrs: { href: "javascript:void(0)" } }, [
-                    _vm._v("Marketplace"),
-                  ]),
-                ]
-              ),
-            ]),
           ]
         ),
       ]
@@ -59839,10 +59412,13 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
-      { staticClass: "w-11/12 xl:w-2/6 mx-auto lg:mx-0 xl:mx-0 mb-6 xl:mb-0" },
+      {
+        staticClass:
+          "w-11/12 xl:w-2/6 mx-auto lg:mx-0 xl:mx-0 mb-6 xl:mb-0 sm:text-center xl:text-base",
+      },
       [
         _c("p", { staticClass: "text-gray-800" }, [
-          _vm._v("2022 SU IMT Universitas Ciputra. All Rights Reserved"),
+          _vm._v("2022 SU IMT Universitas Ciputra"),
         ]),
       ]
     )
@@ -59868,9 +59444,18 @@ var staticRenderFns = [
                 staticClass:
                   "text-gray-800 hover:text-gray-900 text-base mb-4 sm:mb-0",
               },
+              [_c("a", { attrs: { href: "/" } }, [_vm._v("Home")])]
+            ),
+            _vm._v(" "),
+            _c(
+              "li",
+              {
+                staticClass:
+                  "text-gray-800 hover:text-gray-900 text-base mb-4 sm:mb-0",
+              },
               [
-                _c("a", { attrs: { href: "javascript:void(0)" } }, [
-                  _vm._v("Terms of service"),
+                _c("a", { attrs: { href: "/leaderboard" } }, [
+                  _vm._v("Leaderboard"),
                 ]),
               ]
             ),
@@ -59882,8 +59467,8 @@ var staticRenderFns = [
                   "text-gray-800 hover:text-gray-900 text-base mb-4 sm:mb-0",
               },
               [
-                _c("a", { attrs: { href: "javascript:void(0)" } }, [
-                  _vm._v("Privacy Policy"),
+                _c("a", { attrs: { href: "/investors" } }, [
+                  _vm._v("Investors"),
                 ]),
               ]
             ),
@@ -59894,24 +59479,7 @@ var staticRenderFns = [
                 staticClass:
                   "text-gray-800 hover:text-gray-900 text-base mb-4 sm:mb-0",
               },
-              [
-                _c("a", { attrs: { href: "javascript:void(0)" } }, [
-                  _vm._v("Security"),
-                ]),
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "li",
-              {
-                staticClass:
-                  "text-gray-800 hover:text-gray-900 text-base mb-4 sm:mb-0",
-              },
-              [
-                _c("a", { attrs: { href: "javascript:void(0)" } }, [
-                  _vm._v("Sitemap"),
-                ]),
-              ]
+              [_c("a", { attrs: { href: "/map" } }, [_vm._v("Map")])]
             ),
           ]
         ),
