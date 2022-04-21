@@ -59936,11 +59936,11 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
-      { staticClass: "w-full lg:w-1/2 h-full lg:pr-10 xl:pr-0 mb-10 lg:mb-0" },
+      { staticClass: "w-full lg:w-1/2 h-full lg:pr-10 mb-10 lg:mb-0" },
       [
         _c("img", {
-          staticClass: "mx-auto w-100 md:w-3/5",
-          attrs: { src: "img/asset_1.png" },
+          staticClass: "mx-auto w-100 md:w-3/5 drop-shadow-xl",
+          attrs: { src: "img/technoshop_img.png" },
         }),
       ]
     )
@@ -60005,10 +60005,7 @@ var render = function () {
             _vm._v(" "),
             _c(
               "div",
-              {
-                staticClass:
-                  "w-full lg:w-1/2 h-full lg:pr-10 xl:pr-0 mb-10 lg:mb-0",
-              },
+              { staticClass: "w-full lg:w-1/2 h-full lg:pl-10 mb-10 lg:mb-0" },
               [
                 _c("div", [
                   _c(
@@ -60263,10 +60260,7 @@ var render = function () {
             _vm._v(" "),
             _c(
               "div",
-              {
-                staticClass:
-                  "w-full lg:w-1/2 h-full lg:pr-10 xl:pr-0 mb-10 lg:mb-0",
-              },
+              { staticClass: "w-full lg:w-1/2 h-full lg:pl-10 mb-10 lg:mb-0" },
               [
                 _c("div", [
                   _c(
@@ -60558,10 +60552,7 @@ var render = function () {
             _vm._v(" "),
             _c(
               "div",
-              {
-                staticClass:
-                  "w-full lg:w-1/2 h-full lg:pr-10 xl:pr-0 mb-10 lg:mb-0",
-              },
+              { staticClass: "w-full lg:w-1/2 h-full lg:pl-10 mb-10 lg:mb-0" },
               [
                 _c(
                   "div",

@@ -7,7 +7,7 @@
                     <h1 class="text-purple text-4xl md:text-7xl mb-8 fw-bold">Welcome, {{ user.name }}</h1>
                     <p class="text-gray-800 font-regular mb-8 text-base">Please use the QR scanner to scan a team's QR code and log their time. You can also use any QR code scanner on your phone (Note: The QR code must have the logo of IMT SU).</p>
                 </div>
-                <div class="w-full lg:w-1/2 h-full lg:pr-10 xl:pr-0 mb-10 lg:mb-0">
+                <div class="w-full lg:w-1/2 h-full lg:pl-10 mb-10 lg:mb-0">
                     <div>
                         <button @click="openModal" class="block w-full text-center my-4 border rounded-md px-3 sm:px-16 py-3 bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50">Show QR Scanner</button>
                     </div>

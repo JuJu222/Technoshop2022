@@ -9,7 +9,7 @@
                     <h1 class="text-purple text-4xl md:text-7xl mb-8 fw-bold">Welcome, {{ judge.name }}</h1>
                     <p class="text-gray-800 font-regular mb-8 text-base">Please use the QR scanner to scan a team's QR code whom you want to invest in and input their scores and the amount of coins to invest. You can also use any QR code scanner on your phone (Note: The QR code must have the logo of UC).</p>
                 </div>
-                <div class="w-full lg:w-1/2 h-full lg:pr-10 xl:pr-0 mb-10 lg:mb-0">
+                <div class="w-full lg:w-1/2 h-full lg:pl-10 mb-10 lg:mb-0">
                     <div>
                         <h1 class="text-purple text-2xl md:text-3xl mb-3 fw-bold">Your remaining coins: </h1>
                         <div class="bg-white py-4 px-4 flex flex-col sm:flex-row justify-start sm:justify-between items-start sm:items-center shadow-lg rounded-lg">

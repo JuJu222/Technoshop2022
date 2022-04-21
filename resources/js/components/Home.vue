@@ -4,8 +4,8 @@
     <section>
         <div class="w-full relative px-6 xl:!px-20">
             <div class="pt-10 lg:pt-20 lg:flex items-center relative z-10 container mx-auto">
-                <div class="w-full lg:w-1/2 h-full lg:pr-10 xl:pr-0 mb-10 lg:mb-0">
-                    <img class="mx-auto w-100 md:w-3/5" src="img/asset_1.png" />
+                <div class="w-full lg:w-1/2 h-full lg:pr-10 mb-10 lg:mb-0">
+                    <img class="mx-auto w-100 md:w-3/5 drop-shadow-xl" src="img/technoshop_img.png" />
                 </div>
                 <div class="w-full lg:w-1/2 h-full">
                     <p class="uppercase text-2xl mb-4">Universitas Ciputra - SU IMT</p>
