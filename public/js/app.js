@@ -59781,7 +59781,7 @@ var render = function () {
     [
       _c(
         "div",
-        { staticClass: "w-full lg:w-1/2" },
+        { staticClass: "w-full sm:w-1/2" },
         [
           _c(
             "h1",
@@ -61311,7 +61311,7 @@ var render = function () {
     [
       _c(
         "div",
-        { staticClass: "w-full lg:w-1/2" },
+        { staticClass: "w-full sm:w-1/2" },
         [
           _c(
             "h1",

@@ -1,6 +1,6 @@
 <template>
     <div class="flex items-center flex-col justify-center lg:flex-row pt-10 px-3 md:px-24 md:pt-20 gap-16 lg:gap-28">
-        <div class="w-full lg:w-1/2">
+        <div class="w-full sm:w-1/2">
             <h1 class="py-4 text-3xl lg:text-4xl font-extrabold text-gray-800">{{ message }}</h1>
             <p v-if="query" class="text-base text-gray-800">Your prototype score: {{ query.prototype }}</p>
             <p v-if="query" class="py-1 text-base text-gray-800">Your idea score: {{ query.idea }}</p>
