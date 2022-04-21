@@ -38,7 +38,7 @@
                                 <p class="text-xs">{{ team.members }}</p>
                             </div>
                             <div class="w-full flex align-items-center justify-content-end pr-4 mb-2">
-                                <span v-if="team.investment" class="block text-center w-32 border rounded-md px-3 sm:px-16 py-3 bg-gray-300 text-gray-500 disabled focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50">Invest</span>
+                                <span v-if="team.investment || judge.judge.points < 1" class="block text-center w-32 border rounded-md px-3 sm:px-16 py-3 bg-gray-300 text-gray-500 disabled focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50">Invest</span>
                                 <a v-else :href="'/judge/'+team.id" class="block text-center w-32 border rounded-md px-3 sm:px-16 py-3 bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50">Invest</a>
                             </div>
                         </div>
