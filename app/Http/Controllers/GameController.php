@@ -68,7 +68,7 @@ class GameController extends Controller
             $game = Game::query()->where('user_id', Auth::id())->where('team_id', $id)->first();
             if ($game->finish_at == null) {
                 $game->update([
-                    'finish_at' => Carbon::now()
+                    'finish_at' => Carbon::now()->timezone('Asia/Jakarta')
                 ]);
 
                 $message = 'You have succesfully logged ' . $teamName . ' finish time';
@@ -80,7 +80,7 @@ class GameController extends Controller
             $query = Game::query()->create([
                 'user_id' => Auth::id(),
                 'team_id' => $id,
-                'start_at' => Carbon::now(),
+                'start_at' => Carbon::now()->timezone('Asia/Jakarta'),
             ]);
         }
 
