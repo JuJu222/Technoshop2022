@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('user_id');
             $table->foreignId('team_id');
-            $table->timestamp('start_at');
+            $table->timestamp('start_at')->default('');
             $table->timestamp('finish_at')->nullable();
             $table->timestamps();
 
