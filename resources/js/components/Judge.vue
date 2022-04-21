@@ -12,17 +12,17 @@
                     <p tabindex="0" class="focus:outline-none text-2xl font-extrabold leading-6 text-gray-800">Enter coins and scores for {{ team.name }}</p>
                     <p class="focus:outline-none mt-2 text-xl font-medium leading-6 text-gray-800">Remaining Coins: <b>{{ judge.points }}</b></p>
                     <div class="mt-6 w-full">
-                        <label for="investment" class="text-sm font-medium leading-none text-gray-800">Investment (Min: 1 & Max: {{ judge.points }})</label>
+                        <label for="investment" class="text-sm font-medium leading-none text-gray-800">Investment (Give your coins, Min: 1 & Max: {{ judge.points }})</label>
                         <input hidden id="investment" type="number" class="border rounded text-xs font-medium leading-none placeholder-gray-800 text-gray-800 py-3 w-full pl-3 mt-2" name="investment" required autofocus>
                         <number-input controls size="large" :min="1" :max="judge.points" @change="onChange3"></number-input>
                     </div>
                     <div class="mt-6">
-                        <label for="prototype" class="text-sm font-medium leading-none text-gray-800">Prototype (Min: 1 & Max: 10)</label>
+                        <label for="prototype" class="text-sm font-medium leading-none text-gray-800">Prototype (Score from 1 - 10)</label>
                         <input hidden id="prototype" type="number" class="border rounded text-xs font-medium leading-none placeholder-gray-800 text-gray-800 py-3 w-full pl-3 mt-2" name="prototype" required autofocus>
                         <number-input controls size="large" :min="1" :max="10" @change="onChange1"></number-input>
                     </div>
                     <div class="mt-6 w-full">
-                        <label for="idea" class="text-sm font-medium leading-none text-gray-800">Idea (Min: 1 & Max: 10)</label>
+                        <label for="idea" class="text-sm font-medium leading-none text-gray-800">Idea (Score from 1 - 10)</label>
                         <input hidden id="idea" type="number" class="border rounded text-xs font-medium leading-none placeholder-gray-800 text-gray-800 py-3 w-full pl-3 mt-2" name="idea" required autofocus>
                         <number-input controls size="large" :min="1" :max="10" @change="onChange2"></number-input>
                     </div>

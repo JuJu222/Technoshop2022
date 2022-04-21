@@ -35,6 +35,11 @@ class JudgeController extends Controller
     {
         $judge = Judge::query()->where('user_id', Auth::id())->first();
 
+        if ($judge->points < 1) {
+            $message = 'You have 0 coins left';
+            return redirect()->to('/judge_result')->with(['message' => $message]);
+        }
+
         if (Point::query()->where('judge_id', $judge->id)->where('team_id', $id)->exists()) {
             $teamName = Team::query()->with('user')->where('teams.id', $id)->first()->user->name;
             $team = DB::table('points')

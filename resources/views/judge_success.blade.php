@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-    <judge-success :team="{{ $team }}" :judge="{{ $judge }}" :query="{{ $query }}" message="{{ $message }}"></judge-success>
+    @isset($team)
+        <judge-success :team="{{ $team }}" :judge="{{ $judge }}" :query="{{ $query }}" message="{{ $message }}"></judge-success>
+    @else
+        <judge-success message="{{ $message }}"></judge-success>
+    @endisset
 @endsection

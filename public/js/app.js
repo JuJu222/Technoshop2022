@@ -60456,11 +60456,7 @@ var render = function () {
                                 _c(
                                   "p",
                                   { staticClass: "text-xs align-items-center" },
-                                  [
-                                    _vm._v(
-                                      "Investment: " + _vm._s(team.investment)
-                                    ),
-                                  ]
+                                  [_vm._v("Coins: " + _vm._s(team.investment))]
                                 ),
                               ]
                             ),
@@ -61161,7 +61157,7 @@ var render = function () {
                       },
                       [
                         _vm._v(
-                          "Investment (Min: 1 & Max: " +
+                          "Investment (Give your coins, Min: 1 & Max: " +
                             _vm._s(_vm.judge.points) +
                             ")"
                         ),
@@ -61205,7 +61201,7 @@ var render = function () {
                           "text-sm font-medium leading-none text-gray-800",
                         attrs: { for: "prototype" },
                       },
-                      [_vm._v("Prototype (Min: 1 & Max: 10)")]
+                      [_vm._v("Prototype (Score from 1 - 10)")]
                     ),
                     _vm._v(" "),
                     _c("input", {
@@ -61240,7 +61236,7 @@ var render = function () {
                           "text-sm font-medium leading-none text-gray-800",
                         attrs: { for: "idea" },
                       },
-                      [_vm._v("Idea (Min: 1 & Max: 10)")]
+                      [_vm._v("Idea (Score from 1 - 10)")]
                     ),
                     _vm._v(" "),
                     _c("input", {
@@ -61326,23 +61322,33 @@ var render = function () {
             [_vm._v(_vm._s(_vm.message))]
           ),
           _vm._v(" "),
-          _c("p", { staticClass: "text-base text-gray-800" }, [
-            _vm._v("Your prototype score: " + _vm._s(_vm.query.prototype)),
-          ]),
+          _vm.query
+            ? _c("p", { staticClass: "text-base text-gray-800" }, [
+                _vm._v("Your prototype score: " + _vm._s(_vm.query.prototype)),
+              ])
+            : _vm._e(),
           _vm._v(" "),
-          _c("p", { staticClass: "py-1 text-base text-gray-800" }, [
-            _vm._v("Your idea score: " + _vm._s(_vm.query.idea)),
-          ]),
+          _vm.query
+            ? _c("p", { staticClass: "py-1 text-base text-gray-800" }, [
+                _vm._v("Your idea score: " + _vm._s(_vm.query.idea)),
+              ])
+            : _vm._e(),
           _vm._v(" "),
-          _c("p", { staticClass: "mb-4 text-base text-gray-800" }, [
-            _vm._v("Your coins: " + _vm._s(_vm.query.investment)),
-          ]),
+          _vm.query
+            ? _c("p", { staticClass: "mb-4 text-base text-gray-800" }, [
+                _vm._v("Your coins: " + _vm._s(_vm.query.investment)),
+              ])
+            : _vm._e(),
           _vm._v(" "),
-          _c("p", { staticClass: "py-1 text-base text-gray-800" }, [
-            _vm._v(_vm._s(_vm.team.name) + " current scores and coins: "),
-          ]),
+          _vm.team
+            ? _c("p", { staticClass: "py-1 text-base text-gray-800" }, [
+                _vm._v(_vm._s(_vm.team.name) + " current scores and coins: "),
+              ])
+            : _vm._e(),
           _vm._v(" "),
-          _c("LeaderboardCard", { attrs: { team: _vm.team } }),
+          _vm.team
+            ? _c("LeaderboardCard", { attrs: { team: _vm.team } })
+            : _vm._e(),
           _vm._v(" "),
           _c(
             "a",

@@ -53,7 +53,7 @@
                                 <p class="text-xs align-items-center">Prototype: {{ team.prototype }}</p>
                             </div>
                             <div class="px-2 py-2 items-center max-h-max flex">
-                                <p class="text-xs align-items-center">Investment: {{ team.investment }}</p>
+                                <p class="text-xs align-items-center">Coins: {{ team.investment }}</p>
                             </div>
                         </div>
                     </div>
