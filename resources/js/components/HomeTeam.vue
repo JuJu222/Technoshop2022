@@ -18,6 +18,37 @@
                     </div>
                 </div>
             </div>
+            <div class="relative z-10 container mx-auto pt-6 lg:px-20 md:px-6 px-1">
+                <h1 class="text-purple text-2xl md:text-3xl mb-3 fw-bold mx-auto max-w-max">Or use the list below if you are having problems: </h1>
+                <div v-for="(game, index) in team.games" :key="team.id" class="md:!mb-5 mb-3 text-xs flex flex-row w-full">
+                    <div class="px-2 py-2 items-center bg-white rounded-lg shadow-lg w-full">
+                        <div class="flex flex-row">
+                            <div class="px-2 py-2 items-center">
+                                <p class="text-lg sm:text-xl font-bold whitespace-nowrap">{{ game.name }}</p>
+                            </div>
+                            <div class="px-2 py-2 items-center max-h-max flex">
+                                <p class="text-xs align-items-center">{{ game.name }}</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-row">
+                            <div class="px-2 py-2 items-center">
+                                <p class="text-xs">{{ game.name }}</p>
+                            </div>
+                        </div>
+                        <div v-if="game.start_at" class="flex flex-row">
+                            <div v-if="game.delta" class="px-2 py-2 items-center max-h-max flex">
+                                <p class="text-xs align-items-center">Time Taken: {{ game.delta }}</p>
+                            </div>
+                            <div class="px-2 py-2 items-center max-h-max flex">
+                                <p class="text-xs align-items-center">Start: {{ game.start_at }}</p>
+                            </div>
+                            <div v-if="game.finish_at" class="px-2 py-2 items-center max-h-max flex">
+                                <p class="text-xs align-items-center">End: {{ game.finish_at }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <QrModal v-show="isModalVisibleJudge" @close-modal="closeModalJudge" :name="team.name" :type="'Investors'" :qr-code="team.qr_judge"/>
         <QrModal v-show="isModalVisibleGame" @close-modal="closeModalGame" :name="team.name" :type="'Minigames'" :qr-code="team.qr_game"/>

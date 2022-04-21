@@ -6501,6 +6501,37 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -12581,7 +12612,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* Top menu */\n.top-100[data-v-27a22972] {\n    -webkit-animation: slideDown-data-v-27a22972 0.5s ease-in-out;\n            animation: slideDown-data-v-27a22972 0.5s ease-in-out;\n}\n@-webkit-keyframes slideDown-data-v-27a22972 {\n0% {\n        top: -50%;\n}\n100% {\n        top: 0;\n}\n}\n@keyframes slideDown-data-v-27a22972 {\n0% {\n        top: -50%;\n}\n100% {\n        top: 0;\n}\n}\n*[data-v-27a22972] {\n    outline: none !important;\n    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\n    -webkit-tap-highlight-color: transparent;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* Top menu */\n.top-100[data-v-27a22972] {\n    -webkit-animation: slideDown-data-v-27a22972 0.5s ease-in-out;\n            animation: slideDown-data-v-27a22972 0.5s ease-in-out;\n}\n@-webkit-keyframes slideDown-data-v-27a22972 {\n0% {\n        top: -50%;\n}\n100% {\n        top: 0;\n}\n}\n@keyframes slideDown-data-v-27a22972 {\n0% {\n        top: -50%;\n}\n100% {\n        top: 0;\n}\n}\n*[data-v-27a22972] {\n    outline: none !important;\n    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\n    -webkit-tap-highlight-color: transparent;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -60580,6 +60611,144 @@ var render = function () {
               ]
             ),
           ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass:
+              "relative z-10 container mx-auto pt-6 lg:px-20 md:px-6 px-1",
+          },
+          [
+            _c(
+              "h1",
+              {
+                staticClass:
+                  "text-purple text-2xl md:text-3xl mb-3 fw-bold mx-auto max-w-max",
+              },
+              [_vm._v("Or use the list below if you are having problems: ")]
+            ),
+            _vm._v(" "),
+            _vm._l(_vm.team.games, function (game, index) {
+              return _c(
+                "div",
+                {
+                  key: _vm.team.id,
+                  staticClass: "md:!mb-5 mb-3 text-xs flex flex-row w-full",
+                },
+                [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "px-2 py-2 items-center bg-white rounded-lg shadow-lg w-full",
+                    },
+                    [
+                      _c("div", { staticClass: "flex flex-row" }, [
+                        _c("div", { staticClass: "px-2 py-2 items-center" }, [
+                          _c(
+                            "p",
+                            {
+                              staticClass:
+                                "text-lg sm:text-xl font-bold whitespace-nowrap",
+                            },
+                            [_vm._v(_vm._s(game.name))]
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "px-2 py-2 items-center max-h-max flex",
+                          },
+                          [
+                            _c(
+                              "p",
+                              { staticClass: "text-xs align-items-center" },
+                              [_vm._v(_vm._s(game.name))]
+                            ),
+                          ]
+                        ),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "flex flex-row" }, [
+                        _c("div", { staticClass: "px-2 py-2 items-center" }, [
+                          _c("p", { staticClass: "text-xs" }, [
+                            _vm._v(_vm._s(game.name)),
+                          ]),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      game.start_at
+                        ? _c("div", { staticClass: "flex flex-row" }, [
+                            game.delta
+                              ? _c(
+                                  "div",
+                                  {
+                                    staticClass:
+                                      "px-2 py-2 items-center max-h-max flex",
+                                  },
+                                  [
+                                    _c(
+                                      "p",
+                                      {
+                                        staticClass:
+                                          "text-xs align-items-center",
+                                      },
+                                      [
+                                        _vm._v(
+                                          "Time Taken: " + _vm._s(game.delta)
+                                        ),
+                                      ]
+                                    ),
+                                  ]
+                                )
+                              : _vm._e(),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "px-2 py-2 items-center max-h-max flex",
+                              },
+                              [
+                                _c(
+                                  "p",
+                                  { staticClass: "text-xs align-items-center" },
+                                  [_vm._v("Start: " + _vm._s(game.start_at))]
+                                ),
+                              ]
+                            ),
+                            _vm._v(" "),
+                            game.finish_at
+                              ? _c(
+                                  "div",
+                                  {
+                                    staticClass:
+                                      "px-2 py-2 items-center max-h-max flex",
+                                  },
+                                  [
+                                    _c(
+                                      "p",
+                                      {
+                                        staticClass:
+                                          "text-xs align-items-center",
+                                      },
+                                      [_vm._v("End: " + _vm._s(game.finish_at))]
+                                    ),
+                                  ]
+                                )
+                              : _vm._e(),
+                          ])
+                        : _vm._e(),
+                    ]
+                  ),
+                ]
+              )
+            }),
+          ],
+          2
         ),
       ]),
       _vm._v(" "),

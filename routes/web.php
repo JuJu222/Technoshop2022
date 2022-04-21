@@ -69,12 +69,24 @@ Route::get('/', function () {
                 ->groupBy('qr_game')
                 ->first();
 
+            $games = Team::with('game')->where('teams.id', $team->id)->first();
             $investors = Team::with('point')->where('teams.id', $team->id)->first();
             $pictures = array();
             foreach ($investors->point as $point) {
                 array_push($pictures, Judge::with('user')->where('judges.id', $point->judge_id)->first()->img_portrait);
             }
             $team->pictures = $pictures;
+            $team->games = $games->game;
+            foreach ($games->game as $game) {
+                $game->name = User::query()->where('id', $game->user_id)->first()->name;
+                    if ($game->finish_at) {
+                        $s = \Carbon\Carbon::createFromFormat('Y-m-d H:i:s', $game->start_at);
+                        $f = \Carbon\Carbon::createFromFormat('Y-m-d H:i:s', $game->finish_at);
+                        $game->delta = gmdate('H:i:s', $f->diffInSeconds($s));
+                    } else {
+                        $game->delta = null;
+                    }
+            }
 
             $team = json_encode($team);
 
