@@ -5,11 +5,11 @@
                 <div class="w-full lg:w-1/2 h-full">
                     <p class="uppercase text-2xl mb-4">Technopreneurship Workshop 2022</p>
                     <h1 class="text-purple text-4xl md:text-7xl mb-8 fw-bold">Welcome, {{ team.name }}</h1>
-                    <p class="text-gray-800 font-regular mb-8 text-base">Technopreneurship Workshop merupakan workshop bertemakan teknologi yang dikemas dalam bentuk camp jurusan. Melalui workshop ini, peserta diharapkan dapat meningkatkan koneksi yang baik antar angkatan serta melatih dan mempersiapkan peserta untuk menjadi technopreneur muda yang berintegritas dan profesional di masa depan.</p>
+                    <p class="text-gray-800 font-regular mb-8 text-base">Please show your QR code to a liaison officer (before and after playing) or to a investor (if they want to invest) (Note: There are 2 different QR codes, make sure to show the correct one).</p>
                 </div>
                 <div class="w-full lg:w-1/2 h-full lg:pr-10 xl:pr-0 mb-10 lg:mb-0">
                     <div>
-                        <h1 class="text-purple text-2xl md:text-3xl mb-3 fw-bold">Your current scores and points: </h1>
+                        <h1 class="text-purple text-2xl md:text-3xl mb-3 fw-bold">Your current scores and coins: </h1>
                         <LeaderboardCard class="w-full" :team="team"></LeaderboardCard>
                     </div>
                     <div>

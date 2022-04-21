@@ -59997,7 +59997,7 @@ var render = function () {
                 { staticClass: "text-gray-800 font-regular mb-8 text-base" },
                 [
                   _vm._v(
-                    "Technopreneurship Workshop merupakan workshop bertemakan teknologi yang dikemas dalam bentuk camp jurusan. Melalui workshop ini, peserta diharapkan dapat meningkatkan koneksi yang baik antar angkatan serta melatih dan mempersiapkan peserta untuk menjadi technopreneur muda yang berintegritas dan profesional di masa depan."
+                    "Please use the QR scanner to scan a team's QR code and log their time. You can also use any QR code scanner on your phone (Note: The QR code must have the logo of IMT SU)."
                   ),
                 ]
               ),
@@ -60255,7 +60255,7 @@ var render = function () {
                 { staticClass: "text-gray-800 font-regular mb-8 text-base" },
                 [
                   _vm._v(
-                    "Technopreneurship Workshop merupakan workshop bertemakan teknologi yang dikemas dalam bentuk camp jurusan. Melalui workshop ini, peserta diharapkan dapat meningkatkan koneksi yang baik antar angkatan serta melatih dan mempersiapkan peserta untuk menjadi technopreneur muda yang berintegritas dan profesional di masa depan."
+                    "Please use the QR scanner to scan a team's QR code whom you want to invest in and input their scores and the amount of coins to invest. You can also use any QR code scanner on your phone (Note: The QR code must have the logo of UC)."
                   ),
                 ]
               ),
@@ -60275,7 +60275,7 @@ var render = function () {
                       staticClass:
                         "text-purple text-2xl md:text-3xl mb-3 fw-bold",
                     },
-                    [_vm._v("Your remaining points: ")]
+                    [_vm._v("Your remaining coins: ")]
                   ),
                   _vm._v(" "),
                   _c(
@@ -60554,7 +60554,7 @@ var render = function () {
                 { staticClass: "text-gray-800 font-regular mb-8 text-base" },
                 [
                   _vm._v(
-                    "Technopreneurship Workshop merupakan workshop bertemakan teknologi yang dikemas dalam bentuk camp jurusan. Melalui workshop ini, peserta diharapkan dapat meningkatkan koneksi yang baik antar angkatan serta melatih dan mempersiapkan peserta untuk menjadi technopreneur muda yang berintegritas dan profesional di masa depan."
+                    "Please show your QR code to a liaison officer (before and after playing) or to a investor (if they want to invest) (Note: There are 2 different QR codes, make sure to show the correct one)."
                   ),
                 ]
               ),
@@ -60576,7 +60576,7 @@ var render = function () {
                         staticClass:
                           "text-purple text-2xl md:text-3xl mb-3 fw-bold",
                       },
-                      [_vm._v("Your current scores and points: ")]
+                      [_vm._v("Your current scores and coins: ")]
                     ),
                     _vm._v(" "),
                     _c("LeaderboardCard", {
@@ -61131,7 +61131,7 @@ var render = function () {
                   },
                   [
                     _vm._v(
-                      "Enter points and scores for " + _vm._s(_vm.team.name)
+                      "Enter coins and scores for " + _vm._s(_vm.team.name)
                     ),
                   ]
                 ),
@@ -61143,7 +61143,7 @@ var render = function () {
                       "focus:outline-none mt-2 text-xl font-medium leading-6 text-gray-800",
                   },
                   [
-                    _vm._v("Remaining Points: "),
+                    _vm._v("Remaining Coins: "),
                     _c("b", [_vm._v(_vm._s(_vm.judge.points))]),
                   ]
                 ),
@@ -61335,11 +61335,11 @@ var render = function () {
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "mb-4 text-base text-gray-800" }, [
-            _vm._v("Your investment points: " + _vm._s(_vm.query.investment)),
+            _vm._v("Your coins: " + _vm._s(_vm.query.investment)),
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "py-1 text-base text-gray-800" }, [
-            _vm._v(_vm._s(_vm.team.name) + " current scores and points: "),
+            _vm._v(_vm._s(_vm.team.name) + " current scores and coins: "),
           ]),
           _vm._v(" "),
           _c("LeaderboardCard", { attrs: { team: _vm.team } }),
@@ -61468,9 +61468,7 @@ var render = function () {
               _vm._v("Idea Score"),
             ]),
             _vm._v(" "),
-            _c("td", { staticClass: "text-center" }, [
-              _vm._v("Investment Points"),
-            ]),
+            _c("td", { staticClass: "text-center" }, [_vm._v("Coins")]),
           ])
         : _vm.index === 2
         ? _c("tr", { staticClass: "silver px-2 py-2 text-white" }, [
@@ -61488,9 +61486,7 @@ var render = function () {
               _vm._v("Idea Score"),
             ]),
             _vm._v(" "),
-            _c("td", { staticClass: "text-center" }, [
-              _vm._v("Investment Points"),
-            ]),
+            _c("td", { staticClass: "text-center" }, [_vm._v("Coins")]),
           ])
         : _vm.index === 3
         ? _c("tr", { staticClass: "bronze px-2 py-2 text-white" }, [
@@ -61508,9 +61504,7 @@ var render = function () {
               _vm._v("Idea Score"),
             ]),
             _vm._v(" "),
-            _c("td", { staticClass: "text-center" }, [
-              _vm._v("Investment Points"),
-            ]),
+            _c("td", { staticClass: "text-center" }, [_vm._v("Coins")]),
           ])
         : _c("tr", { staticClass: "bg-gray-200 px-2 py-2 purple text-white" }, [
             _vm.index
@@ -61527,9 +61521,7 @@ var render = function () {
               _vm._v("Idea Score"),
             ]),
             _vm._v(" "),
-            _c("td", { staticClass: "text-center" }, [
-              _vm._v("Investment Points"),
-            ]),
+            _c("td", { staticClass: "text-center" }, [_vm._v("Coins")]),
           ]),
       _vm._v(" "),
       _c("tr", { staticClass: "px-2 py-2 items-center bg-white" }, [

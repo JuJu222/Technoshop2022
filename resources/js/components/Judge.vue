@@ -9,8 +9,8 @@
             <div class="bg-white shadow-lg rounded-lg xl:w-1/3 lg:w-5/12 md:w-1/2 w-full lg:px-10 sm:px-6 sm:py-10 px-6 py-10 mt-4">
                 <form method="POST" :action="/judge/+team.id">
                     <input type="hidden" name="_token" :value="csrf">
-                    <p tabindex="0" class="focus:outline-none text-2xl font-extrabold leading-6 text-gray-800">Enter points and scores for {{ team.name }}</p>
-                    <p class="focus:outline-none mt-2 text-xl font-medium leading-6 text-gray-800">Remaining Points: <b>{{ judge.points }}</b></p>
+                    <p tabindex="0" class="focus:outline-none text-2xl font-extrabold leading-6 text-gray-800">Enter coins and scores for {{ team.name }}</p>
+                    <p class="focus:outline-none mt-2 text-xl font-medium leading-6 text-gray-800">Remaining Coins: <b>{{ judge.points }}</b></p>
                     <div class="mt-6 w-full">
                         <label for="investment" class="text-sm font-medium leading-none text-gray-800">Investment (Min: 1 & Max: {{ judge.points }})</label>
                         <input hidden id="investment" type="number" class="border rounded text-xs font-medium leading-none placeholder-gray-800 text-gray-800 py-3 w-full pl-3 mt-2" name="investment" required autofocus>

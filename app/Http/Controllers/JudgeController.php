@@ -67,7 +67,7 @@ class JudgeController extends Controller
             $team->pictures = $pictures;
 
             $team = json_encode($team);
-            $message = 'You have already given points and scores to ' . $teamName;
+            $message = 'You have already given coins and scores to ' . $teamName;
             $query = Point::query()->where('judge_id', $judge->id)->where('team_id', $id)->first();
             return redirect()->to('/judge_result')->with(['team' => $team, 'judge' => $judge, 'query' => $query, 'message' => $message]);
         } else {
@@ -119,10 +119,10 @@ class JudgeController extends Controller
         $teamName = Team::query()->with('user')->where('teams.id', $id)->first()->user->name;
 
         if (Point::query()->where('judge_id', $judge->id)->where('team_id', $id)->exists()) {
-            $message = 'You have already given points and scores to ' . $teamName;
+            $message = 'You have already given coins and scores to ' . $teamName;
             $query = Point::query()->where('judge_id', $judge->id)->where('team_id', $id)->first();
         } else {
-            $message = 'You have succesfully given points and scores to ' . $teamName;
+            $message = 'You have succesfully given coins and scores to ' . $teamName;
             $query = Point::query()->create([
                 'judge_id' => $judge->id,
                 'team_id' => $id,

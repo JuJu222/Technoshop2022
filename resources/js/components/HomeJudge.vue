@@ -7,11 +7,11 @@
                 <div class="w-full lg:w-1/2 h-full">
                     <p class="uppercase text-2xl mb-4">Technopreneurship Workshop 2022</p>
                     <h1 class="text-purple text-4xl md:text-7xl mb-8 fw-bold">Welcome, {{ judge.name }}</h1>
-                    <p class="text-gray-800 font-regular mb-8 text-base">Technopreneurship Workshop merupakan workshop bertemakan teknologi yang dikemas dalam bentuk camp jurusan. Melalui workshop ini, peserta diharapkan dapat meningkatkan koneksi yang baik antar angkatan serta melatih dan mempersiapkan peserta untuk menjadi technopreneur muda yang berintegritas dan profesional di masa depan.</p>
+                    <p class="text-gray-800 font-regular mb-8 text-base">Please use the QR scanner to scan a team's QR code whom you want to invest in and input their scores and the amount of coins to invest. You can also use any QR code scanner on your phone (Note: The QR code must have the logo of UC).</p>
                 </div>
                 <div class="w-full lg:w-1/2 h-full lg:pr-10 xl:pr-0 mb-10 lg:mb-0">
                     <div>
-                        <h1 class="text-purple text-2xl md:text-3xl mb-3 fw-bold">Your remaining points: </h1>
+                        <h1 class="text-purple text-2xl md:text-3xl mb-3 fw-bold">Your remaining coins: </h1>
                         <div class="bg-white py-4 px-4 flex flex-col sm:flex-row justify-start sm:justify-between items-start sm:items-center shadow-lg rounded-lg">
                             <h1 class="text-center mx-auto tracking-normal text-purple text-4xl fw-bold">{{ judge.judge.points }}</h1>
                         </div>

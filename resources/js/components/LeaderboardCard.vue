@@ -5,28 +5,28 @@
             <td v-else class="text-left text-xl font-bold"></td>
             <td class="px-2 text-center">Prototype Score</td>
             <td class="px-2 text-center">Idea Score</td>
-            <td class="text-center">Investment Points</td>
+            <td class="text-center">Coins</td>
         </tr>
         <tr v-else-if="index === 2" class="silver px-2 py-2 text-white">
             <td v-if="index" class="text-left text-xl font-bold">{{ ordinal(index) }}</td>
             <td v-else class="text-left text-xl font-bold"></td>
             <td class="px-2 text-center">Prototype Score</td>
             <td class="px-2 text-center">Idea Score</td>
-            <td class="text-center">Investment Points</td>
+            <td class="text-center">Coins</td>
         </tr>
         <tr v-else-if="index === 3" class="bronze px-2 py-2 text-white">
             <td v-if="index" class="text-left text-xl font-bold">{{ ordinal(index) }}</td>
             <td v-else class="text-left text-xl font-bold"></td>
             <td class="px-2 text-center">Prototype Score</td>
             <td class="px-2 text-center">Idea Score</td>
-            <td class="text-center">Investment Points</td>
+            <td class="text-center">Coins</td>
         </tr>
         <tr v-else class="bg-gray-200 px-2 py-2 purple text-white">
             <td v-if="index" class="text-left text-xl font-bold">{{ ordinal(index) }}</td>
             <td v-else class="text-left text-xl font-bold"></td>
             <td class="px-2 text-center">Prototype Score</td>
             <td class="px-2 text-center">Idea Score</td>
-            <td class="text-center">Investment Points</td>
+            <td class="text-center">Coins</td>
         </tr>
 
         <tr class="px-2 py-2 items-center bg-white">

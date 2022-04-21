@@ -4,9 +4,9 @@
             <h1 class="py-4 text-3xl lg:text-4xl font-extrabold text-gray-800">{{ message }}</h1>
             <p class="text-base text-gray-800">Your prototype score: {{ query.prototype }}</p>
             <p class="py-1 text-base text-gray-800">Your idea score: {{ query.idea }}</p>
-            <p class="mb-4 text-base text-gray-800">Your investment points: {{ query.investment }}</p>
+            <p class="mb-4 text-base text-gray-800">Your coins: {{ query.investment }}</p>
 
-            <p class="py-1 text-base text-gray-800">{{ team.name }} current scores and points: </p>
+            <p class="py-1 text-base text-gray-800">{{ team.name }} current scores and coins: </p>
             <LeaderboardCard :team="team"></LeaderboardCard>
 
             <a href="/" class="block max-w-max my-4 border rounded-md px-3 sm:px-16 py-3 bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50">Go back to Homepage</a>
