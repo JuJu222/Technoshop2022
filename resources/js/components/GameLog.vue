@@ -11,7 +11,7 @@
                     <input type="hidden" name="_token" :value="csrf">
                     <p tabindex="0" class="focus:outline-none text-2xl font-extrabold leading-6 text-gray-800">Log time for {{ team.user.name }}</p>
                     <p class="focus:outline-none mt-3 text-base font-medium leading-6 text-gray-800">Press the log button to log the team's time.</p>
-                    <p class="focus:outline-none mt-2 text-base font-medium leading-6 text-gray-800">If both the start and finish time are empty then it will log a start timm, and if the start time has been logged then it will automatically log a finish time.</p>
+                    <p class="focus:outline-none mt-2 text-base font-medium leading-6 text-gray-800">If both the start and finish time are empty then it will log a start time, if the start time has been logged then it will automatically log a finish time.</p>
                     <div class="mt-4">
                         <button type="submit" class="focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 text-sm font-semibold leading-none text-white focus:outline-none bg-indigo-700 border rounded hover:bg-indigo-600 py-4 w-full">Log Time</button>
                     </div>

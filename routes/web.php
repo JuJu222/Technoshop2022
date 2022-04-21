@@ -5,6 +5,7 @@ use App\Http\Controllers\JudgeController;
 use App\Http\Controllers\TeamController;
 use App\Models\Game;
 use App\Models\Judge;
+use App\Models\Point;
 use App\Models\Team;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
@@ -27,6 +28,20 @@ Route::get('/', function () {
         if (Auth::user()->role == 'judge') {
             $judge = User::query()->with('judge')->findOrFail(Auth::id());
             $teams = Team::query()->with('user')->get();
+
+            foreach ($teams as $team) {
+                if (Point::query()->where('judge_id', $judge->id)->where('team_id', $team->id)->exists()) {
+                    $point = Point::query()->where('judge_id', $judge->id)->where('team_id', $team->id)->first();
+                    $team->idea = $point->idea;
+                    $team->prototype = $point->investment;
+                    $team->investment = $point->investment;
+                } else {
+                    $team->idea = null;
+                    $team->prototype = null;
+                    $team->investment = null;
+                }
+            }
+
             return view('home', compact('judge', 'teams'));
         } else if (Auth::user()->role == 'team') {
             $id = Auth::user()->team->id;
@@ -87,7 +102,7 @@ Route::get('/', function () {
                     $team->delta = null;
                 }
             }
-            
+
             return view('home', compact('user', 'teams'));
         }
     } else {

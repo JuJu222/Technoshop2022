@@ -2,7 +2,7 @@
     <!-- for vue instead of using a href, vue router links will be used -->
     <!-- replace appropriate tags after installing vue-router -->
     <div>
-        <div class="w-full relative px-2 xl:px-0">
+        <div class="w-full relative px-2 xl:!px-20">
             <div class="pt-10 lg:pt-20 lg:flex items-center relative z-10 container mx-auto">
                 <div class="w-full lg:w-1/2 h-full">
                     <p class="uppercase text-2xl mb-4">Technopreneurship Workshop 2022</p>
@@ -38,7 +38,22 @@
                                 <p class="text-xs">{{ team.members }}</p>
                             </div>
                             <div class="w-full flex align-items-center justify-content-end pr-4 mb-2">
-                                <a :href="'/judge/'+team.id" class="block text-center w-32 border rounded-md px-3 sm:px-16 py-3 bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50">Invest</a>
+                                <span v-if="team.investment" class="block text-center w-32 border rounded-md px-3 sm:px-16 py-3 bg-gray-300 text-gray-500 disabled focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50">Invest</span>
+                                <a v-else :href="'/judge/'+team.id" class="block text-center w-32 border rounded-md px-3 sm:px-16 py-3 bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50">Invest</a>
+                            </div>
+                        </div>
+                        <div v-if="team.investment" class="flex flex-row">
+                            <div class="px-2 py-2 items-center max-h-max flex">
+                                <p class="text-xs align-items-center">Given Scores and Coins: </p>
+                            </div>
+                            <div class="px-2 py-2 items-center max-h-max flex">
+                                <p class="text-xs align-items-center">Idea: {{ team.idea }}</p>
+                            </div>
+                            <div class="px-2 py-2 items-center max-h-max flex">
+                                <p class="text-xs align-items-center">Prototype: {{ team.prototype }}</p>
+                            </div>
+                            <div class="px-2 py-2 items-center max-h-max flex">
+                                <p class="text-xs align-items-center">Investment: {{ team.investment }}</p>
                             </div>
                         </div>
                     </div>

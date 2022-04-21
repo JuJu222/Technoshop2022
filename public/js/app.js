@@ -6325,6 +6325,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 
 
@@ -6366,6 +6367,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _InvestorCard__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./InvestorCard */ "./resources/js/components/InvestorCard.vue");
 /* harmony import */ var _ExampleComponent__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ExampleComponent */ "./resources/js/components/ExampleComponent.vue");
 /* harmony import */ var _ScannerModal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ScannerModal */ "./resources/js/components/ScannerModal.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -59671,7 +59687,7 @@ var render = function () {
                   },
                   [
                     _vm._v(
-                      "If both the start and finish time are empty then it will log a start timm, and if the start time has been logged then it will automatically log a finish time."
+                      "If both the start and finish time are empty then it will log a start time, if the start time has been logged then it will automatically log a finish time."
                     ),
                   ]
                 ),
@@ -59790,7 +59806,7 @@ var render = function () {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("section", [
-    _c("div", { staticClass: "w-full relative px-6 xl:px-0" }, [
+    _c("div", { staticClass: "w-full relative px-6 xl:!px-20" }, [
       _c(
         "div",
         {
@@ -59924,7 +59940,7 @@ var render = function () {
   return _c(
     "div",
     [
-      _c("div", { staticClass: "w-full relative px-2 xl:px-0" }, [
+      _c("div", { staticClass: "w-full relative px-2 xl:!px-20" }, [
         _c(
           "div",
           {
@@ -60110,15 +60126,22 @@ var render = function () {
                                 _c(
                                   "p",
                                   { staticClass: "text-xs align-items-center" },
-                                  [
-                                    _vm._v(
-                                      "(" +
-                                        _vm._s(team.start_at) +
-                                        " -> " +
-                                        _vm._s(team.finish_at) +
-                                        ")"
-                                    ),
-                                  ]
+                                  [_vm._v("Start: " + _vm._s(team.start_at))]
+                                ),
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "px-2 py-2 items-center max-h-max flex",
+                              },
+                              [
+                                _c(
+                                  "p",
+                                  { staticClass: "text-xs align-items-center" },
+                                  [_vm._v("End: " + _vm._s(team.finish_at))]
                                 ),
                               ]
                             ),
@@ -60175,7 +60198,7 @@ var render = function () {
   return _c(
     "div",
     [
-      _c("div", { staticClass: "w-full relative px-2 xl:px-0" }, [
+      _c("div", { staticClass: "w-full relative px-2 xl:!px-20" }, [
         _c(
           "div",
           {
@@ -60332,18 +60355,86 @@ var render = function () {
                               "w-full flex align-items-center justify-content-end pr-4 mb-2",
                           },
                           [
-                            _c(
-                              "a",
-                              {
-                                staticClass:
-                                  "block text-center w-32 border rounded-md px-3 sm:px-16 py-3 bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50",
-                                attrs: { href: "/judge/" + team.id },
-                              },
-                              [_vm._v("Invest")]
-                            ),
+                            team.investment
+                              ? _c(
+                                  "span",
+                                  {
+                                    staticClass:
+                                      "block text-center w-32 border rounded-md px-3 sm:px-16 py-3 bg-gray-300 text-gray-500 disabled focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50",
+                                  },
+                                  [_vm._v("Invest")]
+                                )
+                              : _c(
+                                  "a",
+                                  {
+                                    staticClass:
+                                      "block text-center w-32 border rounded-md px-3 sm:px-16 py-3 bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50",
+                                    attrs: { href: "/judge/" + team.id },
+                                  },
+                                  [_vm._v("Invest")]
+                                ),
                           ]
                         ),
                       ]),
+                      _vm._v(" "),
+                      team.investment
+                        ? _c("div", { staticClass: "flex flex-row" }, [
+                            _vm._m(0, true),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "px-2 py-2 items-center max-h-max flex",
+                              },
+                              [
+                                _c(
+                                  "p",
+                                  { staticClass: "text-xs align-items-center" },
+                                  [_vm._v("Idea: " + _vm._s(team.idea))]
+                                ),
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "px-2 py-2 items-center max-h-max flex",
+                              },
+                              [
+                                _c(
+                                  "p",
+                                  { staticClass: "text-xs align-items-center" },
+                                  [
+                                    _vm._v(
+                                      "Prototype: " + _vm._s(team.prototype)
+                                    ),
+                                  ]
+                                ),
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "px-2 py-2 items-center max-h-max flex",
+                              },
+                              [
+                                _c(
+                                  "p",
+                                  { staticClass: "text-xs align-items-center" },
+                                  [
+                                    _vm._v(
+                                      "Investment: " + _vm._s(team.investment)
+                                    ),
+                                  ]
+                                ),
+                              ]
+                            ),
+                          ])
+                        : _vm._e(),
                     ]
                   ),
                 ]
@@ -60369,7 +60460,18 @@ var render = function () {
     1
   )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "px-2 py-2 items-center max-h-max flex" }, [
+      _c("p", { staticClass: "text-xs align-items-center" }, [
+        _vm._v("Given Scores and Coins: "),
+      ]),
+    ])
+  },
+]
 render._withStripped = true
 
 
@@ -60395,7 +60497,7 @@ var render = function () {
   return _c(
     "div",
     [
-      _c("div", { staticClass: "w-full relative px-2 xl:px-0" }, [
+      _c("div", { staticClass: "w-full relative px-2 xl:!px-20" }, [
         _c(
           "div",
           {
@@ -60755,7 +60857,7 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "2xl:container 2xl:mx-auto" }, [
+  return _c("div", { staticClass: "2xl:container 2xl:mx-auto xl:px-20" }, [
     _vm._m(0),
     _vm._v(" "),
     _c("div", { staticClass: "pb-6 lg:px-20 md:px-6 px-4" }, [

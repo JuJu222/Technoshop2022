@@ -1,8 +1,6 @@
 <template>
-    <!-- for vue instead of using a href, vue router links will be used -->
-    <!-- replace appropriate tags after installing vue-router -->
     <div>
-        <div class="w-full relative px-2 xl:px-0">
+        <div class="w-full relative px-2 xl:!px-20">
             <div class="pt-10 lg:pt-20 lg:flex items-center relative z-10 container mx-auto">
                 <div class="w-full lg:w-1/2 h-full">
                     <p class="uppercase text-2xl mb-4">Technopreneurship Workshop 2022</p>
@@ -41,7 +39,10 @@
                                 <p class="text-xs align-items-center">Time Taken: {{ team.delta }}</p>
                             </div>
                             <div class="px-2 py-2 items-center max-h-max flex">
-                                <p class="text-xs align-items-center">({{ team.start_at }} -> {{ team.finish_at }})</p>
+                                <p class="text-xs align-items-center">Start: {{ team.start_at }}</p>
+                            </div>
+                            <div class="px-2 py-2 items-center max-h-max flex">
+                                <p class="text-xs align-items-center">End: {{ team.finish_at }}</p>
                             </div>
                         </div>
                     </div>
