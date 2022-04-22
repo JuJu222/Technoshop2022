@@ -60904,7 +60904,7 @@ var staticRenderFns = [
           staticClass:
             "w-10/12 mx-auto md:w-full font-bold lg:text-4xl text-3xl lg:leading-9 md:leading-7 leading-9 text-center text-gray-800",
         },
-        [_vm._v("Investors")]
+        [_vm._v("Investor Profile")]
       ),
     ])
   },
