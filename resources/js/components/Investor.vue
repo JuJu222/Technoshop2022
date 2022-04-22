@@ -1,7 +1,7 @@
 <template>
     <div class="2xl:container 2xl:mx-auto">
         <div class="text-center lg:py-14 md:py-12 py-10">
-            <p class="w-10/12 mx-auto md:w-full font-bold lg:text-4xl text-3xl lg:leading-9 md:leading-7 leading-9 text-center text-gray-800">Investors</p>
+            <p class="w-10/12 mx-auto md:w-full font-bold lg:text-4xl text-3xl lg:leading-9 md:leading-7 leading-9 text-center text-gray-800">Investor Profile</p>
         </div>
         <div class="pb-6 lg:px-20 md:px-6 px-3">
             <div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-8 lg:my-0">
