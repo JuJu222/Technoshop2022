@@ -19,7 +19,7 @@ class UserSeeder extends Seeder
             'id' => 1,
             'name' => 'Yuwono M.D',
             'username' => 'yuwono_md',
-            'password' => bcrypt('yuwono_md'),
+            'password' => bcrypt('Nwj4Zn'),
             'role' => 'judge',
             'created_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta'),
             'updated_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta')
@@ -39,7 +39,7 @@ class UserSeeder extends Seeder
             'id' => 2,
             'name' => 'Mychael M.',
             'username' => 'mychael_m',
-            'password' => bcrypt('mychael_m'),
+            'password' => bcrypt('eL49yf'),
             'role' => 'judge',
             'created_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta'),
             'updated_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta')
@@ -60,7 +60,7 @@ class UserSeeder extends Seeder
             'id' => 3,
             'name' => 'Evan T',
             'username' => 'evan_t',
-            'password' => bcrypt('evan_t'),
+            'password' => bcrypt('N58v37'),
             'role' => 'judge',
             'created_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta'),
             'updated_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta')
@@ -81,7 +81,7 @@ class UserSeeder extends Seeder
             'id' => 4,
             'name' => 'Stephanus Eko',
             'username' => 'stephanus_eko',
-            'password' => bcrypt('stephanus_eko'),
+            'password' => bcrypt('5s7eKs'),
             'role' => 'judge',
             'created_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta'),
             'updated_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta')
@@ -100,7 +100,7 @@ class UserSeeder extends Seeder
             'id' => 5,
             'name' => 'David S.',
             'username' => 'david_s',
-            'password' => bcrypt('david_s'),
+            'password' => bcrypt('uSxs8d'),
             'role' => 'judge',
             'created_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta'),
             'updated_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta')
@@ -120,7 +120,7 @@ class UserSeeder extends Seeder
             'id' => 6,
             'name' => 'Theresia',
             'username' => 'theresia',
-            'password' => bcrypt('theresia'),
+            'password' => bcrypt('EvmN55'),
             'role' => 'judge',
             'created_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta'),
             'updated_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta')
@@ -140,7 +140,7 @@ class UserSeeder extends Seeder
             'id' => 7,
             'name' => 'Laura',
             'username' => 'laura',
-            'password' => bcrypt('laura'),
+            'password' => bcrypt('WVwP7E'),
             'role' => 'judge',
             'created_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta'),
             'updated_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta')
@@ -159,7 +159,7 @@ class UserSeeder extends Seeder
             'id' => 8,
             'name' => 'Caecilia Citra',
             'username' => 'caecilia_citra',
-            'password' => bcrypt('caecilia_citra'),
+            'password' => bcrypt('Nv75k2'),
             'role' => 'judge',
             'created_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta'),
             'updated_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta')
@@ -179,7 +179,7 @@ class UserSeeder extends Seeder
             'id' => 9,
             'name' => 'Team 1',
             'username' => 'team_1',
-            'password' => bcrypt('team_1'),
+            'password' => bcrypt('Veh8zB'),
             'role' => 'team',
             'created_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta'),
             'updated_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta')
@@ -198,7 +198,7 @@ class UserSeeder extends Seeder
             'id' => 10,
             'name' => 'Team 2',
             'username' => 'team_2',
-            'password' => bcrypt('team_2'),
+            'password' => bcrypt('c7HgqZ'),
             'role' => 'team',
             'created_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta'),
             'updated_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta')
@@ -217,7 +217,7 @@ class UserSeeder extends Seeder
             'id' => 11,
             'name' => 'Team 3',
             'username' => 'team_3',
-            'password' => bcrypt('team_3'),
+            'password' => bcrypt('G9rjMY'),
             'role' => 'team',
             'created_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta'),
             'updated_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta')
@@ -236,7 +236,7 @@ class UserSeeder extends Seeder
             'id' => 12,
             'name' => 'Team 4',
             'username' => 'team_4',
-            'password' => bcrypt('team_4'),
+            'password' => bcrypt('2CMQhW'),
             'role' => 'team',
             'created_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta'),
             'updated_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta')
@@ -255,7 +255,7 @@ class UserSeeder extends Seeder
             'id' => 13,
             'name' => 'Team 5',
             'username' => 'team_5',
-            'password' => bcrypt('team_5'),
+            'password' => bcrypt('Pc4T9L'),
             'role' => 'team',
             'created_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta'),
             'updated_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta')
@@ -274,7 +274,7 @@ class UserSeeder extends Seeder
             'id' => 14,
             'name' => 'Team 6',
             'username' => 'team_6',
-            'password' => bcrypt('team_6'),
+            'password' => bcrypt('v6U6Mn'),
             'role' => 'team',
             'created_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta'),
             'updated_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta')
@@ -293,7 +293,7 @@ class UserSeeder extends Seeder
             'id' => 15,
             'name' => 'Team 7',
             'username' => 'team_7',
-            'password' => bcrypt('team_7'),
+            'password' => bcrypt('PEz6Cj'),
             'role' => 'team',
             'created_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta'),
             'updated_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta')
@@ -312,7 +312,7 @@ class UserSeeder extends Seeder
             'id' => 16,
             'name' => 'Team 8',
             'username' => 'team_8',
-            'password' => bcrypt('team_8'),
+            'password' => bcrypt('YKj7Qu'),
             'role' => 'team',
             'created_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta'),
             'updated_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta')
@@ -331,7 +331,7 @@ class UserSeeder extends Seeder
             'id' => 17,
             'name' => 'Team 9',
             'username' => 'team_9',
-            'password' => bcrypt('team_9'),
+            'password' => bcrypt('yq39UE'),
             'role' => 'team',
             'created_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta'),
             'updated_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta')
@@ -350,7 +350,7 @@ class UserSeeder extends Seeder
             'id' => 18,
             'name' => 'Team 10',
             'username' => 'team_10',
-            'password' => bcrypt('team_10'),
+            'password' => bcrypt('3bNL8J'),
             'role' => 'team',
             'created_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta'),
             'updated_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta')
@@ -369,7 +369,7 @@ class UserSeeder extends Seeder
             'id' => 19,
             'name' => 'Team 11',
             'username' => 'team_11',
-            'password' => bcrypt('team_11'),
+            'password' => bcrypt('aV2wjV'),
             'role' => 'team',
             'created_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta'),
             'updated_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta')
@@ -388,7 +388,7 @@ class UserSeeder extends Seeder
             'id' => 20,
             'name' => 'Minigames 1',
             'username' => 'minigames_1',
-            'password' => bcrypt('minigames_1'),
+            'password' => bcrypt('2uewLk'),
             'role' => 'game',
             'created_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta'),
             'updated_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta')
@@ -398,7 +398,7 @@ class UserSeeder extends Seeder
             'id' => 21,
             'name' => 'Minigames 2',
             'username' => 'minigames_2',
-            'password' => bcrypt('minigames_2'),
+            'password' => bcrypt('x6DDxN'),
             'role' => 'game',
             'created_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta'),
             'updated_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta')
@@ -408,7 +408,7 @@ class UserSeeder extends Seeder
             'id' => 22,
             'name' => 'Minigames 3',
             'username' => 'minigames_3',
-            'password' => bcrypt('minigames_3'),
+            'password' => bcrypt('eeCf3F'),
             'role' => 'game',
             'created_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta'),
             'updated_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta')
@@ -418,7 +418,7 @@ class UserSeeder extends Seeder
             'id' => 23,
             'name' => 'Minigames 4',
             'username' => 'minigames_4',
-            'password' => bcrypt('minigames_4'),
+            'password' => bcrypt('EZ9GxZ'),
             'role' => 'game',
             'created_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta'),
             'updated_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta')
@@ -428,7 +428,7 @@ class UserSeeder extends Seeder
             'id' => 24,
             'name' => 'Minigames 5',
             'username' => 'minigames_5',
-            'password' => bcrypt('minigames_5'),
+            'password' => bcrypt('me7YS8'),
             'role' => 'game',
             'created_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta'),
             'updated_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta')
@@ -438,7 +438,7 @@ class UserSeeder extends Seeder
             'id' => 25,
             'name' => 'Minigames 6',
             'username' => 'minigames_6',
-            'password' => bcrypt('minigames_6'),
+            'password' => bcrypt('HPWx3Y'),
             'role' => 'game',
             'created_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta'),
             'updated_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta')
@@ -448,7 +448,7 @@ class UserSeeder extends Seeder
             'id' => 26,
             'name' => 'Minigames 7',
             'username' => 'minigames_7',
-            'password' => bcrypt('minigames_7'),
+            'password' => bcrypt('N9dHHs'),
             'role' => 'game',
             'created_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta'),
             'updated_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta')
@@ -458,7 +458,7 @@ class UserSeeder extends Seeder
             'id' => 27,
             'name' => 'Minigames 8',
             'username' => 'minigames_8',
-            'password' => bcrypt('minigames_8'),
+            'password' => bcrypt('8X5Apb'),
             'role' => 'game',
             'created_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta'),
             'updated_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta')
@@ -468,7 +468,7 @@ class UserSeeder extends Seeder
             'id' => 28,
             'name' => 'Minigames 9',
             'username' => 'minigames_9',
-            'password' => bcrypt('minigames_9'),
+            'password' => bcrypt('vt4CAX'),
             'role' => 'game',
             'created_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta'),
             'updated_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta')
