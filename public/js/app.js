@@ -60587,7 +60587,7 @@ var render = function () {
                     "button",
                     {
                       staticClass:
-                        "block w-full text-center my-4 border rounded-md px-3 sm:px-16 py-3 bg-orange-600 text-white hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-orange-700 focus:ring-opacity-50",
+                        "block w-full text-center my-4 border rounded-md px-3 sm:px-16 py-3 bg-orange-700 text-white hover:bg-orange-800 focus:outline-none focus:ring-2 focus:ring-orange-800 focus:ring-opacity-50",
                       on: { click: _vm.openModalGame },
                     },
                     [_vm._v("Show QR Code for Minigames")]
@@ -61441,7 +61441,7 @@ var render = function () {
     },
     [
       _vm.index === 1
-        ? _c("tr", { staticClass: "gold px-2 py-2 text-white" }, [
+        ? _c("tr", { staticClass: "gold px-2 py-2 text-white fw-bold" }, [
             _vm.index
               ? _c("td", { staticClass: "text-left text-xl font-bold" }, [
                   _vm._v(_vm._s(_vm.ordinal(_vm.index))),
@@ -61459,7 +61459,7 @@ var render = function () {
             _c("td", { staticClass: "text-center" }, [_vm._v("Coins")]),
           ])
         : _vm.index === 2
-        ? _c("tr", { staticClass: "silver px-2 py-2 text-white" }, [
+        ? _c("tr", { staticClass: "silver px-2 py-2 text-white fw-bold" }, [
             _vm.index
               ? _c("td", { staticClass: "text-left text-xl font-bold" }, [
                   _vm._v(_vm._s(_vm.ordinal(_vm.index))),
@@ -61477,7 +61477,7 @@ var render = function () {
             _c("td", { staticClass: "text-center" }, [_vm._v("Coins")]),
           ])
         : _vm.index === 3
-        ? _c("tr", { staticClass: "bronze px-2 py-2 text-white" }, [
+        ? _c("tr", { staticClass: "bronze px-2 py-2 text-white fw-bold" }, [
             _vm.index
               ? _c("td", { staticClass: "text-left text-xl font-bold" }, [
                   _vm._v(_vm._s(_vm.ordinal(_vm.index))),
@@ -61494,23 +61494,27 @@ var render = function () {
             _vm._v(" "),
             _c("td", { staticClass: "text-center" }, [_vm._v("Coins")]),
           ])
-        : _c("tr", { staticClass: "bg-gray-200 px-2 py-2 purple text-white" }, [
-            _vm.index
-              ? _c("td", { staticClass: "text-left text-xl font-bold" }, [
-                  _vm._v(_vm._s(_vm.ordinal(_vm.index))),
-                ])
-              : _c("td", { staticClass: "text-left text-xl font-bold" }),
-            _vm._v(" "),
-            _c("td", { staticClass: "px-2 text-center" }, [
-              _vm._v("Prototype Score"),
-            ]),
-            _vm._v(" "),
-            _c("td", { staticClass: "px-2 text-center" }, [
-              _vm._v("Idea Score"),
-            ]),
-            _vm._v(" "),
-            _c("td", { staticClass: "text-center" }, [_vm._v("Coins")]),
-          ]),
+        : _c(
+            "tr",
+            { staticClass: "bg-gray-200 px-2 py-2 purple text-white fw-bold" },
+            [
+              _vm.index
+                ? _c("td", { staticClass: "text-left text-xl font-bold" }, [
+                    _vm._v(_vm._s(_vm.ordinal(_vm.index))),
+                  ])
+                : _c("td", { staticClass: "text-left text-xl font-bold" }),
+              _vm._v(" "),
+              _c("td", { staticClass: "px-2 text-center" }, [
+                _vm._v("Prototype Score"),
+              ]),
+              _vm._v(" "),
+              _c("td", { staticClass: "px-2 text-center" }, [
+                _vm._v("Idea Score"),
+              ]),
+              _vm._v(" "),
+              _c("td", { staticClass: "text-center" }, [_vm._v("Coins")]),
+            ]
+          ),
       _vm._v(" "),
       _c("tr", { staticClass: "px-2 py-2 items-center bg-white" }, [
         _c("td", { staticClass: "text-sm font-bold" }, [

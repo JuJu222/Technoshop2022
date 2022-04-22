@@ -14,7 +14,7 @@
                     </div>
                     <div>
                         <button @click="openModalJudge" class="block w-full text-center my-4 border rounded-md px-3 sm:px-16 py-3 bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50">Show QR Code for Investor</button>
-                        <button @click="openModalGame" class="block w-full text-center my-4 border rounded-md px-3 sm:px-16 py-3 bg-orange-600 text-white hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-orange-700 focus:ring-opacity-50">Show QR Code for Minigames</button>
+                        <button @click="openModalGame" class="block w-full text-center my-4 border rounded-md px-3 sm:px-16 py-3 bg-orange-700 text-white hover:bg-orange-800 focus:outline-none focus:ring-2 focus:ring-orange-800 focus:ring-opacity-50">Show QR Code for Minigames</button>
                     </div>
                 </div>
             </div>
