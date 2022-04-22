@@ -4,6 +4,7 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 import VueNumberInput from '@chenfengyuan/vue-number-input';
+import VueViewer from "v-viewer";
 require('./bootstrap');
 
 window.Vue = require('vue').default;
@@ -33,6 +34,7 @@ Vue.component('judge', require('./components/Judge.vue').default);
 Vue.component('judge-success', require('./components/JudgeSuccess').default);
 Vue.component('game-log', require('./components/GameLog').default);
 Vue.component('game-success', require('./components/GameSuccess').default);
+Vue.component('maps', require('./components/Map').default);
 Vue.component(VueNumberInput.name, VueNumberInput);
 
 /**

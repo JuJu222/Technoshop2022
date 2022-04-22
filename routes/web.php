@@ -150,3 +150,7 @@ Route::middleware(['auth'])->group(function () {
 
 Route::resource('teams', TeamController::class);
 Route::get('/leaderboard', [TeamController::class, 'leaderboard'])->name('leaderboard');
+Route::get('/maps', function () {
+    return view('map');
+});
+
