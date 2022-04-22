@@ -59988,7 +59988,7 @@ var render = function () {
                 {
                   staticClass: "text-purple text-4xl md:text-7xl mb-8 fw-bold",
                 },
-                [_vm._v("Welcome, " + _vm._s(_vm.user.name))]
+                [_vm._v("Welcome, " + _vm._s(_vm.user.name) + " LO")]
               ),
               _vm._v(" "),
               _c(

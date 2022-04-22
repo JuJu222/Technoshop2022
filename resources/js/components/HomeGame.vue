@@ -4,7 +4,7 @@
             <div class="pt-10 lg:pt-20 lg:flex items-center relative z-10 container mx-auto">
                 <div class="w-full lg:w-1/2 h-full">
                     <p class="uppercase text-2xl mb-4">Technopreneurship Workshop 2022</p>
-                    <h1 class="text-purple text-4xl md:text-7xl mb-8 fw-bold">Welcome, {{ user.name }}</h1>
+                    <h1 class="text-purple text-4xl md:text-7xl mb-8 fw-bold">Welcome, {{ user.name }} LO</h1>
                     <p class="text-gray-800 font-regular mb-8 text-base">Please use the QR scanner to scan a team's QR code and log their time. You can also use any QR code scanner on your phone (Note: The QR code must have the logo of IMT SU).</p>
                 </div>
                 <div class="w-full lg:w-1/2 h-full lg:pl-10 mb-10 lg:mb-0">
