@@ -386,7 +386,7 @@ class UserSeeder extends Seeder
 
         DB::table('users')->insert([
             'id' => 20,
-            'name' => 'Minigames 1',
+            'name' => 'Bottle Flip',
             'username' => 'minigames_1',
             'password' => bcrypt('2uewLk'),
             'role' => 'game',
@@ -396,7 +396,7 @@ class UserSeeder extends Seeder
 
         DB::table('users')->insert([
             'id' => 21,
-            'name' => 'Minigames 2',
+            'name' => 'Ddakji',
             'username' => 'minigames_2',
             'password' => bcrypt('x6DDxN'),
             'role' => 'game',
@@ -406,7 +406,7 @@ class UserSeeder extends Seeder
 
         DB::table('users')->insert([
             'id' => 22,
-            'name' => 'Minigames 3',
+            'name' => 'Musical Chairs',
             'username' => 'minigames_3',
             'password' => bcrypt('eeCf3F'),
             'role' => 'game',
@@ -416,7 +416,7 @@ class UserSeeder extends Seeder
 
         DB::table('users')->insert([
             'id' => 23,
-            'name' => 'Minigames 4',
+            'name' => 'Eat Bulaga',
             'username' => 'minigames_4',
             'password' => bcrypt('EZ9GxZ'),
             'role' => 'game',
@@ -426,7 +426,7 @@ class UserSeeder extends Seeder
 
         DB::table('users')->insert([
             'id' => 24,
-            'name' => 'Minigames 5',
+            'name' => 'Hula Hoop',
             'username' => 'minigames_5',
             'password' => bcrypt('me7YS8'),
             'role' => 'game',
@@ -436,7 +436,7 @@ class UserSeeder extends Seeder
 
         DB::table('users')->insert([
             'id' => 25,
-            'name' => 'Minigames 6',
+            'name' => 'Caplok Stick',
             'username' => 'minigames_6',
             'password' => bcrypt('HPWx3Y'),
             'role' => 'game',
@@ -446,7 +446,7 @@ class UserSeeder extends Seeder
 
         DB::table('users')->insert([
             'id' => 26,
-            'name' => 'Minigames 7',
+            'name' => '24',
             'username' => 'minigames_7',
             'password' => bcrypt('N9dHHs'),
             'role' => 'game',
@@ -456,7 +456,7 @@ class UserSeeder extends Seeder
 
         DB::table('users')->insert([
             'id' => 27,
-            'name' => 'Minigames 8',
+            'name' => 'Tarik Tambang',
             'username' => 'minigames_8',
             'password' => bcrypt('8X5Apb'),
             'role' => 'game',
@@ -466,7 +466,7 @@ class UserSeeder extends Seeder
 
         DB::table('users')->insert([
             'id' => 28,
-            'name' => 'Minigames 9',
+            'name' => 'Menara Kartu',
             'username' => 'minigames_9',
             'password' => bcrypt('vt4CAX'),
             'role' => 'game',
