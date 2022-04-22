@@ -42,7 +42,7 @@ class JudgeController extends Controller
 
         if (Point::query()->where('judge_id', $judge->id)->where('team_id', $id)->exists()) {
             $teamName = Team::query()->with('user')->where('teams.id', $id)->first()->user->name;
-            $team = DB::table('points')
+            $teams = DB::table('points')
                 ->rightJoin(
                     'teams',
                     'teams.id',
@@ -57,12 +57,21 @@ class JudgeController extends Controller
                 CAST(COALESCE(AVG(prototype), 0) AS DECIMAL(3,1)) AS prototype,
                 CAST(COALESCE(AVG(idea), 0) AS DECIMAL(3,1)) AS idea,
                 CAST(COALESCE(SUM(investment), 0) AS SIGNED INTEGER) AS investment')
-                ->where('teams.id', $id)
                 ->groupBy('teams.id')
                 ->groupBy('name')
                 ->groupBy('mentors')
                 ->groupBy('members')
-                ->first();
+                ->orderByDesc('investment')
+                ->orderBy('teams.id')
+                ->get();
+            $team = null;
+            $index = null;
+            foreach ($teams as $i=>$item) {
+                if ($item->id == $id) {
+                    $team = $item;
+                    $index = $i;
+                }
+            }
 
             $investors = Team::with('point')->where('teams.id', $team->id)->first();
             $pictures = array();
@@ -74,9 +83,9 @@ class JudgeController extends Controller
             $team = json_encode($team);
             $message = 'You have already given coins and scores to ' . $teamName;
             $query = Point::query()->where('judge_id', $judge->id)->where('team_id', $id)->first();
-            return redirect()->to('/judge_result')->with(['team' => $team, 'judge' => $judge, 'query' => $query, 'message' => $message]);
+            return redirect()->to('/judge_result')->with(['team' => $team, 'judge' => $judge, 'query' => $query, 'message' => $message, 'index' => $index]);
         } else {
-            $team = DB::table('points')
+            $teams = DB::table('points')
                 ->rightJoin(
                     'teams',
                     'teams.id',
@@ -91,12 +100,21 @@ class JudgeController extends Controller
                 CAST(COALESCE(AVG(prototype), 0) AS DECIMAL(3,1)) AS prototype,
                 CAST(COALESCE(AVG(idea), 0) AS DECIMAL(3,1)) AS idea,
                 CAST(COALESCE(SUM(investment), 0) AS SIGNED INTEGER) AS investment')
-                ->where('teams.id', $id)
                 ->groupBy('teams.id')
                 ->groupBy('name')
                 ->groupBy('mentors')
                 ->groupBy('members')
-                ->first();
+                ->orderByDesc('investment')
+                ->orderBy('teams.id')
+                ->get();
+            $team = null;
+            $index = null;
+            foreach ($teams as $i=>$item) {
+                if ($item->id == $id) {
+                    $team = $item;
+                    $index = $i;
+                }
+            }
 
             $investors = Team::with('point')->where('teams.id', $team->id)->first();
             $pictures = array();
@@ -108,7 +126,7 @@ class JudgeController extends Controller
             $team = json_encode($team);
             $judge = Judge::with('user')->where('user_id', Auth::id())->first();
 
-            return view('judge', compact('team', 'judge'));
+            return view('judge', compact('team', 'judge', 'index'));
         }
     }
 
@@ -186,8 +204,9 @@ class JudgeController extends Controller
             $judge = session('judge');
             $query = session('query');
             $message = session('message');
+            $index = session('index');
 
-            return view('judge_success', compact('team', 'judge', 'query', 'message'));
+            return view('judge_success', compact('team', 'judge', 'query', 'message', 'index'));
         } else {
             return redirect()->to('/');
         }

@@ -45,7 +45,7 @@ Route::get('/', function () {
             return view('home', compact('judge', 'teams'));
         } else if (Auth::user()->role == 'team') {
             $id = Auth::user()->team->id;
-            $team = DB::table('points')
+            $teams = DB::table('points')
                 ->rightJoin(
                     'teams',
                     'teams.id',
@@ -56,18 +56,25 @@ Route::get('/', function () {
                     'users.id',
                     '=',
                     'user_id')
-                ->selectRaw('teams.id, name, mentors, members, qr_judge, qr_game,
+                ->selectRaw('teams.id, name, mentors, members,
                 CAST(COALESCE(AVG(prototype), 0) AS DECIMAL(3,1)) AS prototype,
                 CAST(COALESCE(AVG(idea), 0) AS DECIMAL(3,1)) AS idea,
                 CAST(COALESCE(SUM(investment), 0) AS SIGNED INTEGER) AS investment')
-                ->where('teams.id', $id)
                 ->groupBy('teams.id')
                 ->groupBy('name')
                 ->groupBy('mentors')
                 ->groupBy('members')
-                ->groupBy('qr_judge')
-                ->groupBy('qr_game')
-                ->first();
+                ->orderByDesc('investment')
+                ->orderBy('teams.id')
+                ->get();
+            $team = null;
+            $index = null;
+            foreach ($teams as $i=>$item) {
+                if ($item->id == $id) {
+                    $team = $item;
+                    $index = $i;
+                }
+            }
 
             $games = Team::with('game')->where('teams.id', $team->id)->first();
             $investors = Team::with('point')->where('teams.id', $team->id)->first();
@@ -90,7 +97,7 @@ Route::get('/', function () {
 
             $team = json_encode($team);
 
-            return view('home', compact('team'));
+            return view('home', compact('team', 'index'));
         } else {
             $user = User::with('game')->where('id', Auth::id())->first();
             $teams = Team::query()->with('user')->get();

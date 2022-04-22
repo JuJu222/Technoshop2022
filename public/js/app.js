@@ -6542,7 +6542,7 @@ __webpack_require__.r(__webpack_exports__);
     JudgeCard: _InvestorCard__WEBPACK_IMPORTED_MODULE_0__["default"],
     LeaderboardCard: _LeaderboardCard__WEBPACK_IMPORTED_MODULE_2__["default"]
   },
-  props: ['team'],
+  props: ['team', 'index'],
   data: function data() {
     return {
       isModalVisibleJudge: false,
@@ -6787,7 +6787,7 @@ var input3filled = false;
       buttonDisabled: true
     };
   },
-  props: ['team', 'judge'],
+  props: ['team', 'judge', 'index'],
   methods: {
     onChange1: function onChange1(event) {
       document.getElementById("prototype").value = event;
@@ -6862,7 +6862,7 @@ __webpack_require__.r(__webpack_exports__);
   components: {
     LeaderboardCard: _LeaderboardCard__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
-  props: ['team', 'judge', 'message', 'query']
+  props: ['team', 'judge', 'message', 'query', 'index']
 });
 
 /***/ }),
@@ -60561,12 +60561,12 @@ var render = function () {
                         staticClass:
                           "text-purple text-2xl md:text-3xl mb-3 fw-bold",
                       },
-                      [_vm._v("Your current scores and coins: ")]
+                      [_vm._v("Your current ranking, scores, and coins: ")]
                     ),
                     _vm._v(" "),
                     _c("LeaderboardCard", {
                       staticClass: "w-full",
-                      attrs: { team: _vm.team },
+                      attrs: { team: _vm.team, index: _vm.index },
                     }),
                   ],
                   1
@@ -61079,7 +61079,11 @@ var render = function () {
           _c(
             "div",
             { staticClass: "flex items-start mt-8" },
-            [_c("LeaderboardCard", { attrs: { team: _vm.team } })],
+            [
+              _c("LeaderboardCard", {
+                attrs: { team: _vm.team, index: _vm.index },
+              }),
+            ],
             1
           ),
         ]),
@@ -61329,7 +61333,9 @@ var render = function () {
             : _vm._e(),
           _vm._v(" "),
           _vm.team
-            ? _c("LeaderboardCard", { attrs: { team: _vm.team } })
+            ? _c("LeaderboardCard", {
+                attrs: { team: _vm.team, index: _vm.index },
+              })
             : _vm._e(),
           _vm._v(" "),
           _c(
@@ -61551,7 +61557,7 @@ var render = function () {
             _c("td", { staticClass: "text-xs", attrs: { colspan: "4" } }, [
               _c(
                 "div",
-                { staticClass: "flex items-center flex-no-wrap mb-1" },
+                { staticClass: "flex items-center flex-wrap mb-1" },
                 [
                   _vm._l(_vm.team.pictures, function (picture) {
                     return _c(
@@ -61569,7 +61575,9 @@ var render = function () {
                     )
                   }),
                   _vm._v(" "),
-                  _c("p", { staticClass: "ml-2" }, [_vm._v("has invested")]),
+                  _c("p", { staticClass: "ml-2 pt-1" }, [
+                    _vm._v("has invested"),
+                  ]),
                 ],
                 2
               ),

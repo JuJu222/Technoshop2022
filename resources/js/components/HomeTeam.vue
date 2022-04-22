@@ -9,8 +9,8 @@
                 </div>
                 <div class="w-full lg:w-1/2 h-full lg:pl-10 mb-10 lg:mb-0">
                     <div>
-                        <h1 class="text-purple text-2xl md:text-3xl mb-3 fw-bold">Your current scores and coins: </h1>
-                        <LeaderboardCard class="w-full" :team="team"></LeaderboardCard>
+                        <h1 class="text-purple text-2xl md:text-3xl mb-3 fw-bold">Your current ranking, scores, and coins: </h1>
+                        <LeaderboardCard class="w-full" :team="team" :index="index"></LeaderboardCard>
                     </div>
                     <div>
                         <button @click="openModalJudge" class="block w-full text-center my-4 border rounded-md px-3 sm:px-16 py-3 bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50">Show QR Code for Investor</button>
@@ -63,7 +63,7 @@ import QrModal from "./QrModal";
 export default {
     name: "HomeTeam",
     components: {QrModal, JudgeCard, LeaderboardCard},
-    props: ['team'],
+    props: ['team', 'index'],
     data(){
         return {
             isModalVisibleJudge: false,
