@@ -6856,6 +6856,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "JudgeSuccess",
@@ -60486,7 +60487,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "px-2 py-2 items-center max-h-max flex" }, [
       _c("p", { staticClass: "text-xs align-items-center" }, [
-        _vm._v("Given Scores and Coins: "),
+        _vm._v("Scores and coins given: "),
       ]),
     ])
   },
@@ -61310,19 +61311,25 @@ var render = function () {
           _vm._v(" "),
           _vm.query
             ? _c("p", { staticClass: "text-base text-gray-800" }, [
-                _vm._v("Your prototype score: " + _vm._s(_vm.query.prototype)),
+                _vm._v("Prototype score given: " + _vm._s(_vm.query.prototype)),
               ])
             : _vm._e(),
           _vm._v(" "),
           _vm.query
             ? _c("p", { staticClass: "py-1 text-base text-gray-800" }, [
-                _vm._v("Your idea score: " + _vm._s(_vm.query.idea)),
+                _vm._v("Idea score given: " + _vm._s(_vm.query.idea)),
               ])
             : _vm._e(),
           _vm._v(" "),
           _vm.query
             ? _c("p", { staticClass: "mb-4 text-base text-gray-800" }, [
-                _vm._v("Your coins: " + _vm._s(_vm.query.investment)),
+                _vm._v("Coins given: " + _vm._s(_vm.query.investment)),
+              ])
+            : _vm._e(),
+          _vm._v(" "),
+          _vm.query
+            ? _c("p", { staticClass: "mb-4 text-base text-gray-800" }, [
+                _vm._v("Your remaining coins: " + _vm._s(_vm.judge.points)),
               ])
             : _vm._e(),
           _vm._v(" "),

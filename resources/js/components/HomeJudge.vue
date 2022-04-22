@@ -44,7 +44,7 @@
                         </div>
                         <div v-if="team.investment" class="flex flex-row">
                             <div class="px-2 py-2 items-center max-h-max flex">
-                                <p class="text-xs align-items-center">Given Scores and Coins: </p>
+                                <p class="text-xs align-items-center">Scores and coins given: </p>
                             </div>
                             <div class="px-2 py-2 items-center max-h-max flex">
                                 <p class="text-xs align-items-center">Idea: {{ team.idea }}</p>
