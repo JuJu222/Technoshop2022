@@ -33,7 +33,7 @@ Route::get('/', function () {
                 if (Point::query()->where('judge_id', $judge->id)->where('team_id', $team->id)->exists()) {
                     $point = Point::query()->where('judge_id', $judge->id)->where('team_id', $team->id)->first();
                     $team->idea = $point->idea;
-                    $team->prototype = $point->investment;
+                    $team->prototype = $point->prototype;
                     $team->investment = $point->investment;
                 } else {
                     $team->idea = null;
