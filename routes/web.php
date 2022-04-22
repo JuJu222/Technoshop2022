@@ -56,7 +56,7 @@ Route::get('/', function () {
                     'users.id',
                     '=',
                     'user_id')
-                ->selectRaw('teams.id, name, mentors, members,
+                ->selectRaw('teams.id, name, mentors, members, qr_judge, qr_game,
                 CAST(COALESCE(AVG(prototype), 0) AS DECIMAL(3,1)) AS prototype,
                 CAST(COALESCE(AVG(idea), 0) AS DECIMAL(3,1)) AS idea,
                 CAST(COALESCE(SUM(investment), 0) AS SIGNED INTEGER) AS investment')
@@ -64,6 +64,8 @@ Route::get('/', function () {
                 ->groupBy('name')
                 ->groupBy('mentors')
                 ->groupBy('members')
+                ->groupBy('qr_judge')
+                ->groupBy('qr_game')
                 ->orderByDesc('investment')
                 ->orderBy('teams.id')
                 ->get();
