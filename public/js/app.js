@@ -60618,7 +60618,7 @@ var render = function () {
               ? _c(
                   "h1",
                   { staticClass: "text-xl mb-3 mx-auto max-w-max pt-4" },
-                  [_vm._v("You have not played a minigame yet!")]
+                  [_vm._v("You haven't played any minigames yet!")]
                 )
               : _vm._e(),
             _vm._v(" "),

@@ -20,7 +20,7 @@
             </div>
             <div class="relative z-10 container mx-auto pt-6 lg:px-20 md:px-6 px-1">
                 <h1 class="text-purple text-2xl md:text-3xl mb-3 fw-bold mx-auto max-w-max">Minigames that you have played: </h1>
-                <h1 v-if="team.games.length == 0" class="text-xl mb-3 mx-auto max-w-max pt-4">You have not played a minigame yet!</h1>
+                <h1 v-if="team.games.length == 0" class="text-xl mb-3 mx-auto max-w-max pt-4">You haven't played any minigames yet!</h1>
                 <div v-for="(game, index) in team.games" :key="team.id" class="md:!mb-5 mb-3 text-xs flex flex-row w-full">
                     <div class="px-2 py-2 items-center bg-white rounded-lg shadow-lg w-full">
                         <div class="flex flex-row">
