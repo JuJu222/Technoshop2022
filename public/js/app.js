@@ -64665,20 +64665,25 @@ var render = function () {
                               ]
                             ),
                             _vm._v(" "),
-                            _c(
-                              "div",
-                              {
-                                staticClass:
-                                  "px-2 py-2 items-center max-h-max flex",
-                              },
-                              [
-                                _c(
-                                  "p",
-                                  { staticClass: "text-xs align-items-center" },
-                                  [_vm._v("End: " + _vm._s(team.finish_at))]
-                                ),
-                              ]
-                            ),
+                            _vm.game.finish_at
+                              ? _c(
+                                  "div",
+                                  {
+                                    staticClass:
+                                      "px-2 py-2 items-center max-h-max flex",
+                                  },
+                                  [
+                                    _c(
+                                      "p",
+                                      {
+                                        staticClass:
+                                          "text-xs align-items-center",
+                                      },
+                                      [_vm._v("End: " + _vm._s(team.finish_at))]
+                                    ),
+                                  ]
+                                )
+                              : _vm._e(),
                           ])
                         : _vm._e(),
                     ]
