@@ -28,11 +28,6 @@
                                 <p class="text-lg sm:text-xl font-bold whitespace-nowrap">{{ game.name }}</p>
                             </div>
                         </div>
-                        <div class="flex flex-row">
-                            <div class="px-2 py-2 items-center">
-                                <p class="text-xs">{{ game.name }}</p>
-                            </div>
-                        </div>
                         <div v-if="game.start_at" class="flex flex-row">
                             <div v-if="game.delta" class="px-2 py-2 items-center max-h-max flex">
                                 <p class="text-xs align-items-center">Time Taken: {{ game.delta }}</p>
