@@ -41,7 +41,7 @@
                             <div class="px-2 py-2 items-center max-h-max flex">
                                 <p class="text-xs align-items-center">Start: {{ team.start_at }}</p>
                             </div>
-                            <div v-if="game.finish_at" class="px-2 py-2 items-center max-h-max flex">
+                            <div v-if="team.finish_at" class="px-2 py-2 items-center max-h-max flex">
                                 <p class="text-xs align-items-center">End: {{ team.finish_at }}</p>
                             </div>
                         </div>

@@ -64665,7 +64665,7 @@ var render = function () {
                               ]
                             ),
                             _vm._v(" "),
-                            _vm.game.finish_at
+                            team.finish_at
                               ? _c(
                                   "div",
                                   {
