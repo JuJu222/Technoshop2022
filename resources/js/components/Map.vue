@@ -4,7 +4,7 @@
             <p class="w-10/12 mx-auto md:w-full font-bold lg:text-4xl text-3xl lg:leading-9 md:leading-7 leading-9 text-center text-gray-800">Maps</p>
             <p class="text-base mb-3 mx-auto max-w-max pt-2">(Click on the images to view them)</p>
         </div>
-        <div class="pb-6 lg:px-20 md:px-6 px-4 sm:w-3/5 mx-auto">
+        <div class="pb-6 lg:px-20 md:px-6 px-3 sm:w-3/5 mx-auto">
             <div class="images" v-viewer>
                 <div v-for="item in images">
                     <h1 class="text-xl mb-3 mx-auto max-w-max pt-4">{{ item.title }}</h1>

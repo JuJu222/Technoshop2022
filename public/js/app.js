@@ -64169,7 +64169,7 @@ var render = function () {
       "div",
       {
         staticClass:
-          "xl:px-20 md:px-10 sm:px-6 px-2 md:py-12 py-9 2xl:mx-auto 2xl:container md:flex items-center justify-center",
+          "xl:px-20 md:px-10 sm:px-6 px-3 md:py-12 py-9 2xl:mx-auto 2xl:container md:flex items-center justify-center",
       },
       [
         _c("div", { staticClass: "xl:w-1/3 md:w-1/2 lg:mr-16 md:mt-0" }, [
@@ -65512,7 +65512,7 @@ var render = function () {
   return _c("div", { staticClass: "2xl:container 2xl:mx-auto xl:px-20" }, [
     _vm._m(0),
     _vm._v(" "),
-    _c("div", { staticClass: "pb-6 lg:px-20 md:px-6 px-4" }, [
+    _c("div", { staticClass: "pb-6 lg:px-20 md:px-6 px-3" }, [
       _c("hr", { staticClass: "w-full bg-gray-200 my-6" }),
       _vm._v(" "),
       _c(
@@ -65577,7 +65577,7 @@ var render = function () {
       "div",
       {
         staticClass:
-          "xl:px-20 md:px-10 sm:px-6 px-2 md:py-12 py-9 2xl:mx-auto 2xl:container md:flex items-center justify-center",
+          "xl:px-20 md:px-10 sm:px-6 px-3 md:py-12 py-9 2xl:mx-auto 2xl:container md:flex items-center justify-center",
       },
       [
         _c("div", { staticClass: "xl:w-1/3 md:w-1/2 lg:mr-16 md:mt-0" }, [
@@ -66124,7 +66124,7 @@ var render = function () {
   return _c("div", { staticClass: "2xl:container 2xl:mx-auto xl:px-20" }, [
     _vm._m(0),
     _vm._v(" "),
-    _c("div", { staticClass: "pb-6 lg:px-20 md:px-6 px-4 sm:w-3/5 mx-auto" }, [
+    _c("div", { staticClass: "pb-6 lg:px-20 md:px-6 px-3 sm:w-3/5 mx-auto" }, [
       _c(
         "div",
         {

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="xl:px-20 md:px-10 sm:px-6 px-2 md:py-12 py-9 2xl:mx-auto 2xl:container md:flex items-center justify-center">
+        <div class="xl:px-20 md:px-10 sm:px-6 px-3 md:py-12 py-9 2xl:mx-auto 2xl:container md:flex items-center justify-center">
             <div class="xl:w-1/3 md:w-1/2 lg:mr-16 md:mt-0">
                 <div class="flex items-start mt-8">
                     <LeaderboardCard :team="team" :index="index"></LeaderboardCard>
