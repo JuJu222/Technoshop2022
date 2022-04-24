@@ -20,6 +20,22 @@
                             <p class="pt-4 text-base font-bold flex items-center justify-center lg:justify-start">{{ investor.field }}</p>
                             <p class="pt-8 text-center text-lg font-bold flex items-center justify-center">About</p>
                             <p class="pt-4 text-sm">{{ investor.about }}</p>
+                            <div class="flex flex-row max-w-fit mx-auto pt-3">
+                                <div class="max-w-fit">
+                                    <p class="inline">{{ investor.red_flag }}</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="fill-red-600 inline" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" width="20" height="20" viewBox="0 0 471.098 471.098" style="enable-background:new 0 0 471.098 471.098;" xml:space="preserve">
+                                <path d="M403.288,153.454L111.732,45.741v-21.27C111.732,10.961,100.779,0,87.261,0C73.743,0,62.79,10.961,62.79,24.471v422.156  c0,13.51,10.952,24.471,24.471,24.471c13.518,0,24.471-10.961,24.471-24.471V275.555l291.557-107.699  c3.012-1.113,5.019-3.981,5.019-7.2C408.307,157.436,406.3,154.57,403.288,153.454z"/>
+                            </svg>
+                                    <p class="inline">{{ investor.yellow_flag }}</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="fill-yellow-400 inline" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" width="20" height="20" viewBox="0 0 471.098 471.098" style="enable-background:new 0 0 471.098 471.098;" xml:space="preserve">
+                                <path d="M403.288,153.454L111.732,45.741v-21.27C111.732,10.961,100.779,0,87.261,0C73.743,0,62.79,10.961,62.79,24.471v422.156  c0,13.51,10.952,24.471,24.471,24.471c13.518,0,24.471-10.961,24.471-24.471V275.555l291.557-107.699  c3.012-1.113,5.019-3.981,5.019-7.2C408.307,157.436,406.3,154.57,403.288,153.454z"/>
+                            </svg>
+                                    <p class="inline">{{ investor.green_flag }}</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="fill-green-500 inline" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" width="20" height="20" viewBox="0 0 471.098 471.098" style="enable-background:new 0 0 471.098 471.098;" xml:space="preserve">
+                                <path d="M403.288,153.454L111.732,45.741v-21.27C111.732,10.961,100.779,0,87.261,0C73.743,0,62.79,10.961,62.79,24.471v422.156  c0,13.51,10.952,24.471,24.471,24.471c13.518,0,24.471-10.961,24.471-24.471V275.555l291.557-107.699  c3.012-1.113,5.019-3.981,5.019-7.2C408.307,157.436,406.3,154.57,403.288,153.454z"/>
+                            </svg>
+                                </div>
+                            </div>
                         </div>
                         <div class="mt-6 pb-4 lg:pb-0 mx-auto">
                             <p class="pt-4 text-center text-lg font-bold flex items-center justify-center">Portfolio</p>

@@ -11921,6 +11921,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .block {
   display: block;
 }
+.inline-block {
+  display: inline-block;
+}
+.inline {
+  display: inline;
+}
 .flex {
   display: flex;
 }
@@ -11960,10 +11966,25 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-11 {
   height: 2.75rem;
 }
+.h-72 {
+  height: 18rem;
+}
+.h-9 {
+  height: 2.25rem;
+}
+.h-96 {
+  height: 24rem;
+}
+.\!h-96 {
+  height: 24rem !important;
+}
 .max-h-max {
   max-height: -webkit-max-content;
   max-height: -moz-max-content;
   max-height: max-content;
+}
+.max-h-72 {
+  max-height: 18rem;
 }
 .min-h-screen {
   min-height: 100vh;
@@ -12021,6 +12042,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .max-w-4xl {
   max-width: 56rem;
 }
+.max-w-fit {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
 .table-auto {
   table-layout: auto;
 }
@@ -12044,6 +12070,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .items-center {
   align-items: center;
+}
+.items-stretch {
+  align-items: stretch;
 }
 .justify-start {
   justify-content: flex-start;
@@ -12165,6 +12194,27 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .fill-amber-700 {
   fill: #b45309;
+}
+.fill-red-600 {
+  fill: #dc2626;
+}
+.fill-yellow-600 {
+  fill: #ca8a04;
+}
+.fill-green-600 {
+  fill: #16a34a;
+}
+.fill-yellow-400 {
+  fill: #facc15;
+}
+.fill-green-400 {
+  fill: #4ade80;
+}
+.fill-green-300 {
+  fill: #86efac;
+}
+.fill-green-500 {
+  fill: #22c55e;
 }
 .object-cover {
   -o-object-fit: cover;
@@ -12294,6 +12344,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .pl-0 {
   padding-left: 0px;
+}
+.pb-3 {
+  padding-bottom: 0.75rem;
 }
 .text-left {
   text-align: left;

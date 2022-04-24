@@ -19,6 +19,9 @@ return new class extends Migration
             $table->text('about');
             $table->string('img_portrait');
             $table->string('img_portfolio');
+            $table->string('red_flag');
+            $table->string('yellow_flag');
+            $table->string('green_flag');
             $table->integer('points')->default(1000);
             $table->foreignId('user_id');
             $table->timestamps();

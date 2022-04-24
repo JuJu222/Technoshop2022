@@ -6616,6 +6616,22 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "Investor",
   props: ['investor']
@@ -6634,6 +6650,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -65361,6 +65393,110 @@ var render = function () {
                       _c("p", { staticClass: "pt-4 text-sm" }, [
                         _vm._v(_vm._s(_vm.investor.about)),
                       ]),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "flex flex-row max-w-fit mx-auto pt-3" },
+                        [
+                          _c("div", { staticClass: "max-w-fit" }, [
+                            _c("p", { staticClass: "inline" }, [
+                              _vm._v(_vm._s(_vm.investor.red_flag)),
+                            ]),
+                            _vm._v(" "),
+                            _c(
+                              "svg",
+                              {
+                                staticClass: "fill-red-600 inline",
+                                staticStyle: {
+                                  "enable-background":
+                                    "new 0 0 471.098 471.098",
+                                },
+                                attrs: {
+                                  xmlns: "http://www.w3.org/2000/svg",
+                                  "xmlns:xlink": "http://www.w3.org/1999/xlink",
+                                  version: "1.1",
+                                  id: "Capa_1",
+                                  width: "20",
+                                  height: "20",
+                                  viewBox: "0 0 471.098 471.098",
+                                  "xml:space": "preserve",
+                                },
+                              },
+                              [
+                                _c("path", {
+                                  attrs: {
+                                    d: "M403.288,153.454L111.732,45.741v-21.27C111.732,10.961,100.779,0,87.261,0C73.743,0,62.79,10.961,62.79,24.471v422.156  c0,13.51,10.952,24.471,24.471,24.471c13.518,0,24.471-10.961,24.471-24.471V275.555l291.557-107.699  c3.012-1.113,5.019-3.981,5.019-7.2C408.307,157.436,406.3,154.57,403.288,153.454z",
+                                  },
+                                }),
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c("p", { staticClass: "inline" }, [
+                              _vm._v(_vm._s(_vm.investor.yellow_flag)),
+                            ]),
+                            _vm._v(" "),
+                            _c(
+                              "svg",
+                              {
+                                staticClass: "fill-yellow-400 inline",
+                                staticStyle: {
+                                  "enable-background":
+                                    "new 0 0 471.098 471.098",
+                                },
+                                attrs: {
+                                  xmlns: "http://www.w3.org/2000/svg",
+                                  "xmlns:xlink": "http://www.w3.org/1999/xlink",
+                                  version: "1.1",
+                                  id: "Capa_1",
+                                  width: "20",
+                                  height: "20",
+                                  viewBox: "0 0 471.098 471.098",
+                                  "xml:space": "preserve",
+                                },
+                              },
+                              [
+                                _c("path", {
+                                  attrs: {
+                                    d: "M403.288,153.454L111.732,45.741v-21.27C111.732,10.961,100.779,0,87.261,0C73.743,0,62.79,10.961,62.79,24.471v422.156  c0,13.51,10.952,24.471,24.471,24.471c13.518,0,24.471-10.961,24.471-24.471V275.555l291.557-107.699  c3.012-1.113,5.019-3.981,5.019-7.2C408.307,157.436,406.3,154.57,403.288,153.454z",
+                                  },
+                                }),
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c("p", { staticClass: "inline" }, [
+                              _vm._v(_vm._s(_vm.investor.green_flag)),
+                            ]),
+                            _vm._v(" "),
+                            _c(
+                              "svg",
+                              {
+                                staticClass: "fill-green-500 inline",
+                                staticStyle: {
+                                  "enable-background":
+                                    "new 0 0 471.098 471.098",
+                                },
+                                attrs: {
+                                  xmlns: "http://www.w3.org/2000/svg",
+                                  "xmlns:xlink": "http://www.w3.org/1999/xlink",
+                                  version: "1.1",
+                                  id: "Capa_1",
+                                  width: "20",
+                                  height: "20",
+                                  viewBox: "0 0 471.098 471.098",
+                                  "xml:space": "preserve",
+                                },
+                              },
+                              [
+                                _c("path", {
+                                  attrs: {
+                                    d: "M403.288,153.454L111.732,45.741v-21.27C111.732,10.961,100.779,0,87.261,0C73.743,0,62.79,10.961,62.79,24.471v422.156  c0,13.51,10.952,24.471,24.471,24.471c13.518,0,24.471-10.961,24.471-24.471V275.555l291.557-107.699  c3.012-1.113,5.019-3.981,5.019-7.2C408.307,157.436,406.3,154.57,403.288,153.454z",
+                                  },
+                                }),
+                              ]
+                            ),
+                          ]),
+                        ]
+                      ),
                     ]
                   ),
                   _vm._v(" "),
@@ -65440,7 +65576,7 @@ var render = function () {
     _c("div", { staticClass: "relative" }, [
       _c(
         "div",
-        { staticClass: "h-300 rounded-2xl overflow-hidden shadow-md bg-white" },
+        { staticClass: "rounded-2xl overflow-hidden shadow-md bg-white" },
         [
           _c(
             "div",
@@ -65472,10 +65608,107 @@ var render = function () {
               "p",
               {
                 staticClass:
-                  "text-center text-gray-600 text-base pt-3 pb-5 font-normal",
+                  "text-center text-gray-600 text-base pt-3 pb-3  font-normal",
               },
               [_vm._v(_vm._s(_vm.investor.judge.about))]
             ),
+            _vm._v(" "),
+            _c("div", { staticClass: "flex flex-row max-w-fit mx-auto pb-5" }, [
+              _c("div", { staticClass: "max-w-fit" }, [
+                _c("p", { staticClass: "inline" }, [
+                  _vm._v(_vm._s(_vm.investor.judge.red_flag)),
+                ]),
+                _vm._v(" "),
+                _c(
+                  "svg",
+                  {
+                    staticClass: "fill-red-600 inline",
+                    staticStyle: {
+                      "enable-background": "new 0 0 471.098 471.098",
+                    },
+                    attrs: {
+                      xmlns: "http://www.w3.org/2000/svg",
+                      "xmlns:xlink": "http://www.w3.org/1999/xlink",
+                      version: "1.1",
+                      id: "Capa_1",
+                      width: "20",
+                      height: "20",
+                      viewBox: "0 0 471.098 471.098",
+                      "xml:space": "preserve",
+                    },
+                  },
+                  [
+                    _c("path", {
+                      attrs: {
+                        d: "M403.288,153.454L111.732,45.741v-21.27C111.732,10.961,100.779,0,87.261,0C73.743,0,62.79,10.961,62.79,24.471v422.156  c0,13.51,10.952,24.471,24.471,24.471c13.518,0,24.471-10.961,24.471-24.471V275.555l291.557-107.699  c3.012-1.113,5.019-3.981,5.019-7.2C408.307,157.436,406.3,154.57,403.288,153.454z",
+                      },
+                    }),
+                  ]
+                ),
+                _vm._v(" "),
+                _c("p", { staticClass: "inline" }, [
+                  _vm._v(_vm._s(_vm.investor.judge.yellow_flag)),
+                ]),
+                _vm._v(" "),
+                _c(
+                  "svg",
+                  {
+                    staticClass: "fill-yellow-400 inline",
+                    staticStyle: {
+                      "enable-background": "new 0 0 471.098 471.098",
+                    },
+                    attrs: {
+                      xmlns: "http://www.w3.org/2000/svg",
+                      "xmlns:xlink": "http://www.w3.org/1999/xlink",
+                      version: "1.1",
+                      id: "Capa_1",
+                      width: "20",
+                      height: "20",
+                      viewBox: "0 0 471.098 471.098",
+                      "xml:space": "preserve",
+                    },
+                  },
+                  [
+                    _c("path", {
+                      attrs: {
+                        d: "M403.288,153.454L111.732,45.741v-21.27C111.732,10.961,100.779,0,87.261,0C73.743,0,62.79,10.961,62.79,24.471v422.156  c0,13.51,10.952,24.471,24.471,24.471c13.518,0,24.471-10.961,24.471-24.471V275.555l291.557-107.699  c3.012-1.113,5.019-3.981,5.019-7.2C408.307,157.436,406.3,154.57,403.288,153.454z",
+                      },
+                    }),
+                  ]
+                ),
+                _vm._v(" "),
+                _c("p", { staticClass: "inline" }, [
+                  _vm._v(_vm._s(_vm.investor.judge.green_flag)),
+                ]),
+                _vm._v(" "),
+                _c(
+                  "svg",
+                  {
+                    staticClass: "fill-green-500 inline",
+                    staticStyle: {
+                      "enable-background": "new 0 0 471.098 471.098",
+                    },
+                    attrs: {
+                      xmlns: "http://www.w3.org/2000/svg",
+                      "xmlns:xlink": "http://www.w3.org/1999/xlink",
+                      version: "1.1",
+                      id: "Capa_1",
+                      width: "20",
+                      height: "20",
+                      viewBox: "0 0 471.098 471.098",
+                      "xml:space": "preserve",
+                    },
+                  },
+                  [
+                    _c("path", {
+                      attrs: {
+                        d: "M403.288,153.454L111.732,45.741v-21.27C111.732,10.961,100.779,0,87.261,0C73.743,0,62.79,10.961,62.79,24.471v422.156  c0,13.51,10.952,24.471,24.471,24.471c13.518,0,24.471-10.961,24.471-24.471V275.555l291.557-107.699  c3.012-1.113,5.019-3.981,5.019-7.2C408.307,157.436,406.3,154.57,403.288,153.454z",
+                      },
+                    }),
+                  ]
+                ),
+              ]),
+            ]),
           ]),
         ]
       ),

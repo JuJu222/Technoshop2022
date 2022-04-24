@@ -31,6 +31,9 @@ class UserSeeder extends Seeder
             projects that can be useful for human life. All members have the same heart and support each other.',
             'img_portrait' => 'pak_yuwono/pak_yuwono.png',
             'img_portfolio' => 'pak_yuwono/portfolio_pak_yuwono.png',
+            'red_flag' => 3,
+            'yellow_flag' => 3,
+            'green_flag' => 3,
             'created_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta'),
             'updated_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta')
         ]);
@@ -52,6 +55,9 @@ class UserSeeder extends Seeder
             and creating job opportunities for many people.',
             'img_portrait' => 'pak_mychael/pak_mychael.png',
             'img_portfolio' => 'pak_mychael/portfolio_pak_mychael.png',
+            'red_flag' => 4,
+            'yellow_flag' => 4,
+            'green_flag' => 4,
             'created_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta'),
             'updated_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta')
         ]);
@@ -73,6 +79,9 @@ class UserSeeder extends Seeder
             but beyond.',
             'img_portrait' => 'pak_evan/pak_evan.png',
             'img_portfolio' => 'pak_evan/portfolio_pak_evan.png',
+            'red_flag' => 3,
+            'yellow_flag' => 3,
+            'green_flag' => 3,
             'created_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta'),
             'updated_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta')
         ]);
@@ -92,6 +101,9 @@ class UserSeeder extends Seeder
             'about' => 'I love businesses that solve people\'s problems, support them, and make their lives easier!',
             'img_portrait' => 'pak_eko/pak_eko.png',
             'img_portfolio' => 'pak_eko/portfolio_pak_eko.png',
+            'red_flag' => 5,
+            'yellow_flag' => 5,
+            'green_flag' => 5,
             'created_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta'),
             'updated_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta')
         ]);
@@ -112,6 +124,9 @@ class UserSeeder extends Seeder
             for a new place and culinary.',
             'img_portrait' => 'pak_david/pak_david.png',
             'img_portfolio' => 'pak_david/portfolio_pak_david.png',
+            'red_flag' => 3,
+            'yellow_flag' => 3,
+            'green_flag' => 3,
             'created_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta'),
             'updated_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta')
         ]);
@@ -132,6 +147,9 @@ class UserSeeder extends Seeder
             product especially concerning with senior and marginilized citizen.',
             'img_portrait' => 'bu_theresia/bu_theresia.png',
             'img_portfolio' => 'bu_theresia/portfolio_bu_theresia.png',
+            'red_flag' => 4,
+            'yellow_flag' => 4,
+            'green_flag' => 4,
             'created_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta'),
             'updated_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta')
         ]);
@@ -151,6 +169,9 @@ class UserSeeder extends Seeder
             'about' => 'I like business ideas that are out of the box and i like it even more when they make tons of money.',
             'img_portrait' => 'bu_laura/bu_laura.png',
             'img_portfolio' => 'bu_laura/portfolio_bu_laura.png',
+            'red_flag' => 4,
+            'yellow_flag' => 4,
+            'green_flag' => 4,
             'created_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta'),
             'updated_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta')
         ]);
@@ -171,6 +192,9 @@ class UserSeeder extends Seeder
             business that has members who dedicated to the business and know what they\'re doing.',
             'img_portrait' => 'bu_citra/bu_citra.png',
             'img_portfolio' => 'bu_citra/portfolio_bu_citra.png',
+            'red_flag' => 3,
+            'yellow_flag' => 3,
+            'green_flag' => 3,
             'created_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta'),
             'updated_at' => \Carbon\Carbon::now()->timezone('Asia/Jakarta')
         ]);
