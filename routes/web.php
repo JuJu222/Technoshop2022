@@ -134,19 +134,19 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::resource('investors', JudgeController::class);
-Route::middleware(['auth'])->group(function () {
-    Route::middleware(['judge'])->group(function () {
-        Route::get('/judge/{id}', [JudgeController::class, 'judgeGet']);
-        Route::get('/judge_result', [JudgeController::class, 'judgeGetResult']);
-        Route::post('/judge/{id}', [JudgeController::class, 'judgePost']);
-    });
-
-    Route::middleware(['game'])->group(function () {
-        Route::get('/log/{id}', [GameController::class, 'gameLogGet']);
-        Route::get('/log_result', [GameController::class, 'gameLogGetResult']);
-        Route::post('/log/{id}', [GameController::class, 'gameLogPost']);
-    });
-});
+//Route::middleware(['auth'])->group(function () {
+//    Route::middleware(['judge'])->group(function () {
+//        Route::get('/judge/{id}', [JudgeController::class, 'judgeGet']);
+//        Route::get('/judge_result', [JudgeController::class, 'judgeGetResult']);
+//        Route::post('/judge/{id}', [JudgeController::class, 'judgePost']);
+//    });
+//
+//    Route::middleware(['game'])->group(function () {
+//        Route::get('/log/{id}', [GameController::class, 'gameLogGet']);
+//        Route::get('/log_result', [GameController::class, 'gameLogGetResult']);
+//        Route::post('/log/{id}', [GameController::class, 'gameLogPost']);
+//    });
+//});
 
 Route::resource('teams', TeamController::class);
 Route::get('/leaderboard', [TeamController::class, 'leaderboard'])->name('leaderboard');
