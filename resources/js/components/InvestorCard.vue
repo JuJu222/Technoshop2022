@@ -10,7 +10,7 @@
                 <div class="px-6 mt-16">
                     <div class="font-bold text-3xl text-center pb-1">{{ investor.name }}</div>
                     <p class="text-gray-800 text-sm text-center">{{ investor.judge.field }}</p>
-                    <p class="text-center text-gray-600 text-base pt-3 pb-5 font-normal">Our services encompass the assessment and repair of property damage caused by water, fire, smoke, or mold. We can also be a part of the restoration.</p>
+                    <p class="text-center text-gray-600 text-base pt-3 pb-5 font-normal">{{ investor.judge.about }}</p>
                 </div>
             </div>
         </div>

@@ -12160,6 +12160,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-center {
   background-position: center;
 }
+.fill-blue-50 {
+  fill: #eff6ff;
+}
+.fill-amber-700 {
+  fill: #b45309;
+}
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;

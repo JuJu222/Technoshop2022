@@ -65474,11 +65474,7 @@ var render = function () {
                 staticClass:
                   "text-center text-gray-600 text-base pt-3 pb-5 font-normal",
               },
-              [
-                _vm._v(
-                  "Our services encompass the assessment and repair of property damage caused by water, fire, smoke, or mold. We can also be a part of the restoration."
-                ),
-              ]
+              [_vm._v(_vm._s(_vm.investor.judge.about))]
             ),
           ]),
         ]
