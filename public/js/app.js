@@ -64891,7 +64891,7 @@ var render = function () {
                               "w-full flex align-items-center justify-content-end pr-4 mb-2",
                           },
                           [
-                            team.investment || _vm.judge.judge.points < 1
+                            team.idea || _vm.judge.judge.points < 1
                               ? _c(
                                   "span",
                                   {
@@ -64913,7 +64913,7 @@ var render = function () {
                         ),
                       ]),
                       _vm._v(" "),
-                      team.investment
+                      team.idea
                         ? _c("div", { staticClass: "flex flex-row" }, [
                             _vm._m(0, true),
                             _vm._v(" "),
