@@ -65648,7 +65648,7 @@ var render = function () {
                       },
                       [
                         _vm._v(
-                          "Investment (Give your coins, Min: 1 & Max: " +
+                          "Investment (Give your coins, Min: 0 & Max: " +
                             _vm._s(_vm.judge.points) +
                             ")"
                         ),
@@ -65672,7 +65672,7 @@ var render = function () {
                       attrs: {
                         controls: "",
                         size: "large",
-                        min: 1,
+                        min: 0,
                         max: _vm.judge.points,
                       },
                       on: { change: _vm.onChange3 },
