@@ -6805,7 +6805,7 @@ var input3filled = false;
     onChange3: function onChange3(event) {
       document.getElementById("investment").value = event;
 
-      if (event) {
+      if (event >= 0) {
         input3filled = true;
       }
 

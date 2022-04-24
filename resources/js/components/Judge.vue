@@ -69,7 +69,7 @@ export default {
         },
         onChange3(event) {
             document.getElementById("investment").value = event;
-            if (event) {
+            if (event >= 0) {
                 input3filled = true;
             }
             this.checkButton()
